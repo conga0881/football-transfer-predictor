@@ -1,4 +1,4 @@
-# Run with:  python3.12 -m streamlit run app.py
+# Run with: python3.12 -m streamlit run app.py
 
 import pickle
 import numpy as np
@@ -11,7 +11,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import shap
 
-# ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Football Value Predictor",
     page_icon="⚽",
@@ -20,27 +19,24 @@ st.set_page_config(
 
 # ── Load artifacts ────────────────────────────────────────────────────────────
 @st.cache_resource
-def load_data():
+def load_artifacts():
     with open("model_data.pkl", "rb") as f:
-        return pickle.load(f)
+        data = pickle.load(f)
+    with open("model.pkl", "rb") as f:
+        bundle = pickle.load(f)
+    # Pre-build SHAP explainers (slow to create, cache them)
+    explainers = {grp: shap.TreeExplainer(m) for grp, m in bundle["models"].items()}
+    return data, bundle, explainers
 
-data = load_data()
+data, bundle, explainers = load_artifacts()
 
-X             = data["X"]
-y_true_log    = data["y_true"]
-y_pred_log    = data["y_pred"]
-market_values = data["market_values"]          # original EUR
-player_names  = data["player_names"]
-position_labels = data["position_labels"]
-positions_enc = data["positions"]              # encoded ints
-feature_names = data["feature_names"]
-shap_values   = data["shap_values"]
-df_full       = data["df"]
-
-# Decode position labels
-positions_str = [position_labels[i] for i in positions_enc]
-
-predicted_values = np.expm1(y_pred_log)
+groups             = data["groups"]
+df_all             = data["df_all"]
+sub_pos_by_group   = data["sub_positions_by_group"]
+models             = bundle["models"]
+foot_enc           = bundle["foot_enc"]
+sub_pos_enc        = bundle["sub_pos_enc"]
+feature_cols       = bundle["feature_cols"]   # raw col names per group
 
 def fmt_eur(v):
     if v >= 1e6:
@@ -49,133 +45,312 @@ def fmt_eur(v):
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 st.sidebar.title("⚽ Football Value Predictor")
-st.sidebar.markdown("Premier League · Seasons 2022+")
+st.sidebar.markdown("Premier League · Seasons 2024+")
 
-sorted_names = sorted(player_names)
-selected_name = st.sidebar.selectbox("Select a player", sorted_names)
+all_names     = sorted(df_all["name"].tolist())
+selected_name = st.sidebar.selectbox("Select a player", all_names)
 
-idx = int(np.where(player_names == selected_name)[0][0])
+# ── Helper ────────────────────────────────────────────────────────────────────
+def get_player(name):
+    row   = df_all[df_all["name"] == name].iloc[0]
+    group = row["position_group"]
+    gd    = groups[group]
+    idx   = int(np.where(gd["player_names"] == name)[0][0])
+    return row, group, gd, idx
 
-# ── Header ────────────────────────────────────────────────────────────────────
-row = df_full.iloc[idx]
-position_display = positions_str[idx]
-club = row.get("current_club_name", "Unknown")
+# ── Tabs ──────────────────────────────────────────────────────────────────────
+tab1, tab2, tab3, tab4 = st.tabs([
+    "🔍 Player Explorer",
+    "📊 Market Analysis",
+    "⚖️ Compare Players",
+    "🛠️ Build a Player",
+])
 
-st.title(selected_name)
-st.markdown(f"**{position_display}** · {club}")
+# ══════════════════════════════════════════════════════════════════════════════
+# TAB 1 — Player Explorer
+# ══════════════════════════════════════════════════════════════════════════════
+with tab1:
+    row, group, gd, idx = get_player(selected_name)
+    actual    = float(row["market_value_in_eur"])
+    predicted = float(row["predicted_value"])
+    error_pct = (predicted - actual) / actual * 100
 
-# ── Metrics row ───────────────────────────────────────────────────────────────
-actual    = market_values[idx]
-predicted = predicted_values[idx]
-error_pct = (predicted - actual) / actual * 100
+    st.title(selected_name)
+    st.markdown(f"**{row['sub_position']}** · {row.get('current_club_name', 'Unknown')} · *{group}*")
 
-col1, col2, col3, col4 = st.columns(4)
-col1.metric("Age", f"{row['age']:.1f}")
-col2.metric("Predicted Value", fmt_eur(predicted))
-col3.metric("Actual Value", fmt_eur(actual))
-col4.metric("Model Error", f"{error_pct:+.1f}%")
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Age", f"{row['age']:.1f}")
+    c2.metric("Predicted Value", fmt_eur(predicted))
+    c3.metric("Actual Value", fmt_eur(actual))
+    c4.metric("Model Error", f"{error_pct:+.1f}%")
 
-st.divider()
+    st.divider()
 
-# ── Global Feature Importance ─────────────────────────────────────────────────
-st.subheader("Global Feature Importance")
+    # Season stats
+    st.subheader("Season Stats")
+    s1, s2, s3, s4, s5, s6 = st.columns(6)
+    s1.metric("Appearances", int(row["appearances"]))
+    s2.metric("Minutes", f"{int(row['minutes_played']):,}")
+    s3.metric("Goals", int(row["goals"]) if group != "GK" else "—")
+    s4.metric("Assists", int(row["assists"]) if group != "GK" else "—")
+    s5.metric("Yellow Cards", int(row["yellow_cards"]))
+    s6.metric("Red Cards", int(row["red_cards"]))
 
-importance = pd.Series(
-    np.abs(shap_values).mean(axis=0),
-    index=feature_names,
-).sort_values()
+    st.divider()
 
-fig_imp = px.bar(
-    importance,
-    orientation="h",
-    labels={"value": "Mean |SHAP value|", "index": "Feature"},
-    color=importance.values,
-    color_continuous_scale="Blues",
-)
-fig_imp.update_layout(
-    coloraxis_showscale=False,
-    height=420,
-    margin=dict(l=10, r=10, t=10, b=10),
-)
-st.plotly_chart(fig_imp, use_container_width=True)
+    # SHAP waterfall — at the bottom as requested
+    st.subheader("Why this prediction? (SHAP)")
+    exp = explainers[group]
+    ev  = exp.expected_value
+    if hasattr(ev, "__len__"):
+        ev = ev[0]
 
-st.divider()
+    shap_exp = shap.Explanation(
+        values=gd["shap_values"][idx],
+        base_values=float(ev),
+        data=gd["X"][idx],
+        feature_names=gd["feature_names"],
+    )
+    fig_wf, _ = plt.subplots(figsize=(9, 5))
+    shap.plots.waterfall(shap_exp, max_display=12, show=False)
+    st.pyplot(fig_wf, use_container_width=True)
+    plt.close(fig_wf)
+    st.caption(
+        "Red bars push the prediction up, blue bars push it down — relative to the "
+        f"{group} model's average. Values are in log-EUR space."
+    )
 
-# ── Predicted vs Actual Scatter ───────────────────────────────────────────────
-st.subheader("All Players: Predicted vs Actual Value")
+# ══════════════════════════════════════════════════════════════════════════════
+# TAB 2 — Market Analysis
+# ══════════════════════════════════════════════════════════════════════════════
+with tab2:
+    # Feature importance — one chart per group
+    st.subheader("Feature Importance by Position Group")
+    grp_select = st.selectbox("Position group", list(groups.keys()), key="fi_grp")
+    gd_fi = groups[grp_select]
+    importance = pd.Series(
+        np.abs(gd_fi["shap_values"]).mean(axis=0),
+        index=gd_fi["feature_names"],
+    ).sort_values()
+    fig_imp = px.bar(
+        importance, orientation="h",
+        labels={"value": "Mean |SHAP value|", "index": "Feature"},
+        color=importance.values,
+        color_continuous_scale="Blues",
+        height=380,
+    )
+    fig_imp.update_layout(coloraxis_showscale=False, margin=dict(l=10, r=10, t=10, b=10))
+    st.plotly_chart(fig_imp, use_container_width=True)
 
-scatter_df = pd.DataFrame({
-    "Actual (€m)":    market_values / 1e6,
-    "Predicted (€m)": predicted_values / 1e6,
-    "Position":       positions_str,
-    "Name":           player_names,
-    "Selected":       ["★ " + n if n == selected_name else n for n in player_names],
-})
+    st.divider()
 
-fig_sc = px.scatter(
-    scatter_df,
-    x="Actual (€m)",
-    y="Predicted (€m)",
-    color="Position",
-    hover_name="Name",
-    log_x=True,
-    log_y=True,
-    opacity=0.65,
-    height=480,
-)
-
-# Highlight selected player
-fig_sc.add_trace(
-    go.Scatter(
-        x=[actual / 1e6],
-        y=[predicted / 1e6],
+    # Predicted vs Actual scatter
+    st.subheader("All Players: Predicted vs Actual Value")
+    row_sel, _, _, _ = get_player(selected_name)
+    fig_sc = px.scatter(
+        df_all,
+        x=df_all["market_value_in_eur"] / 1e6,
+        y=df_all["predicted_value"] / 1e6,
+        color="position_group",
+        hover_name="name",
+        log_x=True, log_y=True,
+        opacity=0.65, height=480,
+        labels={"x": "Actual (€m)", "y": "Predicted (€m)", "color": "Group"},
+    )
+    fig_sc.add_trace(go.Scatter(
+        x=[row_sel["market_value_in_eur"] / 1e6],
+        y=[row_sel["predicted_value"] / 1e6],
         mode="markers",
         marker=dict(symbol="star", size=18, color="gold", line=dict(color="black", width=1)),
         name=selected_name,
-        hovertext=selected_name,
+    ))
+    max_val = max(df_all["market_value_in_eur"].max(), df_all["predicted_value"].max()) / 1e6
+    fig_sc.add_shape(type="line", x0=0.1, y0=0.1, x1=max_val, y1=max_val,
+                     line=dict(dash="dash", color="gray", width=1))
+    fig_sc.update_layout(margin=dict(l=10, r=10, t=10, b=10))
+    st.plotly_chart(fig_sc, use_container_width=True)
+    st.caption("Dashed line = perfect prediction. Star = selected player.")
+
+    st.divider()
+
+    # Undervalued / Overvalued
+    st.subheader("Most Undervalued & Overvalued Players")
+    df_val = df_all[["name", "position_group", "current_club_name",
+                      "market_value_in_eur", "predicted_value"]].copy()
+    df_val["error_pct"] = (
+        (df_val["predicted_value"] - df_val["market_value_in_eur"])
+        / df_val["market_value_in_eur"] * 100
     )
-)
+    df_val["Actual"]    = df_val["market_value_in_eur"].apply(fmt_eur)
+    df_val["Predicted"] = df_val["predicted_value"].apply(fmt_eur)
+    df_val["Δ%"]        = df_val["error_pct"].apply(lambda x: f"{x:+.0f}%")
 
-# Perfect-prediction line
-max_val = max(market_values.max(), predicted_values.max()) / 1e6
-fig_sc.add_shape(
-    type="line",
-    x0=0.1, y0=0.1, x1=max_val, y1=max_val,
-    line=dict(dash="dash", color="gray", width=1),
-)
+    uv_col, ov_col = st.columns(2)
+    with uv_col:
+        st.markdown("**Top 10 Undervalued** *(model thinks they're worth more)*")
+        top_uv = (
+            df_val.nlargest(10, "error_pct")
+            [["name", "position_group", "current_club_name", "Actual", "Predicted", "Δ%"]]
+            .rename(columns={"name": "Player", "position_group": "Group",
+                              "current_club_name": "Club"})
+        )
+        st.dataframe(top_uv, hide_index=True, use_container_width=True)
+    with ov_col:
+        st.markdown("**Top 10 Overvalued** *(model thinks they're worth less)*")
+        top_ov = (
+            df_val.nsmallest(10, "error_pct")
+            [["name", "position_group", "current_club_name", "Actual", "Predicted", "Δ%"]]
+            .rename(columns={"name": "Player", "position_group": "Group",
+                              "current_club_name": "Club"})
+        )
+        st.dataframe(top_ov, hide_index=True, use_container_width=True)
 
-fig_sc.update_layout(margin=dict(l=10, r=10, t=10, b=10))
-st.plotly_chart(fig_sc, use_container_width=True)
-st.caption("Dashed line = perfect prediction. Star = selected player.")
+# ══════════════════════════════════════════════════════════════════════════════
+# TAB 3 — Compare Players
+# ══════════════════════════════════════════════════════════════════════════════
+with tab3:
+    st.subheader("Compare Two Players")
+    cc1, cc2 = st.columns(2)
+    with cc1:
+        player_a = st.selectbox("Player A", all_names, key="cmp_a")
+    with cc2:
+        default_b = 1 if all_names[0] == player_a else 0
+        player_b  = st.selectbox("Player B", all_names, index=default_b, key="cmp_b")
 
-st.divider()
+    if player_a == player_b:
+        st.warning("Select two different players.")
+    else:
+        row_a = df_all[df_all["name"] == player_a].iloc[0]
+        row_b = df_all[df_all["name"] == player_b].iloc[0]
 
-# ── SHAP Waterfall ────────────────────────────────────────────────────────────
-st.subheader("Why this prediction? (SHAP)")
+        col_a, col_b = st.columns(2)
+        with col_a:
+            st.markdown(f"### {player_a}")
+            st.metric("Position",  row_a["sub_position"])
+            st.metric("Club",      row_a.get("current_club_name", "Unknown"))
+            st.metric("Age",       f"{row_a['age']:.1f}")
+            st.metric("Predicted", fmt_eur(float(row_a["predicted_value"])))
+            st.metric("Actual",    fmt_eur(float(row_a["market_value_in_eur"])))
+            st.metric("Appearances", int(row_a["appearances"]))
+            if row_a["position_group"] != "GK":
+                st.metric("Goals",   int(row_a["goals"]))
+                st.metric("Assists", int(row_a["assists"]))
+                st.metric("Goals/90",   f"{row_a['goals_per_90']:.2f}")
+                st.metric("Assists/90", f"{row_a['assists_per_90']:.2f}")
+        with col_b:
+            st.markdown(f"### {player_b}")
+            st.metric("Position",  row_b["sub_position"])
+            st.metric("Club",      row_b.get("current_club_name", "Unknown"))
+            st.metric("Age",       f"{row_b['age']:.1f}")
+            st.metric("Predicted", fmt_eur(float(row_b["predicted_value"])))
+            st.metric("Actual",    fmt_eur(float(row_b["market_value_in_eur"])))
+            st.metric("Appearances", int(row_b["appearances"]))
+            if row_b["position_group"] != "GK":
+                st.metric("Goals",   int(row_b["goals"]))
+                st.metric("Assists", int(row_b["assists"]))
+                st.metric("Goals/90",   f"{row_b['goals_per_90']:.2f}")
+                st.metric("Assists/90", f"{row_b['assists_per_90']:.2f}")
 
-with open("model.pkl", "rb") as f:
-    model_bundle = pickle.load(f)
+        st.divider()
 
-model = model_bundle["model"]
-explainer = shap.TreeExplainer(model)
-ev = explainer.expected_value
-if hasattr(ev, '__len__'):
-    ev = ev[0]
-expected_value = float(ev)
+        # Percentile bar chart vs all PL players
+        st.subheader("Percentile Rank vs all PL players")
+        stat_cols   = ["appearances", "minutes_played", "goals",
+                       "assists", "goals_per_90", "assists_per_90"]
+        stat_labels = ["Appearances", "Minutes", "Goals",
+                       "Assists", "Goals/90", "Assists/90"]
 
-shap_exp = shap.Explanation(
-    values=shap_values[idx],
-    base_values=expected_value,
-    data=X[idx],
-    feature_names=feature_names,
-)
+        pct_a, pct_b = [], []
+        for sc in stat_cols:
+            vals = df_all[sc].fillna(0)
+            pct_a.append(float((vals < row_a.get(sc, 0)).mean() * 100))
+            pct_b.append(float((vals < row_b.get(sc, 0)).mean() * 100))
 
-fig_wf, ax_wf = plt.subplots(figsize=(9, 5))
-shap.plots.waterfall(shap_exp, max_display=12, show=False)
-st.pyplot(fig_wf, use_container_width=True)
-plt.close(fig_wf)
+        fig_cmp = go.Figure([
+            go.Bar(name=player_a, x=stat_labels, y=pct_a, marker_color="royalblue"),
+            go.Bar(name=player_b, x=stat_labels, y=pct_b, marker_color="tomato"),
+        ])
+        fig_cmp.update_layout(
+            barmode="group",
+            yaxis_title="Percentile (vs all PL players in dataset)",
+            yaxis=dict(range=[0, 100]),
+            height=400,
+            margin=dict(l=10, r=10, t=10, b=10),
+        )
+        st.plotly_chart(fig_cmp, use_container_width=True)
+        st.caption("Higher = better rank among all PL players in the dataset for that stat.")
 
-st.caption(
-    "Each bar shows how much a feature pushes the prediction up (red) or down (blue) "
-    "from the model's average prediction. Values are in log-EUR space."
-)
+# ══════════════════════════════════════════════════════════════════════════════
+# TAB 4 — Build a Player
+# ══════════════════════════════════════════════════════════════════════════════
+with tab4:
+    st.subheader("Build a Custom Player")
+    st.markdown("Design a player with the sliders and see what the model predicts.")
+
+    inp_col, out_col = st.columns([1, 1])
+
+    with inp_col:
+        custom_group  = st.selectbox("Position Group", ["GK", "DEF", "MID", "FWD"])
+        custom_sub    = st.selectbox("Sub-position", sub_pos_by_group.get(custom_group, ["Unknown"]))
+        custom_foot   = st.selectbox("Preferred Foot", ["right", "left", "both", "unknown"])
+        custom_age    = st.slider("Age", 16, 40, 24)
+        custom_height = st.slider("Height (cm)", 155, 210, 181)
+        custom_apps   = st.slider("Appearances", 1, 50, 20)
+        custom_mins   = st.slider("Minutes Played", 90, 4500, 1800)
+        custom_yellow = st.slider("Yellow Cards", 0, 15, 2)
+        custom_red    = st.slider("Red Cards", 0, 5, 0)
+        if custom_group != "GK":
+            custom_goals   = st.slider("Goals", 0, 40, 5)
+            custom_assists = st.slider("Assists", 0, 25, 3)
+        else:
+            custom_goals, custom_assists = 0, 0
+
+    # Derived features
+    mins_safe = max(custom_mins, 1)
+    apps_safe = max(custom_apps, 1)
+    g90 = custom_goals / mins_safe * 90
+    a90 = custom_assists / mins_safe * 90
+    mpg = mins_safe / apps_safe
+
+    # Encode inputs
+    foot_val    = foot_enc.transform([custom_foot])[0] if custom_foot in foot_enc.classes_ else 0
+    sub_pos_str = custom_sub if custom_sub in sub_pos_enc.classes_ else sub_pos_enc.classes_[0]
+    sub_val     = sub_pos_enc.transform([sub_pos_str])[0]
+
+    all_feature_values = {
+        "age": custom_age, "height_in_cm": custom_height,
+        "appearances": custom_apps, "minutes_played": custom_mins,
+        "minutes_per_game": mpg, "yellow_cards": custom_yellow,
+        "red_cards": custom_red, "foot_enc": foot_val,
+        "sub_position_enc": sub_val,
+        "goals": custom_goals, "assists": custom_assists,
+        "goals_per_90": g90, "assists_per_90": a90,
+    }
+
+    cols_for_group = feature_cols[custom_group]
+    X_custom = np.array([[all_feature_values[f] for f in cols_for_group]])
+
+    custom_pred_log = models[custom_group].predict(X_custom)[0]
+    custom_pred_eur = np.expm1(custom_pred_log)
+
+    with out_col:
+        st.markdown("### Predicted Market Value")
+        st.metric("", fmt_eur(custom_pred_eur))
+
+        st.markdown("#### What's driving this prediction?")
+        exp_c = explainers[custom_group]
+        ev_c  = exp_c.expected_value
+        if hasattr(ev_c, "__len__"):
+            ev_c = ev_c[0]
+
+        shap_custom = exp_c.shap_values(X_custom)
+        shap_exp_c  = shap.Explanation(
+            values=shap_custom[0],
+            base_values=float(ev_c),
+            data=X_custom[0],
+            feature_names=groups[custom_group]["feature_names"],
+        )
+        fig_c, _ = plt.subplots(figsize=(8, 4))
+        shap.plots.waterfall(shap_exp_c, max_display=10, show=False)
+        st.pyplot(fig_c, use_container_width=True)
+        plt.close(fig_c)

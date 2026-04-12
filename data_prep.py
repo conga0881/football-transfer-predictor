@@ -43,8 +43,8 @@ stats = (
 # Keep most recent season per player
 stats = stats.sort_values("season").groupby("player_id").last().reset_index()
 
-# Only keep players from recent seasons (2022 onwards)
-stats = stats[stats["season"] >= 2022]
+# Only keep players from recent seasons (2024 onwards)
+stats = stats[stats["season"] >= 2024]
 
 # ── 4. Merge everything together ───────────────────────────────────────────────
 df = stats.merge(latest_valuations, on="player_id", how="inner")

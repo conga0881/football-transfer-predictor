@@ -1,5 +1,4 @@
-# Run with:  python3.12 model.py
-# Then start the dashboard with:  python3.12 -m streamlit run app.py
+# Run with: python3.12 model.py
 
 import pickle
 import numpy as np
@@ -13,93 +12,135 @@ import shap
 print("Loading cleaned data...")
 df = pd.read_csv("cleaned_data.csv")
 
-# ── 1. Preprocessing ──────────────────────────────────────────────────────────
-df["foot"] = df["foot"].fillna("unknown")
+# ── 1. Position groups ────────────────────────────────────────────────────────
+POSITION_GROUP_MAP = {
+    "Goalkeeper": "GK",
+    "Defender":   "DEF",
+    "Midfield":   "MID",
+    "Attack":     "FWD",
+}
+df["position_group"] = df["position"].map(POSITION_GROUP_MAP).fillna("FWD")
+
+# ── 2. Global preprocessing ───────────────────────────────────────────────────
+df["foot"]         = df["foot"].fillna("unknown")
+df["sub_position"] = df["sub_position"].fillna("Unknown")
 df["height_in_cm"] = df["height_in_cm"].fillna(df["height_in_cm"].median())
 
-cat_cols = ["position", "sub_position", "foot"]
-encoders = {}
-for col in cat_cols:
-    le = LabelEncoder()
-    df[col] = le.fit_transform(df[col].astype(str))
-    encoders[col] = le
+foot_enc    = LabelEncoder()
+sub_pos_enc = LabelEncoder()
+df["foot_enc"]         = foot_enc.fit_transform(df["foot"].astype(str))
+df["sub_position_enc"] = sub_pos_enc.fit_transform(df["sub_position"].astype(str))
 
-feature_cols = [
-    "age", "height_in_cm",
-    "appearances", "goals", "assists", "minutes_played",
-    "yellow_cards", "red_cards",
-    "goals_per_90", "assists_per_90", "minutes_per_game",
-    "position", "sub_position", "foot",
-]
+# ── 3. Position-specific feature sets ─────────────────────────────────────────
+# GKs: no goals/assists — they're always 0 and add noise
+# DEF/MID/FWD: full outfield features
+COMMON   = ["age", "height_in_cm", "appearances", "minutes_played",
+            "minutes_per_game", "yellow_cards", "red_cards",
+            "foot_enc", "sub_position_enc"]
+OUTFIELD = ["goals", "assists", "goals_per_90", "assists_per_90"]
 
-X = df[feature_cols].values
-y = np.log1p(df["market_value_in_eur"].values)   # log-transform target
+POSITION_FEATURES = {
+    "GK":  COMMON,
+    "DEF": COMMON + OUTFIELD,
+    "MID": COMMON + OUTFIELD,
+    "FWD": COMMON + OUTFIELD,
+}
 
-# ── 2. Train / test split ────────────────────────────────────────────────────
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
+# Human-readable display names for encoded columns
+DISPLAY_NAMES = {"foot_enc": "foot", "sub_position_enc": "sub_position"}
 
-# ── 3. Train XGBoost ─────────────────────────────────────────────────────────
-print("Training XGBoost...")
-model = XGBRegressor(
-    n_estimators=500,
-    learning_rate=0.05,
-    max_depth=5,
-    subsample=0.8,
-    colsample_bytree=0.8,
-    random_state=42,
-    early_stopping_rounds=20,
-    eval_metric="rmse",
-)
-model.fit(
-    X_train, y_train,
-    eval_set=[(X_test, y_test)],
-    verbose=False,
-)
+# ── 4. Train one model per position group ─────────────────────────────────────
+models     = {}
+group_data = {}
 
-# ── 4. Evaluate on test set ──────────────────────────────────────────────────
-y_pred_test_log = model.predict(X_test)
-y_pred_test = np.expm1(y_pred_test_log)
-y_true_test  = np.expm1(y_test)
+for group, features in POSITION_FEATURES.items():
+    print(f"\n── {group} {'─'*50}")
+    df_g = df[df["position_group"] == group].copy().reset_index(drop=True)
+    n = len(df_g)
+    print(f"  Players: {n}")
 
-mae  = mean_absolute_error(y_true_test, y_pred_test)
-rmse = root_mean_squared_error(y_true_test, y_pred_test)
-r2   = r2_score(y_test, y_pred_test_log)   # R² on log scale (more meaningful)
+    if n < 20:
+        print(f"  ⚠ Too few players, skipping")
+        continue
 
-print(f"\n── Test-set performance ──────────────────────")
-print(f"  MAE  : €{mae/1e6:.2f}m")
-print(f"  RMSE : €{rmse/1e6:.2f}m")
-print(f"  R²   : {r2:.3f}  (log scale)")
+    X_g = df_g[features].values
+    y_g = np.log1p(df_g["market_value_in_eur"].values)
 
-# ── 5. SHAP values on full dataset ───────────────────────────────────────────
-print("\nComputing SHAP values (full dataset)...")
-explainer   = shap.TreeExplainer(model)
-shap_values = explainer.shap_values(X)
-
-# ── 6. Full-dataset predictions (for dashboard scatter) ──────────────────────
-y_pred_all = model.predict(X)
-
-# ── 7. Save artifacts ────────────────────────────────────────────────────────
-with open("model.pkl", "wb") as f:
-    pickle.dump({"model": model, "encoders": encoders, "feature_cols": feature_cols}, f)
-
-with open("model_data.pkl", "wb") as f:
-    pickle.dump(
-        {
-            "X":             X,
-            "y_true":        y,            # log scale
-            "y_pred":        y_pred_all,   # log scale
-            "market_values": df["market_value_in_eur"].values,
-            "player_names":  df["name"].values,
-            "positions":     df["position"].values,          # encoded ints
-            "position_labels": encoders["position"].classes_,
-            "feature_names": feature_cols,
-            "shap_values":   shap_values,
-            "df":            df,           # full cleaned dataframe (for dashboard)
-        },
-        f,
+    X_train, X_test, y_train, y_test = train_test_split(
+        X_g, y_g, test_size=0.2, random_state=42
     )
 
-print("\n✅ Artifacts saved: model.pkl, model_data.pkl")
-print("   Run the dashboard with:  python3.12 -m streamlit run app.py")
+    model = XGBRegressor(
+        n_estimators=500,
+        learning_rate=0.05,
+        max_depth=4,
+        subsample=0.8,
+        colsample_bytree=0.8,
+        min_child_weight=3,
+        random_state=42,
+        early_stopping_rounds=20,
+        eval_metric="rmse",
+    )
+    model.fit(X_train, y_train, eval_set=[(X_test, y_test)], verbose=False)
+
+    y_pred_test_log = model.predict(X_test)
+    mae  = mean_absolute_error(np.expm1(y_test), np.expm1(y_pred_test_log))
+    rmse = root_mean_squared_error(np.expm1(y_test), np.expm1(y_pred_test_log))
+    r2   = r2_score(y_test, y_pred_test_log)
+    print(f"  MAE: €{mae/1e6:.2f}m  RMSE: €{rmse/1e6:.2f}m  R²: {r2:.3f}")
+
+    print(f"  Computing SHAP values...")
+    explainer   = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(X_g)
+    y_pred_all  = model.predict(X_g)
+
+    feat_display = [DISPLAY_NAMES.get(f, f) for f in features]
+
+    models[group] = model
+    group_data[group] = {
+        "X":             X_g,
+        "y_true":        y_g,
+        "y_pred":        y_pred_all,
+        "market_values": df_g["market_value_in_eur"].values,
+        "player_names":  df_g["name"].values,
+        "shap_values":   shap_values,
+        "feature_names": feat_display,
+        "feature_cols":  features,
+        "df":            df_g,
+    }
+
+# ── 5. Build combined df_all with predictions ─────────────────────────────────
+parts = []
+for group, gd in group_data.items():
+    gdf = gd["df"].copy()
+    gdf["y_pred_log"]      = gd["y_pred"]
+    gdf["predicted_value"] = np.expm1(gd["y_pred"])
+    parts.append(gdf)
+df_all = pd.concat(parts, ignore_index=True)
+
+sub_positions_by_group = {
+    grp: sorted(df[df["position_group"] == grp]["sub_position"].dropna().unique().tolist())
+    for grp in POSITION_FEATURES if grp in group_data
+}
+
+# ── 6. Save artifacts ─────────────────────────────────────────────────────────
+with open("model.pkl", "wb") as f:
+    pickle.dump({
+        "models":             models,
+        "foot_enc":           foot_enc,
+        "sub_pos_enc":        sub_pos_enc,
+        "feature_cols":       POSITION_FEATURES,
+        "position_group_map": POSITION_GROUP_MAP,
+    }, f)
+
+with open("model_data.pkl", "wb") as f:
+    pickle.dump({
+        "groups":                 group_data,
+        "df_all":                 df_all,
+        "position_group_map":     POSITION_GROUP_MAP,
+        "sub_positions_by_group": sub_positions_by_group,
+        "foot_classes":           foot_enc.classes_.tolist(),
+    }, f)
+
+print(f"\n✅ Done — {len(df_all)} players across {len(group_data)} position models")
+print("   Run dashboard: python3.12 -m streamlit run app.py")
