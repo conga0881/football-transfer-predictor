@@ -77,41 +77,6 @@ col4.metric("Model Error", f"{error_pct:+.1f}%")
 
 st.divider()
 
-# ── SHAP Waterfall ────────────────────────────────────────────────────────────
-st.subheader("Why this prediction? (SHAP)")
-
-with open("model_data.pkl", "rb") as f:
-    _data = pickle.load(f)
-
-with open("model.pkl", "rb") as f:
-    model_bundle = pickle.load(f)
-
-model = model_bundle["model"]
-explainer = shap.TreeExplainer(model)
-ev = explainer.expected_value
-if hasattr(ev, '__len__'):
-    ev = ev[0]
-expected_value = float(ev)
-
-shap_exp = shap.Explanation(
-    values=shap_values[idx],
-    base_values=expected_value,
-    data=X[idx],
-    feature_names=feature_names,
-)
-
-fig_wf, ax_wf = plt.subplots(figsize=(9, 5))
-shap.plots.waterfall(shap_exp, max_display=12, show=False)
-st.pyplot(fig_wf, use_container_width=True)
-plt.close(fig_wf)
-
-st.caption(
-    "Each bar shows how much a feature pushes the prediction up (red) or down (blue) "
-    "from the model's average prediction. Values are in log-EUR space."
-)
-
-st.divider()
-
 # ── Global Feature Importance ─────────────────────────────────────────────────
 st.subheader("Global Feature Importance")
 
@@ -182,3 +147,35 @@ fig_sc.add_shape(
 fig_sc.update_layout(margin=dict(l=10, r=10, t=10, b=10))
 st.plotly_chart(fig_sc, use_container_width=True)
 st.caption("Dashed line = perfect prediction. Star = selected player.")
+
+st.divider()
+
+# ── SHAP Waterfall ────────────────────────────────────────────────────────────
+st.subheader("Why this prediction? (SHAP)")
+
+with open("model.pkl", "rb") as f:
+    model_bundle = pickle.load(f)
+
+model = model_bundle["model"]
+explainer = shap.TreeExplainer(model)
+ev = explainer.expected_value
+if hasattr(ev, '__len__'):
+    ev = ev[0]
+expected_value = float(ev)
+
+shap_exp = shap.Explanation(
+    values=shap_values[idx],
+    base_values=expected_value,
+    data=X[idx],
+    feature_names=feature_names,
+)
+
+fig_wf, ax_wf = plt.subplots(figsize=(9, 5))
+shap.plots.waterfall(shap_exp, max_display=12, show=False)
+st.pyplot(fig_wf, use_container_width=True)
+plt.close(fig_wf)
+
+st.caption(
+    "Each bar shows how much a feature pushes the prediction up (red) or down (blue) "
+    "from the model's average prediction. Values are in log-EUR space."
+)
