@@ -1,0 +1,839 @@
+player_id,season,appearances,goals,assists,minutes_played,yellow_cards,red_cards,market_value_in_eur,name,position,sub_position,foot,height_in_cm,current_club_name,country_of_citizenship,date_of_birth,age,goals_per_90,assists_per_90,minutes_per_game
+3333,2025,19,1,1,719,2,0,750000,James Milner,Midfield,Central Midfield,right,175.0,Brighton and Hove Albion Football Club,England,1986-01-04,40.3,0.12517385257301808,0.12517385257301808,37.8421052631579
+8198,2022,10,1,0,520,2,0,12000000,Cristiano Ronaldo,Attack,Centre-Forward,right,188.0,Al-Nassr Football Club,Portugal,1985-02-05,41.2,0.17307692307692307,0.0,52.0
+14086,2024,32,1,3,1870,7,1,400000,Ashley Young,Defender,Right-Back,both,175.0,Everton Football Club,England,1985-07-09,40.8,0.0481283422459893,0.1443850267379679,58.4375
+16306,2025,29,7,2,2148,10,0,8000000,Casemiro,Midfield,Defensive Midfield,right,185.0,Manchester United Football Club,Brazil,1992-02-23,34.1,0.29329608938547486,0.08379888268156424,74.06896551724138
+17965,2022,25,0,0,2205,0,0,1000000,Hugo Lloris,Goalkeeper,Goalkeeper,left,188.0,Los Angeles Football Club,France,1986-12-26,39.3,0.0,0.0,88.2
+29241,2023,31,3,1,2528,4,0,600000,Thiago Silva,Defender,Centre-Back,right,181.0,Futebol Clube do Porto,Brazil,1984-09-22,41.5,0.10680379746835443,0.03560126582278481,81.54838709677419
+29364,2022,31,0,2,1783,3,0,500000,João Moutinho,Midfield,Central Midfield,right,170.0,Sporting Clube de Braga,Portugal,1986-09-08,39.6,0.0,0.10095344924284913,57.516129032258064
+29692,2024,14,0,0,1161,2,0,250000,Lukasz Fabianski,Goalkeeper,Goalkeeper,right,190.0,West Ham United Football Club,Poland,1985-04-18,41.0,0.0,0.0,82.92857142857143
+33713,2022,20,2,2,1133,1,0,1000000,Theo Walcott,Attack,Right Winger,both,175.0,Southampton FC,England,1989-03-16,37.1,0.1588702559576346,0.1588702559576346,56.65
+42412,2024,7,0,0,314,1,0,2000000,Jonny Evans,Defender,Centre-Back,both,188.0,Manchester United Football Club,Northern Ireland,1988-01-03,38.3,0.0,0.0,44.857142857142854
+42460,2023,5,0,1,98,2,0,1300000,Ivan Perišić,Attack,Left Winger,both,186.0,Eindhovense Voetbalvereniging Philips Sport Vereniging,Croatia,1989-02-02,37.2,0.0,0.9183673469387754,19.6
+43530,2024,14,0,2,355,4,0,750000,Adam Lallana,Midfield,Attacking Midfield,both,172.0,Southampton FC,England,1988-05-10,37.9,0.0,0.5070422535211268,25.357142857142858
+44779,2022,23,1,0,1247,5,1,2000000,Diego Costa,Attack,Centre-Forward,right,186.0,Wolverhampton Wanderers Football Club,Spain,1988-10-07,37.5,0.07217321571772253,0.0,54.21739130434783
+45403,2022,13,0,0,307,1,0,300000,André Ayew,Attack,Centre-Forward,left,175.0,Nooit Opgeven Altijd Doorzetten Aangenaam Door Vermaak En Nuttig Door Ontspanning Combinatie Breda,Ghana,1989-12-17,36.3,0.0,0.0,23.615384615384617
+48002,2023,11,0,0,634,1,0,700000,Angelo Ogbonna,Defender,Centre-Back,left,191.0,West Ham United Football Club,Italy,1988-05-23,37.9,0.0,0.0,57.63636363636363
+52059,2023,14,1,0,1087,4,0,300000,Zanka,Defender,Centre-Back,right,189.0,Football Club København,Denmark,1990-04-23,36.0,0.0827966881324747,0.0,77.64285714285714
+52495,2023,8,0,0,318,1,0,300000,Chris Basham,Defender,Centre-Back,right,190.0,Sheffield United,England,1988-07-20,37.7,0.0,0.0,39.75
+52570,2024,7,0,0,630,0,0,600000,Fraser Forster,Goalkeeper,Goalkeeper,right,201.0,Association Football Club Bournemouth,England,1988-03-17,38.1,0.0,0.0,90.0
+52769,2024,10,0,0,252,0,0,500000,Willian,Attack,Left Winger,right,175.0,Grêmio Foot-Ball Porto Alegrense,Brazil,1988-08-09,37.7,0.0,0.0,25.2
+53360,2023,21,2,1,813,0,0,1000000,Jay Rodríguez,Attack,Centre-Forward,right,185.0,Burnley Football Club,England,1989-07-29,36.7,0.22140221402214022,0.11070110701107011,38.714285714285715
+53622,2024,33,1,7,2229,1,0,2500000,İlkay Gündoğan,Midfield,Central Midfield,right,180.0,Galatasaray Spor Kulübü,Germany,1990-10-24,35.5,0.040376850605652756,0.28263795423956933,67.54545454545455
+57500,2022,25,0,0,1522,3,0,1200000,César Azpilicueta,Defender,Centre-Back,right,178.0,Sevilla Fútbol Club S.A.D.,Spain,1989-08-28,36.6,0.0,0.0,60.88
+58864,2022,15,1,0,551,1,0,3000000,Pierre-Emerick Aubameyang,Attack,Centre-Forward,right,187.0,Olympique de Marseille,Gabon,1989-06-18,36.8,0.16333938294010888,0.0,36.733333333333334
+59377,2022,38,0,0,3420,0,0,3500000,David de Gea,Goalkeeper,Goalkeeper,right,192.0,Associazione Calcio Fiorentina,Spain,1990-11-07,35.4,0.0,0.0,90.0
+61560,2022,6,1,0,233,0,0,1000000,Marc Albrighton,Midfield,Right Midfield,right,175.0,Leicester City,,1989-11-18,36.4,0.38626609442060084,0.0,38.833333333333336
+61644,2022,11,0,0,494,0,0,600000,Jack Colback,Midfield,Defensive Midfield,left,177.0,Nottingham Forest Football Club,England,1989-10-24,36.5,0.0,0.0,44.90909090909091
+61651,2025,29,1,3,1823,4,0,2000000,Jordan Henderson,Midfield,Defensive Midfield,right,182.0,Brentford Football Club,England,1990-06-17,35.8,0.04936917169500823,0.14810751508502468,62.86206896551724
+61697,2023,30,0,0,2648,2,0,450000,Wes Foderingham,Goalkeeper,Goalkeeper,left,185.0,West Ham United Football Club,England,1991-01-14,35.2,0.0,0.0,88.26666666666667
+61841,2025,18,0,1,809,3,0,500000,Adam Smith,Defender,Right-Back,right,174.0,Association Football Club Bournemouth,England,1991-04-29,34.9,0.0,0.11124845488257107,44.94444444444444
+61842,2023,27,1,3,1209,1,0,500000,Andros Townsend,Attack,Right Winger,left,181.0,Antalyaspor,England,1991-07-16,34.7,0.07444168734491315,0.22332506203473945,44.77777777777778
+63200,2025,6,0,0,35,0,0,200000,Ashley Barnes,Attack,Centre-Forward,right,185.0,Burnley Football Club,England,1989-10-30,36.4,0.0,0.0,5.833333333333333
+64399,2022,27,0,0,2430,1,0,400000,Vicente Guaita,Goalkeeper,Goalkeeper,right,190.0,Real Club Celta de Vigo S. A. D.,Spain,1987-01-10,39.2,0.0,0.0,90.0
+66934,2023,12,0,0,208,2,0,1000000,Cheikhou Kouyaté,Midfield,Defensive Midfield,right,189.0,Nottingham Forest Football Club,Senegal,1989-12-21,36.3,0.0,0.0,17.333333333333332
+67063,2025,30,12,0,1829,5,0,4000000,Danny Welbeck,Attack,Centre-Forward,right,185.0,Brighton and Hove Albion Football Club,England,1990-11-26,35.4,0.590486604702023,0.0,60.96666666666667
+67420,2022,29,2,1,2049,3,0,1800000,Luke Ayling,Defender,Right-Back,right,183.0,Leeds United Association Football Club,,1991-08-25,34.6,0.08784773060029283,0.043923865300146414,70.65517241379311
+69633,2024,23,1,2,1056,4,0,3000000,Christian Eriksen,Midfield,Attacking Midfield,right,182.0,Verein für Leibesübungen Wolfsburg,Denmark,1992-02-14,34.2,0.08522727272727273,0.17045454545454547,45.91304347826087
+71292,2022,11,0,0,576,2,0,800000,Jonjo Shelvey,Midfield,Central Midfield,right,184.0,Eyüp Spor Kulübü,England,1992-02-27,34.1,0.0,0.0,52.36363636363637
+72476,2025,31,0,0,2790,3,0,8000000,Bernd Leno,Goalkeeper,Goalkeeper,right,190.0,Fulham Football Club,Germany,1992-03-04,34.1,0.0,0.0,90.0
+73547,2023,27,1,0,1433,8,0,1000000,Oliver Norwood,Midfield,Central Midfield,right,175.0,Sheffield United,Northern Ireland,1991-04-12,35.0,0.0628053035589672,0.0,53.074074074074076
+74230,2024,23,3,2,805,2,0,4000000,Pablo Sarabia,Midfield,Attacking Midfield,left,174.0,Wolverhampton Wanderers Football Club,Spain,1992-05-11,33.9,0.3354037267080745,0.2236024844720497,35.0
+74300,2022,18,0,0,504,2,0,2000000,Luka Milivojevic,Midfield,Defensive Midfield,right,186.0,Crystal Palace Football Club,Serbia,1991-04-07,35.0,0.0,0.0,28.0
+74810,2024,7,0,0,181,2,0,1000000,Ben Mee,Defender,Centre-Back,left,180.0,Brentford Football Club,England,1989-09-21,36.6,0.0,0.0,25.857142857142858
+74960,2025,31,0,0,2790,1,0,750000,Martin Dúbravka,Goalkeeper,Goalkeeper,right,191.0,Burnley Football Club,Slovakia,1989-01-15,37.2,0.0,0.0,90.0
+75067,2022,18,1,0,1427,5,0,1800000,Liam Cooper,Defender,Centre-Back,left,186.0,Leeds United Association Football Club,Scotland,1991-08-30,34.6,0.06306937631394534,0.0,79.27777777777777
+75489,2025,8,0,0,409,0,0,5000000,Niclas Füllkrug,Attack,Centre-Forward,right,189.0,Associazione Calcio Milan,Germany,1993-02-09,33.2,0.0,0.0,51.125
+77100,2022,15,1,0,145,0,1,2500000,Lucas Moura,Attack,Right Winger,right,172.0,São Paulo Futebol Clube,Brazil,1992-08-13,33.7,0.6206896551724138,0.0,9.666666666666666
+77757,2023,38,0,0,3406,3,0,3000000,Thomas Kaminski,Goalkeeper,Goalkeeper,,190.0,Luton Town,Belgium,1992-10-23,33.5,0.0,0.0,89.63157894736842
+79422,2022,17,0,0,1530,2,0,800000,Keylor Navas,Goalkeeper,Goalkeeper,right,185.0,Club Universidad Nacional A. C.,Costa Rica,1986-12-15,39.3,0.0,0.0,90.0
+80197,2022,7,0,0,104,0,0,400000,Salomón Rondón,Attack,Centre-Forward,right,186.0,Promotora del Club Pachuca S. A. de C. V.,Venezuela,1989-09-16,36.6,0.0,0.0,14.857142857142858
+82105,2023,10,0,0,782,2,0,8000000,Joel Matip,Defender,Centre-Back,right,195.0,Liverpool Football Club,Cameroon,1991-08-08,34.7,0.0,0.0,78.2
+82873,2025,12,1,1,1007,2,0,3500000,Pascal Groß,Midfield,Central Midfield,right,181.0,Brighton and Hove Albion Football Club,Germany,1991-06-15,34.8,0.08937437934458788,0.08937437934458788,83.91666666666667
+85177,2025,8,0,1,499,1,0,500000,Nathaniel Clyne,Defender,Right-Back,right,175.0,Crystal Palace Football Club,England,1991-04-05,35.0,0.0,0.18036072144288576,62.375
+88755,2024,28,4,7,1705,2,0,10000000,Kevin De Bruyne,Midfield,Attacking Midfield,right,181.0,Società Sportiva Calcio Napoli,Belgium,1991-06-28,34.8,0.21114369501466276,0.36950146627565983,60.892857142857146
+89231,2023,26,1,3,1192,2,0,1000000,Jóhann Berg Gudmundsson,Attack,Right Winger,left,186.0,,Iceland,1990-10-27,35.5,0.07550335570469799,0.22651006711409394,45.84615384615385
+90836,2022,12,0,0,959,4,0,1800000,Steve Cook,Defender,Centre-Back,right,185.0,Nottingham Forest Football Club,England,1991-04-19,35.0,0.0,0.0,79.91666666666667
+91845,2024,30,7,10,2117,1,0,17000000,Heung-min Son,Attack,Left Winger,both,184.0,Los Angeles Football Club,"Korea, South",1992-07-08,33.8,0.2975909305621162,0.42512990080302315,70.56666666666666
+92469,2023,13,1,0,120,1,0,1000000,Matt Ritchie,Midfield,Right Midfield,left,173.0,Newcastle United Football Club,Scotland,1989-09-10,36.6,0.75,0.0,9.23076923076923
+92571,2024,18,0,0,823,3,0,450000,Aaron Cresswell,Defender,Left-Back,left,170.0,West Ham United Football Club,England,1989-12-15,36.3,0.0,0.0,45.72222222222222
+92738,2022,14,0,0,266,2,0,300000,Mateusz Klich,Midfield,Defensive Midfield,right,183.0,Klub Sportowy Cracovia Spółka Akcyjna,Poland,1990-06-13,35.8,0.0,0.0,19.0
+93128,2022,23,2,1,1800,7,0,5000000,Kalidou Koulibaly,Defender,Centre-Back,right,186.0,Al-Hilal Saudi Football Club,Senegal,1991-06-20,34.8,0.1,0.05,78.26086956521739
+95424,2025,29,0,2,2549,8,0,2500000,Kyle Walker,Defender,Right-Back,right,183.0,Burnley Football Club,England,1990-05-28,35.9,0.0,0.07061592781482934,87.89655172413794
+95810,2025,18,0,1,1461,3,0,2500000,Kieran Trippier,Defender,Right-Back,right,173.0,Newcastle United Football Club,England,1990-09-19,35.6,0.0,0.061601642710472276,81.16666666666667
+95976,2024,5,0,0,450,0,0,300000,Alex McCarthy,Goalkeeper,Goalkeeper,right,193.0,Southampton FC,England,1989-12-03,36.4,0.0,0.0,90.0
+99331,2024,18,0,0,1395,5,0,4000000,Jannik Vestergaard,Defender,Centre-Back,both,199.0,Leicester City,Denmark,1992-08-03,33.7,0.0,0.0,77.5
+99397,2025,15,0,0,1350,1,0,200000,Karl Darlow,Goalkeeper,Goalkeeper,right,190.0,Leeds United Association Football Club,Wales,1990-10-08,35.5,0.0,0.0,90.0
+102017,2024,15,0,0,705,5,0,5000000,Jorginho,Midfield,Defensive Midfield,right,180.0,Clube de Regatas do Flamengo,Italy,1991-12-20,34.3,0.0,0.0,47.0
+104124,2024,14,1,1,844,1,0,700000,Michail Antonio,Attack,Centre-Forward,right,180.0,,Jamaica,1990-03-28,36.0,0.1066350710900474,0.1066350710900474,60.285714285714285
+105470,2025,25,0,0,2250,1,0,17000000,Alisson,Goalkeeper,Goalkeeper,right,193.0,Liverpool Football Club,Brazil,1992-10-02,33.5,0.0,0.0,90.0
+106987,2022,11,0,1,627,1,0,7000000,Marcel Sabitzer,Midfield,Central Midfield,right,178.0,Borussia Dortmund,Austria,1994-03-17,32.1,0.0,0.14354066985645933,57.0
+108354,2024,31,5,0,1663,6,0,1800000,Jordan Ayew,Attack,Centre-Forward,right,182.0,Leicester City,Ghana,1991-09-11,34.6,0.27059530968129886,0.0,53.645161290322584
+108725,2025,8,2,0,545,0,0,6000000,Chris Wood,Attack,Centre-Forward,right,191.0,Nottingham Forest Football Club,New Zealand,1991-12-07,34.3,0.3302752293577982,0.0,68.125
+110864,2025,12,0,0,1080,0,0,3000000,Sam Johnstone,Goalkeeper,Goalkeeper,right,193.0,Wolverhampton Wanderers Football Club,England,1993-03-25,33.0,0.0,0.0,90.0
+111051,2022,19,1,0,751,1,0,3000000,Nampalys Mendy,Midfield,Defensive Midfield,right,168.0,Watford FC,Senegal,1992-06-23,33.8,0.11984021304926765,0.0,39.526315789473685
+111195,2025,19,1,0,843,4,0,2500000,Joël Veltman,Defender,Right-Back,right,184.0,Brighton and Hove Albion Football Club,Netherlands,1992-01-15,34.2,0.10676156583629894,0.0,44.36842105263158
+111422,2022,17,0,3,766,0,0,2000000,Neeskens Kebano,Attack,Left Winger,right,170.0,Fulham Football Club,DR Congo,1992-03-10,34.1,0.0,0.3524804177545692,45.05882352941177
+111455,2025,27,1,5,2271,5,0,10000000,Granit Xhaka,Midfield,Defensive Midfield,left,186.0,Sunderland Association Football Club,Switzerland,1992-09-27,33.5,0.03963011889035667,0.19815059445178337,84.11111111111111
+111873,2025,27,0,0,2385,2,0,15000000,Emiliano Martínez,Goalkeeper,Goalkeeper,right,195.0,Aston Villa Football Club,Argentina,1992-09-02,33.6,0.0,0.0,88.33333333333333
+118534,2025,27,3,0,2137,0,1,4000000,Michael Keane,Defender,Centre-Back,right,188.0,Everton Football Club,England,1993-01-11,33.2,0.12634534394010294,0.0,79.14814814814815
+119269,2022,5,0,0,17,0,0,2000000,Shane Duffy,Defender,Centre-Back,right,193.0,Fulham Football Club,Ireland,1992-01-01,34.3,0.0,0.0,3.4
+120629,2025,20,0,1,1800,0,0,5000000,Alphonse Areola,Goalkeeper,Goalkeeper,right,195.0,West Ham United Football Club,France,1993-02-27,33.1,0.0,0.05,90.0
+121257,2022,12,0,0,476,0,0,1200000,Adam Forshaw,Midfield,Central Midfield,right,175.0,Leeds United Association Football Club,England,1991-10-08,34.5,0.0,0.0,39.666666666666664
+121324,2023,6,0,0,484,2,0,4000000,John Egan,Defender,Centre-Back,right,185.0,Hull City,Ireland,1992-10-20,33.5,0.0,0.0,80.66666666666667
+121477,2024,15,0,0,970,2,0,900000,Craig Dawson,Defender,Centre-Back,right,188.0,Wolverhampton Wanderers Football Club,England,1990-05-06,35.9,0.0,0.0,64.66666666666667
+123275,2025,20,1,0,551,3,0,750000,Tom Cairney,Midfield,Central Midfield,left,185.0,Fulham Football Club,Scotland,1991-01-20,35.2,0.16333938294010888,0.0,27.55
+123551,2024,33,1,1,2757,9,0,400000,Sam Morsy,Midfield,Central Midfield,right,175.0,Ipswich Town,Egypt,1991-09-10,34.6,0.03264417845484222,0.03264417845484222,83.54545454545455
+123682,2025,25,5,1,1045,0,0,5000000,Callum Wilson,Attack,Centre-Forward,right,180.0,West Ham United Football Club,England,1992-02-27,34.1,0.43062200956937796,0.0861244019138756,41.8
+124419,2023,5,0,0,450,0,0,4000000,Odysseas Vlachodimos,Goalkeeper,Goalkeeper,right,191.0,Sevilla Fútbol Club S.A.D.,Greece,1994-04-26,32.0,0.0,0.0,90.0
+124884,2025,5,0,0,405,1,0,2500000,Marco Bizot,Goalkeeper,Goalkeeper,right,193.0,Aston Villa Football Club,Netherlands,1991-03-10,35.1,0.0,0.0,81.0
+125314,2022,12,1,0,724,0,0,700000,Pontus Jansson,Defender,Centre-Back,right,196.0,Malmö Fotbollförening,Sweden,1991-02-13,35.2,0.12430939226519336,0.0,60.333333333333336
+125685,2023,17,2,1,311,1,0,400000,Luke Berry,Midfield,Central Midfield,right,177.0,Luton Town,England,1992-07-12,33.7,0.5787781350482315,0.28938906752411575,18.294117647058822
+125714,2024,37,0,2,3276,1,0,8000000,Mark Flekken,Goalkeeper,Goalkeeper,both,195.0,Bayer 04 Leverkusen Fußball,Netherlands,1993-06-13,32.8,0.0,0.054945054945054944,88.54054054054055
+126664,2025,26,0,4,1558,3,0,8000000,Lucas Digne,Defender,Left-Back,left,178.0,Aston Villa Football Club,France,1993-07-20,32.7,0.0,0.2310654685494223,59.92307692307692
+126665,2025,22,2,2,1852,1,1,1000000,Idrissa Gueye,Midfield,Defensive Midfield,right,174.0,Everton Football Club,Senegal,1989-09-26,36.5,0.09719222462203024,0.09719222462203024,84.18181818181819
+127032,2023,12,0,2,834,2,0,3700000,Serge Aurier,Defender,Right-Back,right,176.0,Nottingham Forest Football Club,Cote d'Ivoire,1992-12-24,33.3,0.0,0.2158273381294964,69.5
+127187,2024,33,3,2,2577,5,0,6000000,Abdoulaye Doucouré,Midfield,Attacking Midfield,right,183.0,Neom Sports Club,Mali,1993-01-01,33.3,0.10477299185098952,0.06984866123399301,78.0909090909091
+127202,2025,24,0,0,2037,2,0,4000000,Matz Sels,Goalkeeper,Goalkeeper,right,188.0,Nottingham Forest Football Club,Belgium,1992-02-26,34.1,0.0,0.0,84.875
+128901,2024,22,1,0,1714,3,0,1500000,Conor Coady,Defender,Centre-Back,right,185.0,Leicester City,England,1993-02-25,33.1,0.052508751458576426,0.0,77.9090909090909
+128909,2023,34,1,1,2886,10,0,1000000,Jack Robinson,Defender,Centre-Back,left,180.0,Sheffield United,England,1993-09-01,32.6,0.031185031185031187,0.031185031185031187,84.88235294117646
+129078,2023,12,0,0,132,1,0,5000000,Nathan Redmond,Attack,Right Winger,right,173.0,Burnley Football Club,England,1994-03-06,32.1,0.0,0.0,11.0
+129588,2022,22,1,0,640,1,0,2000000,Dennis Praet,Midfield,Central Midfield,right,181.0,Royal Antwerp Football Club,Belgium,1994-05-14,31.9,0.140625,0.0,29.09090909090909
+130164,2025,31,0,0,2790,2,0,15000000,Jordan Pickford,Goalkeeper,Goalkeeper,left,185.0,Everton Football Club,England,1994-03-07,32.1,0.0,0.0,90.0
+130765,2022,32,2,1,1405,6,0,400000,Stuart Armstrong,Midfield,Central Midfield,right,183.0,Aberdeen Football Club,Scotland,1992-03-30,34.0,0.12811387900355872,0.06405693950177936,43.90625
+131505,2022,31,13,1,1943,6,0,5000000,Rodrigo,Attack,Centre-Forward,left,182.0,Leeds United Association Football Club,Spain,1991-03-06,35.1,0.602161605764282,0.04632012352032939,62.67741935483871
+131789,2022,25,11,4,1212,0,0,15000000,Roberto Firmino,Attack,Centre-Forward,right,181.0,Al-Ahli Saudi Football Club,Brazil,1991-10-02,34.5,0.8168316831683169,0.297029702970297,48.48
+131978,2025,14,2,0,393,0,0,5000000,Ross Barkley,Midfield,Central Midfield,right,189.0,Aston Villa Football Club,England,1993-12-05,32.3,0.45801526717557256,0.0,28.071428571428573
+131996,2025,12,1,0,639,1,0,5000000,Bertrand Traoré,Attack,Right Winger,left,181.0,Sunderland Association Football Club,Burkina Faso,1995-09-06,30.6,0.14084507042253522,0.0,53.25
+132098,2022,38,30,3,3408,6,0,65000000,Harry Kane,Attack,Centre-Forward,right,188.0,FC Bayern München,England,1993-07-28,32.7,0.7922535211267606,0.07922535211267606,89.6842105263158
+134270,2025,23,0,3,1814,9,0,5000000,Dan Burn,Defender,Centre-Back,left,201.0,Newcastle United Football Club,England,1992-05-09,33.9,0.0,0.14884233737596472,78.8695652173913
+134294,2024,15,1,2,270,0,0,3500000,Danny Ings,Attack,Centre-Forward,right,177.0,West Ham United Football Club,England,1992-07-23,33.7,0.33333333333333337,0.6666666666666667,18.0
+134425,2024,17,0,2,496,1,0,5000000,Raheem Sterling,Attack,Right Winger,right,170.0,Feyenoord Rotterdam,England,1994-12-08,31.3,0.0,0.3629032258064516,29.176470588235293
+135343,2025,16,0,0,1091,1,0,6000000,Fabian Schär,Defender,Centre-Back,right,186.0,Newcastle United Football Club,Switzerland,1991-12-20,34.3,0.0,0.0,68.1875
+135853,2022,10,1,0,244,0,0,1000000,Manuel Lanzini,Midfield,Attacking Midfield,right,170.0,Club Atlético Vélez Sársfield,Argentina,1993-02-15,33.1,0.36885245901639346,0.0,24.4
+139208,2025,31,3,0,2790,4,0,18000000,Virgil van Dijk,Defender,Centre-Back,right,195.0,Liverpool Football Club,Netherlands,1991-07-08,34.8,0.0967741935483871,0.0,90.0
+140191,2022,12,0,0,531,1,0,1000000,Ryan Fredericks,Defender,Right-Back,right,181.0,Association Football Club Bournemouth,England,1992-10-10,33.5,0.0,0.0,44.25
+141660,2022,17,0,0,927,1,0,2200000,Jesse Lingard,Midfield,Attacking Midfield,right,174.0,Nottingham Forest Football Club,England,1992-12-15,33.3,0.0,0.0,54.529411764705884
+142310,2024,6,0,0,146,1,0,500000,Willy Boly,Defender,Centre-Back,right,195.0,Nottingham Forest Football Club,Cote d'Ivoire,1991-02-03,35.2,0.0,0.0,24.333333333333332
+143424,2022,9,1,0,335,0,0,1500000,Alex Oxlade-Chamberlain,Midfield,Central Midfield,right,180.0,The Celtic Football Club,England,1993-08-15,32.7,0.26865671641791045,0.0,37.22222222222222
+144028,2025,26,5,5,1687,1,0,20000000,Leandro Trossard,Attack,Left Winger,right,172.0,Arsenal Football Club,Belgium,1994-12-04,31.3,0.26674570243034973,0.26674570243034973,64.88461538461539
+145466,2023,18,1,0,1505,4,0,200000,Tim Ream,Defender,Centre-Back,left,186.0,Charlotte Football Club,United States,1987-10-05,38.5,0.059800664451827246,0.0,83.61111111111111
+145988,2022,27,7,2,2294,5,0,4000000,Wilfried Zaha,Attack,Left Winger,right,180.0,Charlotte Football Club,Cote d'Ivoire,1992-11-10,33.4,0.2746294681778553,0.07846556233653008,84.96296296296296
+146310,2025,8,0,1,170,1,0,5000000,Wataru Endo,Midfield,Defensive Midfield,right,178.0,Liverpool Football Club,Japan,1993-02-09,33.2,0.0,0.5294117647058824,21.25
+146509,2024,6,0,1,335,1,0,500000,Conor Townsend,Defender,Left-Back,left,183.0,Ipswich Town,England,1993-03-04,33.1,0.0,0.26865671641791045,55.833333333333336
+146690,2023,13,0,1,970,4,0,2000000,George Baldock,Defender,Right-Back,right,178.0,Panathinaikos Athlitikos Omilos,Greece,1993-03-09,33.1,0.0,0.09278350515463918,74.61538461538461
+146795,2024,8,0,0,306,0,1,1800000,Ryan Fraser,Attack,Left Winger,right,163.0,Western Sydney Wanderers,Scotland,1994-02-24,32.1,0.0,0.0,38.25
+148153,2025,29,0,0,2565,10,0,4000000,Lewis Dunk,Defender,Centre-Back,right,192.0,Brighton and Hove Albion Football Club,England,1991-11-21,34.4,0.0,0.0,88.44827586206897
+148252,2022,28,0,0,2165,4,0,4000000,Remo Freuler,Midfield,Central Midfield,right,180.0,Bologna Football Club 1909,Switzerland,1992-04-15,34.0,0.0,0.0,77.32142857142857
+148367,2025,6,0,0,56,0,0,7000000,Christian Nørgaard,Midfield,Defensive Midfield,right,187.0,Arsenal Football Club,Denmark,1994-03-10,32.1,0.0,0.0,9.333333333333334
+148368,2023,20,0,1,600,1,0,5000000,Divock Origi,Attack,Centre-Forward,right,189.0,Nottingham Forest Football Club,Belgium,1995-04-18,31.0,0.0,0.15000000000000002,30.0
+148455,2025,22,5,6,1821,1,0,30000000,Mohamed Salah,Attack,Right Winger,left,175.0,Liverpool Football Club,Egypt,1992-06-15,33.8,0.2471169686985173,0.29654036243822074,82.77272727272727
+156501,2023,7,0,0,373,3,0,1500000,Felipe,Defender,Centre-Back,right,190.0,Nottingham Forest Football Club,Brazil,1989-05-16,36.9,0.0,0.0,53.285714285714285
+157506,2024,12,0,0,94,0,0,2000000,Jeffrey Schlupp,Midfield,Left Midfield,left,178.0,The Celtic Football Club,Ghana,1992-12-23,33.3,0.0,0.0,7.833333333333333
+157509,2023,33,3,0,2839,3,0,25000000,Kurt Zouma,Defender,Centre-Back,right,190.0,Al-Orobah FC,France,1994-10-27,31.5,0.095103909827404,0.0,86.03030303030303
+157672,2024,22,0,0,1061,5,0,2700000,Vladimír Coufal,Defender,Right-Back,right,174.0,Turn- und Sportgemeinschaft 1899 Hoffenheim Fußball-Spielbetriebs,Czech Republic,1992-08-22,33.6,0.0,0.0,48.22727272727273
+163744,2024,19,1,0,1394,2,2,1200000,Jack Stephens,Defender,Centre-Back,right,185.0,Southampton FC,England,1994-01-27,32.2,0.06456241032998565,0.0,73.36842105263158
+164770,2023,22,1,0,1371,2,0,20000000,Raphaël Varane,Defender,Centre-Back,right,191.0,Calcio Como,France,1993-04-25,33.0,0.06564551422319474,0.0,62.31818181818182
+167799,2023,36,0,0,1293,4,0,18000000,Pierre-Emile Højbjerg,Midfield,Defensive Midfield,right,185.0,Olympique de Marseille,Denmark,1995-08-05,30.7,0.0,0.0,35.916666666666664
+168157,2023,8,1,0,119,0,0,3000000,Leander Dendoncker,Midfield,Defensive Midfield,right,188.0,Real Oviedo S.A.D.,Belgium,1995-04-15,31.0,0.7563025210084033,0.0,14.875
+169801,2023,24,1,1,408,2,0,1000000,Cauley Woodrow,Attack,Centre-Forward,right,184.0,Luton Town,England,1994-12-02,31.4,0.22058823529411764,0.22058823529411764,17.0
+170321,2023,5,0,0,18,0,0,900000,Paul Dummett,Defender,Centre-Back,left,183.0,Newcastle United Football Club,Wales,1991-09-26,34.5,0.0,0.0,3.6
+170527,2024,18,0,3,508,0,0,3000000,Timo Werner,Attack,Centre-Forward,right,180.0,San Jose Earthquakes,Germany,1996-03-06,30.1,0.0,0.5314960629921259,28.22222222222222
+170934,2024,17,1,3,1363,3,0,5000000,Mario Lemina,Midfield,Defensive Midfield,right,184.0,Galatasaray Spor Kulübü,Gabon,1993-09-01,32.6,0.06603081438004402,0.19809244314013205,80.17647058823529
+171424,2022,30,5,10,1924,2,0,7000000,Riyad Mahrez,Attack,Right Winger,left,179.0,Al-Ahli Saudi Football Club,Algeria,1991-02-21,35.1,0.2338877338877339,0.4677754677754678,64.13333333333334
+171679,2025,10,0,0,707,4,0,1500000,Matt Doherty,Defender,Right-Back,right,185.0,Wolverhampton Wanderers Football Club,Ireland,1992-01-16,34.2,0.0,0.0,70.7
+173504,2025,30,1,1,2700,5,0,7000000,James Tarkowski,Defender,Centre-Back,right,185.0,Everton Football Club,England,1992-11-19,33.4,0.03333333333333333,0.03333333333333333,90.0
+177476,2025,14,0,0,488,1,0,15000000,Nathan Aké,Defender,Centre-Back,left,180.0,Manchester City Football Club,Netherlands,1995-02-18,31.1,0.0,0.0,34.857142857142854
+177907,2025,18,1,1,1205,3,1,10000000,Harry Maguire,Defender,Centre-Back,right,194.0,Manchester United Football Club,England,1993-03-05,33.1,0.07468879668049792,0.07468879668049792,66.94444444444444
+181579,2025,11,0,1,732,1,0,6000000,James Ward-Prowse,Midfield,Central Midfield,right,177.0,Burnley Football Club,England,1994-11-01,31.4,0.0,0.12295081967213115,66.54545454545455
+181687,2024,11,0,0,196,0,0,350000,Massimo Luongo,Midfield,Central Midfield,right,176.0,Ipswich Town,Australia,1992-09-25,33.5,0.0,0.0,17.818181818181817
+181778,2024,31,2,1,2125,5,0,10000000,Emerson,Defender,Left-Back,left,176.0,Olympique de Marseille,Italy,1994-08-03,31.7,0.08470588235294117,0.042352941176470586,68.54838709677419
+182712,2022,17,2,1,1278,3,1,9000000,João Cancelo,Defender,Right-Back,right,182.0,Futbol Club Barcelona,Portugal,1994-05-27,31.9,0.14084507042253522,0.07042253521126761,75.17647058823529
+182877,2023,13,1,0,444,0,0,5000000,Anthony Martial,Attack,Centre-Forward,right,184.0,Club de Fútbol Monterrey Rayados A.C.,France,1995-12-05,30.3,0.20270270270270271,0.0,34.15384615384615
+182904,2023,14,0,1,1155,3,0,5000000,Clément Lenglet,Defender,Centre-Back,left,186.0,Club Atlético de Madrid S.A.D.,France,1995-06-17,30.8,0.0,0.07792207792207792,82.5
+183288,2025,31,0,1,2628,5,0,10000000,Luke Shaw,Defender,Left-Back,left,178.0,Manchester United Football Club,England,1995-07-12,30.7,0.0,0.03424657534246575,84.7741935483871
+183293,2023,11,0,0,381,0,0,2500000,Joe Rothwell,Midfield,Central Midfield,right,185.0,Association Football Club Bournemouth,England,1995-01-11,31.2,0.0,0.0,34.63636363636363
+183302,2022,7,0,0,284,1,0,2200000,Ben Pearson,Midfield,Central Midfield,right,176.0,Association Football Club Bournemouth,,1995-01-04,31.3,0.0,0.0,40.57142857142857
+183318,2023,16,1,0,1081,4,0,2000000,Jamaal Lascelles,Defender,Centre-Back,right,188.0,Newcastle United Football Club,England,1993-11-11,32.4,0.08325624421831637,0.0,67.5625
+183321,2022,6,0,1,141,1,0,3000000,Kevin Mbabu,Defender,Right-Back,right,184.0,Fodbold Club Midtjylland,Switzerland,1995-04-19,31.0,0.0,0.6382978723404256,23.5
+183334,2022,28,4,2,1523,3,0,7000000,Patrick Bamford,Attack,Centre-Forward,left,185.0,Leeds United Association Football Club,England,1993-09-05,32.6,0.23637557452396585,0.11818778726198292,54.392857142857146
+184129,2023,23,1,1,1306,4,0,1000000,Jordan Clark,Midfield,Central Midfield,right,183.0,Luton Town,England,1993-09-22,32.5,0.06891271056661562,0.06891271056661562,56.78260869565217
+184573,2025,12,0,1,572,0,0,6000000,Victor Lindelöf,Defender,Centre-Back,right,187.0,Aston Villa Football Club,Sweden,1994-07-17,31.7,0.0,0.15734265734265734,47.666666666666664
+186186,2024,23,1,3,741,2,0,5000000,Bobby De Cordova-Reid,Midfield,Attacking Midfield,right,170.0,Leicester City,Jamaica,1993-02-02,33.2,0.1214574898785425,0.3643724696356275,32.21739130434783
+186590,2025,7,0,0,353,0,0,15000000,John Stones,Defender,Centre-Back,right,188.0,Manchester City Football Club,England,1994-05-28,31.9,0.0,0.0,50.42857142857143
+186644,2022,33,1,1,2179,4,0,4500000,Mohamed Elyounoussi,Attack,Second Striker,right,178.0,Football Club København,Norway,1994-08-04,31.7,0.04130335016062414,0.04130335016062414,66.03030303030303
+188077,2025,21,2,0,716,2,0,9000000,Ryan Christie,Midfield,Central Midfield,left,178.0,Association Football Club Bournemouth,Scotland,1995-02-22,31.1,0.25139664804469275,0.0,34.095238095238095
+191422,2023,9,0,1,454,1,1,2000000,Mahmoud Dahoud,Midfield,Central Midfield,right,178.0,Eintracht Frankfurt Fußball AG,Syria,1996-01-01,30.3,0.0,0.19823788546255508,50.44444444444444
+191614,2022,35,2,2,1233,6,0,6000000,Fred,Midfield,Central Midfield,both,169.0,Fenerbahçe Spor Kulübü,Brazil,1993-03-05,33.1,0.14598540145985403,0.14598540145985403,35.22857142857143
+192080,2025,22,0,0,1967,1,0,7000000,Nick Pope,Goalkeeper,Goalkeeper,right,198.0,Newcastle United Football Club,England,1992-04-19,34.0,0.0,0.0,89.4090909090909
+192279,2024,31,0,0,2790,2,0,7000000,Kepa Arrizabalaga,Goalkeeper,Goalkeeper,right,188.0,Arsenal Football Club,Spain,1994-10-03,31.5,0.0,0.0,90.0
+193098,2024,15,0,1,960,2,0,3500000,Álex Moreno,Defender,Left-Back,left,179.0,Girona Fútbol Club S. A. D.,Spain,1993-06-08,32.8,0.0,0.09375,64.0
+193116,2025,24,4,3,1735,3,0,15000000,John McGinn,Midfield,Central Midfield,left,178.0,Aston Villa Football Club,Scotland,1994-10-18,31.5,0.207492795389049,0.15561959654178675,72.29166666666667
+195633,2024,8,0,0,353,1,0,2000000,Charlie Taylor,Defender,Left-Back,left,183.0,Southampton FC,England,1993-09-18,32.6,0.0,0.0,44.125
+197838,2024,35,9,4,2839,5,0,1000000,Jamie Vardy,Attack,Centre-Forward,right,179.0,Unione Sportiva Cremonese S.p.A.,England,1987-01-11,39.2,0.28531172948221206,0.12680521310320536,81.11428571428571
+199527,2025,26,3,1,1247,1,0,15000000,Jacob Murphy,Attack,Right Winger,right,179.0,Newcastle United Football Club,England,1995-02-24,31.1,0.2165196471531676,0.07217321571772253,47.96153846153846
+202886,2022,25,0,1,1542,1,0,10000000,Ruben Loftus-Cheek,Midfield,Central Midfield,right,191.0,Associazione Calcio Milan,England,1996-01-23,30.2,0.0,0.058365758754863814,61.68
+203394,2024,33,2,6,2026,7,0,15000000,Andreas Pereira,Midfield,Central Midfield,right,178.0,Sociedade Esportiva Palmeiras,Brazil,1996-01-01,30.3,0.08884501480750247,0.2665350444225074,61.39393939393939
+203460,2025,20,2,6,1632,4,0,25000000,Jack Grealish,Attack,Left Winger,right,180.0,Everton Football Club,England,1995-09-10,30.6,0.11029411764705882,0.33088235294117646,81.6
+203853,2025,5,0,0,353,0,0,10000000,Oleksandr Zinchenko,Defender,Left-Back,left,175.0,AFC Ajax Amsterdam,Ukraine,1996-12-15,29.3,0.0,0.0,70.6
+204103,2025,22,0,0,349,1,0,8000000,Adama Traoré,Attack,Right Winger,right,178.0,West Ham United Football Club,Spain,1996-01-25,30.2,0.0,0.0,15.863636363636363
+204294,2023,19,1,0,730,5,0,2000000,Saman Ghoddos,Midfield,Attacking Midfield,right,175.0,,Iran,1993-09-06,32.6,0.12328767123287672,0.0,38.421052631578945
+206040,2025,30,9,3,1986,5,0,4000000,Raúl Jiménez,Attack,Centre-Forward,right,187.0,Fulham Football Club,Mexico,1991-05-05,34.9,0.40785498489425986,0.13595166163141995,66.2
+206746,2025,22,1,0,1795,2,0,11000000,Kenny Tete,Defender,Right-Back,right,180.0,Fulham Football Club,Netherlands,1995-10-09,30.5,0.05013927576601671,0.0,81.5909090909091
+207014,2025,27,0,0,1295,7,0,6000000,Will Hughes,Midfield,Central Midfield,left,185.0,Crystal Palace Football Club,England,1995-04-17,31.0,0.0,0.0,47.96296296296296
+207742,2023,14,1,1,1172,4,0,2500000,Tom Lockyer,Defender,Centre-Back,right,185.0,Luton Town,Wales,1994-12-03,31.4,0.07679180887372014,0.07679180887372014,83.71428571428571
+208379,2024,7,0,0,630,0,0,900000,Christian Walton,Goalkeeper,Goalkeeper,left,195.0,Ipswich Town,England,1995-11-09,30.4,0.0,0.0,90.0
+212847,2024,14,0,0,888,1,0,5000000,Adam Webster,Defender,Centre-Back,right,190.0,Brighton and Hove Albion Football Club,England,1995-01-04,31.3,0.0,0.0,63.42857142857143
+214056,2022,20,0,0,1610,1,0,5000000,Daniel Amartey,Defender,Centre-Back,right,186.0,Beşiktaş Jimnastik Kulübü,Ghana,1994-12-21,31.3,0.0,0.0,80.5
+214666,2023,14,0,0,819,5,0,2500000,Connor Roberts,Defender,Right-Back,right,175.0,Burnley Football Club,Wales,1995-09-23,30.5,0.0,0.0,58.5
+215118,2023,5,0,1,150,1,0,4000000,Calum Chambers,Defender,Centre-Back,right,182.0,Aston Villa Football Club,England,1995-01-20,31.2,0.0,0.6000000000000001,30.0
+215876,2024,10,0,0,385,1,0,3000000,Ricardo Pereira,Defender,Right-Back,right,175.0,Leicester City,Portugal,1993-10-06,32.5,0.0,0.0,38.5
+217111,2022,18,0,3,653,1,0,3000000,Hakim Ziyech,Attack,Right Winger,left,180.0,Galatasaray Spor Kulübü,Morocco,1993-03-19,33.1,0.0,0.41347626339969373,36.27777777777778
+217115,2023,31,6,3,1424,8,0,4000000,Neal Maupay,Attack,Centre-Forward,right,171.0,Sevilla Fútbol Club S.A.D.,France,1996-08-14,29.7,0.3792134831460674,0.1896067415730337,45.935483870967744
+218087,2023,24,0,2,1363,3,0,1000000,Ben Osborn,Midfield,Central Midfield,left,176.0,Sheffield United,England,1994-08-05,31.7,0.0,0.13206162876008803,56.791666666666664
+221025,2023,12,1,0,504,4,0,4500000,André Gomes,Midfield,Central Midfield,right,190.0,Columbus Crew,Portugal,1993-07-30,32.7,0.17857142857142855,0.0,42.0
+225083,2022,7,0,1,520,1,0,4500000,N'Golo Kanté,Midfield,Defensive Midfield,right,168.0,Fenerbahçe Spor Kulübü,France,1991-03-29,35.0,0.0,0.17307692307692307,74.28571428571429
+225122,2024,29,2,4,987,1,0,6000000,Gonçalo Guedes,Attack,Left Winger,right,179.0,Real Sociedad de Fútbol S.A.D.,Portugal,1996-11-29,29.4,0.18237082066869303,0.36474164133738607,34.03448275862069
+225161,2022,35,6,1,3023,12,0,25000000,Rúben Neves,Midfield,Defensive Midfield,right,180.0,Al-Hilal Saudi Football Club,Portugal,1997-03-13,29.1,0.17863049950380416,0.029771749917300697,86.37142857142857
+225693,2022,36,0,2,2677,11,0,13000000,Fabinho,Midfield,Defensive Midfield,right,188.0,Al-Ittihad Football Club,Brazil,1993-10-23,32.5,0.0,0.0672394471423235,74.36111111111111
+226073,2023,9,0,0,772,1,0,1200000,Ivo Grbic,Goalkeeper,Goalkeeper,right,195.0,Fatih Karagümrük Sportif Faaliyetler San. Tic. A.Ş.,Croatia,1996-01-18,30.2,0.0,0.0,85.77777777777777
+226973,2025,6,1,0,26,0,0,3000000,Harrison Reed,Midfield,Central Midfield,right,181.0,Fulham Football Club,England,1995-01-27,31.2,3.4615384615384617,0.0,4.333333333333333
+228645,2022,17,0,1,797,1,0,2500000,Wout Weghorst,Attack,Centre-Forward,right,197.0,AFC Ajax Amsterdam,Netherlands,1992-08-07,33.7,0.0,0.11292346298619824,46.88235294117647
+230784,2024,35,4,2,2800,4,0,2500000,Thomas Partey,Midfield,Defensive Midfield,right,185.0,Villarreal Club de Fútbol S.A.D.,Ghana,1993-06-13,32.8,0.12857142857142856,0.06428571428571428,80.0
+231572,2024,34,0,4,2896,8,0,7000000,Nélson Semedo,Defender,Right-Back,right,177.0,Fenerbahçe Spor Kulübü,Portugal,1993-11-16,32.4,0.0,0.12430939226519336,85.17647058823529
+234509,2024,34,0,0,3060,0,0,12000000,André Onana,Goalkeeper,Goalkeeper,right,190.0,Trabzonspor Kulübü,Cameroon,1996-04-02,30.0,0.0,0.0,90.0
+234803,2025,19,0,0,767,0,0,10000000,Andrew Robertson,Defender,Left-Back,left,178.0,Liverpool Football Club,Scotland,1994-03-11,32.1,0.0,0.0,40.36842105263158
+236490,2025,15,0,0,1321,3,0,20000000,Ola Aina,Defender,Right-Back,right,184.0,Nottingham Forest Football Club,Nigeria,1996-10-08,29.5,0.0,0.0,88.06666666666666
+238223,2024,26,0,4,2321,4,0,13000000,Ederson,Goalkeeper,Goalkeeper,left,188.0,Fenerbahçe Spor Kulübü,Brazil,1993-08-17,32.6,0.0,0.15510555794915984,89.26923076923077
+238266,2022,13,1,0,944,2,0,3000000,Duje Caleta-Car,Defender,Centre-Back,right,193.0,Real Sociedad de Fútbol S.A.D.,Croatia,1996-09-17,29.6,0.09533898305084745,0.0,72.61538461538461
+240306,2025,28,8,16,2438,3,0,40000000,Bruno Fernandes,Midfield,Attacking Midfield,right,179.0,Manchester United Football Club,Portugal,1994-09-08,31.6,0.29532403609516,0.59064807219032,87.07142857142857
+240692,2025,18,0,2,1429,7,1,5000000,Reinildo Mandava,Defender,Left-Back,left,180.0,Sunderland Association Football Club,Mozambique,1994-01-21,32.2,0.0,0.12596221133659902,79.38888888888889
+241481,2023,9,0,0,230,0,0,1200000,Jaïro Riedewald,Midfield,Defensive Midfield,left,182.0,Royal Antwerp Football Club,Netherlands,1996-09-09,29.6,0.0,0.0,25.555555555555557
+241641,2025,30,2,4,2256,8,0,27000000,Bernardo Silva,Midfield,Attacking Midfield,left,173.0,Manchester City Football Club,Portugal,1994-08-10,31.7,0.0797872340425532,0.1595744680851064,75.2
+242606,2025,18,2,2,1520,2,0,6000000,Josh Cullen,Midfield,Central Midfield,right,175.0,Burnley Football Club,Ireland,1996-04-07,30.0,0.11842105263157894,0.11842105263157894,84.44444444444444
+242631,2025,25,4,3,2146,3,0,25000000,Alex Iwobi,Attack,Left Winger,right,183.0,Fulham Football Club,Nigeria,1996-05-03,29.9,0.16775396085740912,0.12581547064305684,85.84
+243028,2024,30,2,0,2535,7,0,11000000,Jan Bednarek,Defender,Centre-Back,right,189.0,Futebol Clube do Porto,Poland,1996-04-12,30.0,0.07100591715976332,0.0,84.5
+244338,2023,27,0,0,1093,1,0,1500000,Pelly Ruddock Mpanzu,Midfield,Defensive Midfield,right,175.0,Luton Town,DR Congo,1994-03-22,32.1,0.0,0.0,40.48148148148148
+245056,2025,20,1,3,1239,6,0,12000000,Saša Lukić,Midfield,Central Midfield,right,182.0,Fulham Football Club,Serbia,1996-08-13,29.7,0.07263922518159806,0.2179176755447942,61.95
+245625,2024,13,0,0,1170,2,0,900000,Alex Palmer,Goalkeeper,Goalkeeper,right,191.0,Ipswich Town,England,1996-08-10,29.7,0.0,0.0,90.0
+246291,2022,8,0,0,648,1,0,3000000,Diego Llorente,Defender,Centre-Back,right,186.0,Real Betis Balompié S.A.D.,Spain,1993-08-16,32.6,0.0,0.0,81.0
+246963,2023,38,11,4,2868,4,0,13000000,Carlton Morris,Attack,Centre-Forward,right,185.0,Luton Town,England,1995-12-16,30.3,0.34518828451882844,0.12552301255230125,75.47368421052632
+246968,2022,8,0,1,379,0,0,6000000,Ayoze Pérez,Attack,Centre-Forward,right,178.0,Villarreal Club de Fútbol S.A.D.,Spain,1993-07-29,32.7,0.0,0.23746701846965698,47.375
+249089,2025,16,0,1,870,1,1,13000000,Lewis Cook,Midfield,Central Midfield,right,175.0,Association Football Club Bournemouth,England,1997-02-03,29.2,0.0,0.10344827586206896,54.375
+249126,2024,22,0,2,1540,4,0,7000000,Harry Winks,Midfield,Defensive Midfield,right,178.0,Leicester City,England,1996-02-02,30.2,0.0,0.11688311688311688,70.0
+249356,2022,10,0,0,293,2,0,2200000,Jack Stacey,Defender,Right-Back,right,180.0,Association Football Club Bournemouth,England,1996-04-06,30.0,0.0,0.0,29.3
+249565,2025,18,0,4,1322,0,0,35000000,Youri Tielemans,Midfield,Central Midfield,right,177.0,Aston Villa Football Club,Belgium,1997-05-07,28.9,0.0,0.2723146747352496,73.44444444444444
+249994,2025,19,0,0,1710,2,0,5000000,José Sá,Goalkeeper,Goalkeeper,right,192.0,Wolverhampton Wanderers Football Club,Portugal,1993-01-17,33.2,0.0,0.0,90.0
+250426,2025,7,1,2,570,3,0,8000000,Adam Armstrong,Attack,Centre-Forward,right,173.0,Wolverhampton Wanderers Football Club,England,1997-02-10,29.2,0.15789473684210525,0.3157894736842105,81.42857142857143
+251106,2025,17,1,0,173,1,0,8000000,Enes Ünal,Attack,Centre-Forward,right,187.0,Association Football Club Bournemouth,Türkiye,1997-05-10,28.9,0.5202312138728323,0.0,10.176470588235293
+251664,2023,17,4,2,1449,5,0,20000000,Ivan Toney,Attack,Centre-Forward,right,185.0,Al-Ahli Saudi Football Club,England,1996-03-16,30.1,0.2484472049689441,0.12422360248447205,85.23529411764706
+251845,2022,5,0,0,73,0,0,2500000,Sergi Canós,Attack,Left Winger,right,177.0,Valencia Club de Fútbol S. A. D.,Spain,1997-02-02,29.2,0.0,0.0,14.6
+253341,2022,14,1,0,562,0,0,3000000,Rob Holding,Defender,Centre-Back,right,189.0,Colorado Rapids,England,1995-09-20,30.6,0.16014234875444838,0.0,40.142857142857146
+253677,2025,13,0,1,963,0,0,4000000,Tyrone Mings,Defender,Centre-Back,left,196.0,Aston Villa Football Club,England,1993-03-13,33.1,0.0,0.09345794392523364,74.07692307692308
+255731,2024,18,0,1,934,1,0,1200000,Wes Burns,Midfield,Right Midfield,right,173.0,Ipswich Town,Wales,1994-11-23,31.4,0.0,0.09635974304068523,51.888888888888886
+255788,2024,18,0,2,1540,0,0,500000,Cameron Burgess,Defender,Centre-Back,left,194.0,Swansea City,Australia,1995-10-21,30.5,0.0,0.11688311688311688,85.55555555555556
+255906,2023,5,0,0,417,0,0,4000000,Scott McKenna,Defender,Centre-Back,left,189.0,GNK Dinamo Zagreb,Scotland,1996-11-12,29.4,0.0,0.0,83.4
+256178,2025,16,0,2,496,2,0,15000000,Joe Gomez,Defender,Centre-Back,right,188.0,Liverpool Football Club,England,1997-05-23,28.9,0.0,0.3629032258064516,31.0
+257455,2025,26,3,2,1780,6,0,18000000,João Palhinha,Midfield,Defensive Midfield,right,190.0,Tottenham Hotspur Football Club,Portugal,1995-07-09,30.8,0.15168539325842698,0.10112359550561799,68.46153846153847
+258004,2025,25,2,0,2050,3,0,60000000,Rúben Dias,Defender,Centre-Back,right,187.0,Manchester City Football Club,Portugal,1997-05-14,28.9,0.08780487804878048,0.0,82.0
+258878,2025,15,0,0,744,2,0,18000000,Tosin Adarabioyo,Defender,Centre-Back,right,197.0,Chelsea Football Club,England,1997-09-24,28.5,0.0,0.0,49.6
+258885,2023,10,0,1,500,1,0,2500000,Max Lowe,Defender,Left-Back,left,175.0,Sheffield United,England,1997-05-11,28.9,0.0,0.18,50.0
+258889,2025,12,3,0,781,1,0,35000000,Dominic Solanke,Attack,Centre-Forward,right,186.0,Tottenham Hotspur Football Club,England,1997-09-14,28.6,0.34571062740076824,0.0,65.08333333333333
+258919,2025,29,0,0,2610,3,0,28000000,Dean Henderson,Goalkeeper,Goalkeeper,right,188.0,Crystal Palace Football Club,England,1997-03-12,29.1,0.0,0.0,90.0
+258923,2024,25,6,4,1426,2,0,40000000,Marcus Rashford,Attack,Left Winger,right,185.0,Futbol Club Barcelona,England,1997-10-31,28.4,0.37868162692847124,0.25245441795231416,57.04
+260827,2025,28,0,1,2472,7,0,25000000,Joachim Andersen,Defender,Centre-Back,right,192.0,Fulham Football Club,Denmark,1996-05-31,29.9,0.0,0.03640776699029127,88.28571428571429
+260841,2022,12,0,0,1080,0,0,2500000,Daniel Iversen,Goalkeeper,Goalkeeper,right,193.0,Leicester City,Denmark,1997-07-19,28.7,0.0,0.0,90.0
+262226,2025,23,0,0,1219,3,0,10000000,Timothy Castagne,Defender,Right-Back,right,185.0,Fulham Football Club,Belgium,1995-12-05,30.3,0.0,0.0,53.0
+262300,2024,24,0,1,1468,2,0,2800000,Ryan Manning,Defender,Left-Back,left,173.0,Southampton FC,Ireland,1996-06-14,29.8,0.0,0.061307901907356945,61.166666666666664
+262749,2025,31,0,0,2790,1,0,35000000,David Raya,Goalkeeper,Goalkeeper,right,183.0,Arsenal Football Club,Spain,1995-09-15,30.6,0.0,0.0,90.0
+262980,2025,24,0,3,1248,6,0,8000000,Jefferson Lerma,Midfield,Defensive Midfield,right,179.0,Crystal Palace Football Club,Colombia,1994-10-25,31.5,0.0,0.21634615384615385,52.0
+263236,2025,17,0,0,931,4,0,20000000,Kevin Danso,Defender,Centre-Back,right,190.0,Tottenham Hotspur Football Club,Austria,1998-09-19,27.6,0.0,0.0,54.76470588235294
+263361,2022,16,0,0,1265,3,0,3000000,Maximilian Wöber,Defender,Centre-Back,left,188.0,Sportverein Werder Bremen von 1899,Austria,1998-02-04,28.2,0.0,0.0,79.0625
+264220,2023,22,0,4,1664,5,0,1800000,Reece Burke,Defender,Centre-Back,right,189.0,Luton Town,England,1996-09-02,29.6,0.0,0.21634615384615385,75.63636363636364
+270171,2025,22,1,4,1255,7,0,18000000,Vitaly Janelt,Midfield,Defensive Midfield,left,184.0,Brentford Football Club,Germany,1998-05-10,27.9,0.07171314741035857,0.2868525896414343,57.04545454545455
+272622,2025,10,0,0,593,2,0,10000000,Issa Diop,Defender,Centre-Back,right,194.0,Fulham Football Club,France,1997-01-09,29.2,0.0,0.0,59.3
+272642,2022,25,1,5,1117,1,0,10000000,Allan Saint-Maximin,Attack,Left Winger,right,173.0,Racing Club de Lens,France,1997-03-12,29.1,0.08057296329453895,0.4028648164726947,44.68
+272855,2024,25,4,1,1045,4,0,6000000,Paul Onuachu,Attack,Centre-Forward,right,201.0,Trabzonspor Kulübü,Nigeria,1994-05-28,31.9,0.3444976076555024,0.0861244019138756,41.8
+272999,2024,9,0,0,150,0,0,9000000,Miguel Almirón,Attack,Right Winger,left,174.0,Atlanta United Football Club,Paraguay,1994-02-10,32.2,0.0,0.0,16.666666666666668
+274839,2024,28,0,5,2337,8,0,10000000,Wilfred Ndidi,Midfield,Defensive Midfield,right,183.0,Beşiktaş Jimnastik Kulübü,Nigeria,1996-12-16,29.3,0.0,0.19255455712451863,83.46428571428571
+275590,2023,8,1,0,100,0,0,2000000,Kieffer Moore,Attack,Centre-Forward,right,196.0,,Wales,1992-08-08,33.7,0.9,0.0,12.5
+277033,2025,25,1,2,1051,7,0,14000000,David Brooks,Attack,Right Winger,left,173.0,Association Football Club Bournemouth,Wales,1997-07-08,28.8,0.0856327307326356,0.1712654614652712,42.04
+278166,2023,21,0,0,1723,0,0,2500000,Amari'i Bell,Defender,Centre-Back,left,180.0,,Jamaica,1994-05-05,31.9,0.0,0.0,82.04761904761905
+279455,2025,29,10,6,2279,6,0,25000000,Harry Wilson,Attack,Right Winger,left,173.0,Fulham Football Club,Wales,1997-03-22,29.1,0.3949100482667837,0.23694602896007022,78.58620689655173
+282939,2025,8,0,0,227,1,1,1000000,Luke O'Nien,Defender,Centre-Back,right,174.0,Sunderland Association Football Club,England,1994-11-21,31.4,0.0,0.0,28.375
+283628,2025,28,4,0,1596,2,1,12000000,Tomáš Souček,Midfield,Defensive Midfield,right,192.0,West Ham United Football Club,Czech Republic,1995-02-27,31.1,0.22556390977443608,0.0,57.0
+284730,2024,26,0,0,2014,3,0,18000000,Manuel Akanji,Defender,Centre-Back,right,188.0,Football Club Internazionale Milano S.p.A.,Switzerland,1995-07-19,30.7,0.0,0.0,77.46153846153847
+284857,2025,27,1,3,2080,5,1,50000000,Marc Cucurella,Defender,Left-Back,left,173.0,Chelsea Football Club,Spain,1998-07-22,27.7,0.04326923076923077,0.12980769230769232,77.03703703703704
+285845,2022,22,0,1,1404,3,0,10000000,Ainsley Maitland-Niles,Defender,Right-Back,right,180.0,Olympique Lyonnais,England,1997-08-29,28.6,0.0,0.06410256410256411,63.81818181818182
+286047,2025,31,0,0,2790,1,0,23000000,Guglielmo Vicario,Goalkeeper,Goalkeeper,right,194.0,Tottenham Hotspur Football Club,Italy,1996-10-07,29.5,0.0,0.0,90.0
+287579,2023,21,0,0,932,6,0,12000000,Sofyan Amrabat,Midfield,Defensive Midfield,right,185.0,Real Betis Balompié S.A.D.,Morocco,1996-08-21,29.6,0.0,0.0,44.38095238095238
+289446,2022,7,2,0,596,2,0,3000000,Yerry Mina,Defender,Centre-Back,right,195.0,Cagliari Calcio,Colombia,1994-09-23,31.5,0.30201342281879195,0.0,85.14285714285714
+289592,2024,19,1,0,1261,2,0,10000000,Orel Mangala,Midfield,Defensive Midfield,right,178.0,Olympique Lyonnais,Belgium,1998-03-18,28.1,0.07137192704203013,0.0,66.36842105263158
+290532,2023,13,0,1,615,1,0,9000000,Saïd Benrahma,Attack,Left Winger,right,172.0,Neom Sports Club,Algeria,1995-08-10,30.7,0.0,0.14634146341463414,47.30769230769231
+291200,2023,21,1,0,1457,5,0,18000000,Moussa Niakhaté,Defender,Centre-Back,left,190.0,Olympique Lyonnais,Senegal,1996-03-08,30.1,0.06177076183939602,0.0,69.38095238095238
+292246,2025,20,2,1,1158,3,0,8000000,Hee-chan Hwang,Attack,Centre-Forward,right,177.0,Wolverhampton Wanderers Football Club,"Korea, South",1996-01-26,30.2,0.15544041450777202,0.07772020725388601,57.9
+292417,2022,33,4,1,2511,3,0,12000000,Demarai Gray,Attack,Left Winger,right,183.0,,Jamaica,1996-06-28,29.8,0.14336917562724014,0.035842293906810034,76.0909090909091
+292808,2024,34,1,0,2812,4,0,10000000,Wout Faes,Defender,Centre-Back,right,187.0,Association sportive de Monaco Football Club,Belgium,1998-04-03,28.0,0.032005689900426744,0.0,82.70588235294117
+293194,2025,5,0,0,53,0,0,4000000,Borna Sosa,Defender,Left-Back,left,187.0,Crystal Palace Football Club,Croatia,1998-01-21,28.2,0.0,0.0,10.6
+293281,2025,23,0,1,970,0,0,5000000,Jacob Bruun Larsen,Attack,Left Winger,right,183.0,Burnley Football Club,Denmark,1998-09-19,27.6,0.0,0.09278350515463918,42.17391304347826
+293569,2023,33,4,2,2252,4,1,10000000,Josh Brownhill,Midfield,Central Midfield,right,179.0,Al-Shabab Club,England,1995-12-19,30.3,0.15985790408525755,0.07992895204262877,68.24242424242425
+294057,2024,31,9,7,1817,6,0,25000000,James Maddison,Midfield,Attacking Midfield,right,175.0,Tottenham Hotspur Football Club,England,1996-11-23,29.4,0.445789763346175,0.3467253714914695,58.61290322580645
+295313,2025,12,2,0,268,1,0,9000000,Taiwo Awoniyi,Attack,Centre-Forward,right,183.0,Nottingham Forest Football Club,Nigeria,1997-08-12,28.7,0.6716417910447761,0.0,22.333333333333332
+295330,2022,28,5,5,1121,0,0,3000000,Kelechi Iheanacho,Attack,Centre-Forward,left,185.0,The Celtic Football Club,Nigeria,1996-10-03,29.5,0.40142729705619984,0.40142729705619984,40.035714285714285
+296422,2023,6,0,0,65,1,0,1000000,Fodé Ballo-Touré,Defender,Left-Back,left,182.0,Football Club de Metz,Senegal,1997-01-03,29.3,0.0,0.0,10.833333333333334
+296622,2024,13,3,1,745,2,0,15000000,Marco Asensio,Midfield,Attacking Midfield,left,182.0,Fenerbahçe Spor Kulübü,Spain,1996-01-21,30.2,0.36241610738255037,0.12080536912751677,57.30769230769231
+297212,2025,29,2,0,2548,1,0,15000000,Joe Rodon,Defender,Centre-Back,right,193.0,Leeds United Association Football Club,Wales,1997-10-22,28.5,0.0706436420722135,0.0,87.86206896551724
+298091,2022,12,0,1,991,2,0,6000000,Harry Souttar,Defender,Centre-Back,right,198.0,Leicester City,Australia,1998-10-22,27.5,0.0,0.09081735620585267,82.58333333333333
+298477,2023,21,6,3,1285,7,0,2500000,Oli McBurnie,Attack,Centre-Forward,right,188.0,UD Las Palmas,Scotland,1996-06-04,29.8,0.42023346303501946,0.21011673151750973,61.19047619047619
+300716,2024,13,1,0,252,0,0,8000000,Kieran Tierney,Defender,Left-Back,left,180.0,The Celtic Football Club,Scotland,1997-06-05,28.8,0.3571428571428571,0.0,19.384615384615383
+302215,2022,8,0,0,292,1,0,2000000,Naby Keïta,Midfield,Central Midfield,right,172.0,Sportverein Werder Bremen von 1899,Guinea,1995-02-10,31.2,0.0,0.0,36.5
+305274,2023,8,0,0,407,1,0,500000,Fred Onyedinma,Midfield,Attacking Midfield,right,185.0,Luton Town,Nigeria,1996-11-24,29.4,0.0,0.0,50.875
+306024,2025,28,10,1,2121,1,0,22000000,Dominic Calvert-Lewin,Attack,Centre-Forward,right,189.0,Leeds United Association Football Club,England,1997-03-16,29.1,0.4243281471004244,0.042432814710042434,75.75
+309400,2025,6,0,1,264,0,0,50000000,Kai Havertz,Attack,Centre-Forward,left,193.0,Arsenal Football Club,Germany,1999-06-11,26.8,0.0,0.34090909090909094,44.0
+314210,2023,9,0,0,214,2,0,5000000,Tom Davies,Midfield,Central Midfield,right,180.0,Sheffield United,England,1998-06-30,27.8,0.0,0.0,23.77777777777778
+314241,2025,28,1,0,1581,7,1,2000000,Josh Laurent,Midfield,Central Midfield,right,188.0,Burnley Football Club,England,1995-05-06,30.9,0.05692599620493359,0.0,56.464285714285715
+314288,2025,25,6,1,874,0,0,10000000,Lukas Nmecha,Attack,Centre-Forward,right,185.0,Leeds United Association Football Club,Germany,1998-12-14,27.3,0.6178489702517163,0.10297482837528604,34.96
+314353,2024,33,3,7,2377,5,0,65000000,Trent Alexander-Arnold,Defender,Right-Back,right,180.0,Real Madrid Club de Fútbol,England,1998-10-07,27.5,0.11358855700462768,0.2650399663441313,72.03030303030303
+314367,2025,19,1,3,908,0,0,8000000,Marcus Edwards,Attack,Right Winger,left,168.0,Burnley Football Club,England,1998-12-03,27.4,0.09911894273127754,0.29735682819383263,47.78947368421053
+314875,2025,31,8,6,2781,4,0,35000000,Jarrod Bowen,Attack,Right Winger,left,176.0,West Ham United Football Club,England,1996-12-20,29.3,0.2588996763754045,0.19417475728155337,89.70967741935483
+315779,2022,24,1,1,813,1,0,50000000,Christian Pulisic,Attack,Right Winger,right,177.0,Associazione Calcio Milan,United States,1998-09-18,27.6,0.11070110701107011,0.11070110701107011,33.875
+315858,2025,27,0,0,2430,6,0,45000000,Gianluigi Donnarumma,Goalkeeper,Goalkeeper,right,196.0,Manchester City Football Club,Italy,1999-02-25,27.1,0.0,0.0,90.0
+315867,2022,16,3,0,928,3,0,25000000,Gianluca Scamacca,Attack,Centre-Forward,right,195.0,Atalanta Bergamasca Calcio S.p.a.,Italy,1999-01-01,27.3,0.29094827586206895,0.0,58.0
+316125,2024,8,1,0,254,1,0,12000000,Ben Chilwell,Defender,Left-Back,left,180.0,Racing Club de Strasbourg Alsace,England,1996-12-21,29.3,0.3543307086614173,0.0,31.75
+316264,2025,20,1,6,1078,0,0,65000000,Martin Ødegaard,Midfield,Attacking Midfield,left,178.0,Arsenal Football Club,Norway,1998-12-17,27.3,0.08348794063079777,0.5009276437847866,53.9
+318508,2025,8,0,1,440,2,0,15000000,Olivier Boscagli,Defender,Centre-Back,left,181.0,Brighton and Hove Albion Football Club,France,1997-11-18,28.4,0.0,0.20454545454545453,55.0
+318523,2022,29,2,2,1837,4,0,7000000,Romain Perraud,Defender,Left-Back,left,173.0,Lille Olympique Sporting Club,France,1997-09-22,28.5,0.09798584648884051,0.09798584648884051,63.3448275862069
+319301,2025,15,0,0,409,0,0,12000000,Daniel James,Attack,Right Winger,right,171.0,Leeds United Association Football Club,Wales,1997-11-10,28.4,0.0,0.0,27.266666666666666
+319859,2025,29,2,1,1656,3,0,12000000,Mathias Jensen,Midfield,Central Midfield,right,180.0,Brentford Football Club,Denmark,1996-01-01,30.3,0.10869565217391304,0.05434782608695652,57.10344827586207
+319900,2023,27,10,0,1416,1,0,12000000,Elijah Adebayo,Attack,Centre-Forward,,193.0,Luton Town,England,1998-01-07,28.3,0.635593220338983,0.0,52.44444444444444
+320141,2022,7,1,0,529,2,0,4500000,Çağlar Söyüncü,Defender,Centre-Back,both,185.0,Fenerbahçe Spor Kulübü,Türkiye,1996-05-23,29.9,0.17013232514177695,0.0,75.57142857142857
+320411,2024,10,0,0,176,1,0,7000000,Philip Billing,Midfield,Central Midfield,left,193.0,Fodbold Club Midtjylland,Denmark,1996-06-11,29.8,0.0,0.0,17.6
+321247,2025,29,5,2,1458,6,0,18000000,Emiliano Buendía,Midfield,Attacking Midfield,right,172.0,Aston Villa Football Club,Argentina,1996-12-25,29.3,0.30864197530864196,0.12345679012345678,50.275862068965516
+322702,2023,8,0,0,110,0,0,5000000,Benson Manuel,Attack,Right Winger,left,166.0,Burnley Football Club,Angola,1997-03-28,29.0,0.0,0.0,13.75
+322985,2023,36,4,6,2924,9,0,15000000,Gustavo Hamer,Midfield,Central Midfield,right,169.0,Sheffield United,Netherlands,1997-06-24,28.8,0.12311901504787962,0.18467852257181944,81.22222222222223
+324223,2024,17,0,1,1073,0,0,2500000,James Bree,Defender,Right-Back,right,182.0,Southampton FC,England,1997-12-11,28.3,0.0,0.08387698042870456,63.11764705882353
+324358,2025,30,9,1,2306,3,0,30000000,Ollie Watkins,Attack,Centre-Forward,right,180.0,Aston Villa Football Club,England,1995-12-30,30.3,0.3512575888985256,0.03902862098872507,76.86666666666666
+324882,2023,13,0,0,1133,5,0,5000000,Marvelous Nakamba,Midfield,Defensive Midfield,left,177.0,Luton Town,Zimbabwe,1994-01-19,32.2,0.0,0.0,87.15384615384616
+325443,2025,29,11,0,1901,4,0,65000000,Viktor Gyökeres,Attack,Centre-Forward,right,189.0,Arsenal Football Club,Sweden,1998-06-04,27.8,0.5207785376117833,0.0,65.55172413793103
+326029,2025,21,4,1,645,0,0,35000000,Donyell Malen,Attack,Centre-Forward,right,176.0,Associazione Sportiva Roma,Netherlands,1999-01-19,27.2,0.5581395348837209,0.13953488372093023,30.714285714285715
+326031,2025,13,1,0,1170,0,0,40000000,Matthijs de Ligt,Defender,Centre-Back,right,189.0,Manchester United Football Club,Netherlands,1999-08-12,26.7,0.07692307692307693,0.0,90.0
+328658,2025,24,0,1,1627,3,0,18000000,Kristoffer Ajer,Defender,Centre-Back,right,198.0,Brentford Football Club,Norway,1998-04-17,28.0,0.0,0.05531653349723417,67.79166666666667
+328784,2022,36,0,0,3177,7,0,15000000,Robin Koch,Defender,Centre-Back,right,192.0,Eintracht Frankfurt Fußball AG,Germany,1996-07-17,29.7,0.0,0.0,88.25
+329145,2024,10,0,0,828,1,0,6000000,Diego Carlos,Defender,Centre-Back,right,185.0,Calcio Como,Brazil,1993-03-15,33.1,0.0,0.0,82.8
+330085,2022,6,0,0,179,1,0,5000000,Gustavo Scarpa,Midfield,Attacking Midfield,left,177.0,Clube Atlético Mineiro,Brazil,1994-01-05,32.3,0.0,0.0,29.833333333333332
+330659,2025,18,2,0,922,4,0,30000000,Justin Kluivert,Midfield,Attacking Midfield,both,172.0,Association Football Club Bournemouth,Netherlands,1999-05-05,26.9,0.19522776572668113,0.0,51.22222222222222
+331726,2025,8,1,0,195,0,0,20000000,Tammy Abraham,Attack,Centre-Forward,right,194.0,Aston Villa Football Club,England,1997-10-02,28.5,0.46153846153846156,0.0,24.375
+332697,2022,19,0,1,1441,7,0,30000000,Weston McKennie,Midfield,Central Midfield,right,185.0,Juventus Football Club,United States,1998-08-28,27.6,0.0,0.062456627342123525,75.84210526315789
+332705,2025,18,2,1,1421,7,0,25000000,Tyler Adams,Midfield,Defensive Midfield,right,175.0,Association Football Club Bournemouth,United States,1999-02-14,27.2,0.1266713581984518,0.0633356790992259,78.94444444444444
+333014,2025,31,0,1,2596,5,0,25000000,Sander Berge,Midfield,Defensive Midfield,right,195.0,Fulham Football Club,Norway,1998-02-14,28.2,0.0,0.03466872110939908,83.74193548387096
+333241,2025,24,2,1,1692,9,0,30000000,Joelinton,Midfield,Central Midfield,right,186.0,Newcastle United Football Club,Brazil,1996-08-14,29.7,0.10638297872340426,0.05319148936170213,70.5
+334526,2022,7,0,0,413,0,0,25000000,Denis Zakaria,Midfield,Defensive Midfield,right,190.0,Association sportive de Monaco Football Club,Switzerland,1996-11-20,29.4,0.0,0.0,59.0
+335721,2025,7,0,1,411,0,0,30000000,Ben White,Defender,Right-Back,right,186.0,Arsenal Football Club,England,1997-10-08,28.5,0.0,0.21897810218978103,58.714285714285715
+336077,2025,6,0,0,540,0,0,7000000,Altay Bayındır,Goalkeeper,Goalkeeper,right,198.0,Manchester United Football Club,Türkiye,1998-04-14,28.0,0.0,0.0,90.0
+336869,2022,32,1,2,2330,7,0,4000000,Marc Roca,Midfield,Defensive Midfield,left,184.0,Real Betis Balompié S.A.D.,Spain,1996-11-26,29.4,0.03862660944206008,0.07725321888412016,72.8125
+338070,2024,18,0,1,833,2,0,8000000,Konstantinos Tsimikas,Defender,Left-Back,left,179.0,Associazione Sportiva Roma,Greece,1996-05-12,29.9,0.0,0.10804321728691475,46.27777777777778
+338424,2025,21,4,3,999,1,0,30000000,Mikel Merino,Midfield,Central Midfield,left,189.0,Arsenal Football Club,Spain,1996-06-22,29.8,0.36036036036036034,0.2702702702702703,47.57142857142857
+338629,2025,9,0,0,308,1,0,8000000,Sebastiaan Bornauw,Defender,Centre-Back,right,191.0,Leeds United Association Football Club,Belgium,1999-03-22,27.1,0.0,0.0,34.22222222222222
+338635,2023,12,0,0,585,2,0,2000000,Hannes Delcroix,Defender,Centre-Back,left,184.0,FC Lugano,Haiti,1999-02-28,27.1,0.0,0.0,48.75
+339314,2022,22,5,0,619,2,0,22000000,Deniz Undav,Attack,Centre-Forward,both,179.0,Verein für Bewegungsspiele Stuttgart 1893,Germany,1996-07-19,29.7,0.7269789983844911,0.0,28.136363636363637
+339556,2025,25,0,0,1329,2,0,15000000,Rico Henry,Defender,Left-Back,left,170.0,Brentford Football Club,Jamaica,1997-07-08,28.8,0.0,0.0,53.16
+340324,2025,12,2,0,416,2,0,14000000,Eddie Nketiah,Attack,Centre-Forward,right,175.0,Crystal Palace Football Club,England,1999-05-30,26.9,0.4326923076923077,0.0,34.666666666666664
+340325,2025,7,0,0,55,0,0,12000000,Reiss Nelson,Attack,Left Winger,right,175.0,Brentford Football Club,England,1999-12-10,26.3,0.0,0.0,7.857142857142857
+340328,2024,30,4,1,1617,2,0,8000000,Stephy Mavididi,Attack,Left Winger,right,182.0,Leicester City,England,1998-05-31,27.9,0.22263450834879409,0.05565862708719852,53.9
+340329,2025,20,0,1,699,3,0,16000000,Joe Willock,Midfield,Central Midfield,right,186.0,Newcastle United Football Club,England,1999-08-20,26.6,0.0,0.12875536480686695,34.95
+340456,2025,15,0,0,615,3,0,20000000,Noussair Mazraoui,Defender,Right-Back,right,183.0,Manchester United Football Club,Morocco,1997-11-14,28.4,0.0,0.0,41.0
+340918,2025,30,0,0,2700,1,0,25000000,Caoimhín Kelleher,Goalkeeper,Goalkeeper,right,188.0,Brentford Football Club,Ireland,1998-11-23,27.4,0.0,0.0,90.0
+340950,2024,26,6,4,1194,2,0,40000000,Diogo Jota,Attack,Left Winger,right,178.0,,Portugal,1996-12-04,29.3,0.45226130653266333,0.30150753768844224,45.92307692307692
+341051,2025,18,1,0,955,2,0,13000000,Kyle Walker-Peters,Defender,Right-Back,right,173.0,West Ham United Football Club,England,1997-04-13,29.0,0.0942408376963351,0.0,53.05555555555556
+341092,2025,23,2,1,278,3,0,15000000,Federico Chiesa,Attack,Right Winger,right,175.0,Liverpool Football Club,Italy,1997-10-25,28.5,0.6474820143884893,0.32374100719424465,12.08695652173913
+342046,2025,11,1,0,932,1,0,5000000,Axel Tuanzebe,Defender,Centre-Back,right,185.0,Burnley Football Club,DR Congo,1997-11-14,28.4,0.09656652360515021,0.0,84.72727272727273
+342385,2025,6,0,0,177,1,0,5000000,Guido Rodríguez,Midfield,Defensive Midfield,right,185.0,Valencia Club de Fútbol S. A. D.,Argentina,1994-04-12,32.0,0.0,0.0,29.5
+344009,2024,18,2,0,697,1,0,7000000,Nathan Broadhead,Attack,Left Winger,right,178.0,,Wales,1998-04-05,28.0,0.2582496413199426,0.0,38.72222222222222
+344069,2025,26,4,3,2142,3,0,25000000,Anton Stach,Midfield,Defensive Midfield,right,194.0,Leeds United Association Football Club,Germany,1998-11-15,27.4,0.16806722689075632,0.12605042016806722,82.38461538461539
+344381,2024,27,3,2,910,2,0,28000000,Christopher Nkunku,Attack,Centre-Forward,right,177.0,Associazione Calcio Milan,France,1997-11-14,28.4,0.2967032967032967,0.1978021978021978,33.7037037037037
+344605,2024,31,0,0,2170,8,0,14000000,Boubakary Soumaré,Midfield,Defensive Midfield,right,188.0,Leicester City,France,1999-02-27,27.1,0.0,0.0,70.0
+344830,2023,33,4,0,1987,4,0,6000000,Tahith Chong,Attack,Right Winger,left,185.0,Luton Town,Netherlands,1999-12-04,26.3,0.18117765475591344,0.0,60.21212121212121
+345911,2025,24,2,1,2040,5,0,22000000,Ladislav Krejčí,Defender,Centre-Back,left,191.0,Wolverhampton Wanderers Football Club,Czech Republic,1999-04-20,27.0,0.08823529411764705,0.044117647058823525,85.0
+346314,2025,29,3,0,2552,3,1,40000000,Trevoh Chalobah,Defender,Centre-Back,right,192.0,Chelsea Football Club,England,1999-07-05,26.8,0.10579937304075236,0.0,88.0
+346483,2025,18,3,0,819,0,0,30000000,Mason Mount,Midfield,Attacking Midfield,right,181.0,Manchester United Football Club,England,1999-01-10,27.2,0.32967032967032966,0.0,45.5
+346707,2025,17,1,2,946,2,0,16000000,Sean Longstaff,Midfield,Central Midfield,right,187.0,Leeds United Association Football Club,England,1997-10-30,28.4,0.09513742071881608,0.19027484143763215,55.64705882352941
+346779,2022,28,5,3,1997,1,0,8500000,Ché Adams,Attack,Centre-Forward,right,179.0,Torino Calcio,Scotland,1996-07-13,29.7,0.2253380070105158,0.13520280420630948,71.32142857142857
+346890,2025,24,4,0,1299,3,0,18000000,Noah Okafor,Attack,Left Winger,right,185.0,Leeds United Association Football Club,Switzerland,2000-05-24,25.9,0.27713625866050806,0.0,54.125
+348026,2025,25,1,4,2165,4,0,18000000,Nordi Mukiele,Defender,Right-Back,right,187.0,Sunderland Association Football Club,France,1997-11-01,28.4,0.04157043879907621,0.16628175519630484,86.6
+348795,2023,22,2,2,494,2,0,10000000,Giovani Lo Celso,Midfield,Attacking Midfield,left,177.0,Real Betis Balompié S.A.D.,Argentina,1996-04-09,30.0,0.3643724696356275,0.3643724696356275,22.454545454545453
+349066,2025,10,2,1,508,0,0,100000000,Alexander Isak,Attack,Centre-Forward,right,192.0,Liverpool Football Club,Sweden,1999-09-21,26.6,0.3543307086614173,0.17716535433070865,50.8
+349503,2024,22,1,1,854,2,0,4000000,Conor Chaplin,Attack,Second Striker,left,168.0,Ipswich Town,England,1997-02-16,29.1,0.1053864168618267,0.1053864168618267,38.81818181818182
+349599,2024,30,1,1,2403,5,0,14000000,Pervis Estupiñán,Defender,Left-Back,left,175.0,Associazione Calcio Milan,Ecuador,1998-01-21,28.2,0.03745318352059925,0.03745318352059925,80.1
+349701,2025,15,0,0,1045,3,0,25000000,Antonee Robinson,Defender,Left-Back,left,183.0,Fulham Football Club,United States,1997-08-08,28.7,0.0,0.0,69.66666666666667
+351749,2024,19,0,0,1240,6,0,6000000,Kalvin Phillips,Midfield,Defensive Midfield,right,179.0,Ipswich Town,England,1995-12-02,30.4,0.0,0.0,65.26315789473684
+352041,2025,16,0,0,1440,2,0,13000000,Lucas Perri,Goalkeeper,Goalkeeper,right,197.0,Leeds United Association Football Club,Brazil,1997-12-10,28.3,0.0,0.0,90.0
+353032,2025,27,1,1,2356,6,0,15000000,Omar Alderete,Defender,Centre-Back,left,188.0,Sunderland Association Football Club,Paraguay,1996-12-26,29.3,0.038200339558573854,0.038200339558573854,87.25925925925925
+354362,2025,20,1,1,1415,5,0,22000000,Rodrigo Bentancur,Midfield,Defensive Midfield,right,187.0,Tottenham Hotspur Football Club,Uruguay,1997-06-25,28.8,0.0636042402826855,0.0636042402826855,70.75
+355861,2023,14,1,0,589,0,0,4000000,Arnaut Danjuma,Attack,Left Winger,right,178.0,Valencia Club de Fútbol S. A. D.,Netherlands,1997-01-31,29.2,0.15280135823429541,0.0,42.07142857142857
+355915,2025,22,4,1,1803,10,1,50000000,Cristian Romero,Defender,Centre-Back,right,185.0,Tottenham Hotspur Football Club,Argentina,1998-04-27,28.0,0.19966722129783696,0.04991680532445924,81.95454545454545
+356141,2025,20,0,1,1489,2,0,12000000,Daichi Kamada,Midfield,Attacking Midfield,right,180.0,Crystal Palace Football Club,Japan,1996-08-05,29.7,0.0,0.06044325050369376,74.45
+357119,2025,29,1,0,2487,6,0,50000000,Ibrahima Konaté,Defender,Centre-Back,right,194.0,Liverpool Football Club,France,1999-05-25,26.9,0.03618817852834741,0.0,85.75862068965517
+357147,2025,29,1,3,2236,5,0,30000000,Diogo Dalot,Defender,Right-Back,right,183.0,Manchester United Football Club,Portugal,1999-03-18,27.1,0.04025044722719141,0.12075134168157423,77.10344827586206
+357162,2025,24,0,2,1661,4,0,20000000,Florentino,Midfield,Defensive Midfield,right,184.0,Burnley Football Club,Portugal,1999-08-19,26.6,0.0,0.10836845273931367,69.20833333333333
+357565,2025,18,1,0,1246,2,0,65000000,Rodri,Midfield,Defensive Midfield,right,191.0,Manchester City Football Club,Spain,1996-06-22,29.8,0.07223113964686999,0.0,69.22222222222223
+357658,2024,5,0,0,450,0,0,4000000,Mark Travers,Goalkeeper,Goalkeeper,right,191.0,Everton Football Club,Ireland,1999-05-18,26.9,0.0,0.0,90.0
+357662,2025,30,4,7,2585,2,0,120000000,Declan Rice,Midfield,Central Midfield,right,188.0,Arsenal Football Club,England,1999-01-14,27.2,0.13926499032882012,0.2437137330754352,86.16666666666667
+357885,2023,15,0,0,419,0,0,8000000,Pablo Fornals,Midfield,Central Midfield,right,178.0,Real Betis Balompié S.A.D.,Spain,1996-02-22,30.1,0.0,0.0,27.933333333333334
+361093,2025,18,1,1,1209,1,0,35000000,Sven Botman,Defender,Centre-Back,left,193.0,Newcastle United Football Club,Netherlands,2000-01-12,26.2,0.07444168734491315,0.07444168734491315,67.16666666666667
+362108,2025,29,0,0,2369,6,0,20000000,Gabriel Gudmundsson,Defender,Left-Back,left,180.0,Leeds United Association Football Club,Sweden,1999-04-29,26.9,0.0,0.0,81.6896551724138
+363205,2025,11,2,0,306,2,0,20000000,Gabriel Jesus,Attack,Centre-Forward,right,175.0,Arsenal Football Club,Brazil,1997-04-03,29.0,0.5882352941176471,0.0,27.818181818181817
+364409,2023,21,2,0,1848,3,0,3000000,Gabriel Osho,Defender,Centre-Back,right,185.0,Association de la Jeunesse auxerroise,Nigeria,1998-08-14,27.7,0.09740259740259741,0.0,88.0
+365108,2025,23,1,1,1175,1,0,35000000,Dan Ndoye,Attack,Right Winger,right,184.0,Nottingham Forest Football Club,Switzerland,2000-10-25,25.5,0.07659574468085106,0.07659574468085106,51.08695652173913
+365172,2024,23,1,0,721,0,0,15000000,Patson Daka,Attack,Centre-Forward,right,183.0,Leicester City,Zambia,1998-10-09,27.5,0.12482662968099861,0.0,31.347826086956523
+366930,2023,6,0,1,48,0,0,15000000,Sergio Gómez,Defender,Left-Back,left,171.0,Real Sociedad de Fútbol S.A.D.,Spain,2000-09-04,25.6,0.0,1.875,8.0
+369316,2025,30,0,0,2504,6,0,30000000,Ferdi Kadıoğlu,Defender,Left-Back,right,174.0,Brighton and Hove Albion Football Club,Türkiye,1999-10-07,26.5,0.0,0.0,83.46666666666667
+369684,2022,26,3,1,1961,4,0,12000000,Rasmus Kristensen,Defender,Right-Back,right,187.0,Eintracht Frankfurt Fußball AG,Denmark,1997-07-11,28.7,0.13768485466598673,0.04589495155532892,75.42307692307692
+369962,2025,13,0,0,217,0,0,13000000,Joël Piroe,Attack,Centre-Forward,left,185.0,Leeds United Association Football Club,Suriname,1999-08-02,26.7,0.0,0.0,16.692307692307693
+371021,2024,18,0,0,1620,1,0,7500000,Arijanet Murić,Goalkeeper,Goalkeeper,right,198.0,Unione Sportiva Sassuolo Calcio,Kosovo,1998-11-07,27.4,0.0,0.0,90.0
+371256,2022,13,1,0,738,0,0,11000000,Tetê,Attack,Right Winger,left,175.0,Grêmio Foot-Ball Porto Alegrense,Brazil,2000-02-15,26.1,0.12195121951219512,0.0,56.76923076923077
+371851,2025,18,1,1,1309,3,0,18000000,Jaka Bijol,Defender,Centre-Back,right,190.0,Leeds United Association Football Club,Slovenia,1999-02-05,27.2,0.06875477463712758,0.06875477463712758,72.72222222222223
+372246,2024,31,1,1,1404,6,0,8000000,Carlos Soler,Midfield,Central Midfield,right,180.0,Real Sociedad de Fútbol S.A.D.,Spain,1997-01-02,29.3,0.06410256410256411,0.06410256410256411,45.29032258064516
+374139,2022,19,1,1,1367,6,1,5000000,Junior Firpo,Defender,Left-Back,left,184.0,Real Betis Balompié S.A.D.,Dominican Republic,1996-08-22,29.6,0.06583760058522312,0.06583760058522312,71.94736842105263
+375885,2025,23,2,2,1770,5,0,22000000,Ibrahim Sangaré,Midfield,Defensive Midfield,right,191.0,Nottingham Forest Football Club,Cote d'Ivoire,1997-12-02,28.4,0.1016949152542373,0.1016949152542373,76.95652173913044
+377468,2023,31,2,0,2650,11,0,12000000,Anel Ahmedhodzic,Defender,Centre-Back,right,190.0,Feyenoord Rotterdam,Bosnia-Herzegovina,1999-03-26,27.0,0.06792452830188679,0.0,85.48387096774194
+378710,2025,26,9,3,1505,4,0,28000000,Richarlison,Attack,Centre-Forward,right,184.0,Tottenham Hotspur Football Club,Brazil,1997-05-10,28.9,0.5382059800664452,0.1794019933554817,57.88461538461539
+379807,2022,21,1,1,1175,4,0,5000000,Lyanco,Defender,Centre-Back,right,187.0,Clube Atlético Mineiro,Brazil,1997-02-01,29.2,0.07659574468085106,0.07659574468085106,55.95238095238095
+381753,2025,21,0,3,1296,3,0,12000000,Ilia Gruev,Midfield,Defensive Midfield,left,185.0,Leeds United Association Football Club,Bulgaria,2000-05-06,25.9,0.0,0.20833333333333331,61.714285714285715
+381967,2023,17,1,3,1310,4,0,10000000,Albert Sambi Lokonga,Midfield,Central Midfield,right,183.0,Hamburger Sport Verein,Belgium,1999-10-22,26.5,0.06870229007633588,0.20610687022900764,77.05882352941177
+386047,2025,7,0,0,630,0,0,15000000,Axel Disasi,Defender,Centre-Back,right,191.0,West Ham United Football Club,France,1998-03-11,28.1,0.0,0.0,90.0
+387191,2023,10,0,0,595,0,0,1200000,Daiki Hashioka,Defender,Right-Back,right,184.0,Koninklijke Atletiek Associatie Gent,Japan,1999-05-17,26.9,0.0,0.0,59.5
+387626,2025,9,0,1,336,1,0,16000000,Leon Bailey,Attack,Right Winger,left,178.0,Aston Villa Football Club,Jamaica,1997-08-09,28.7,0.0,0.26785714285714285,37.333333333333336
+388165,2025,13,1,0,426,1,0,30000000,Yoane Wissa,Attack,Centre-Forward,right,176.0,Newcastle United Football Club,DR Congo,1996-09-03,29.6,0.2112676056338028,0.0,32.76923076923077
+389253,2023,32,0,0,2572,4,0,6000000,Auston Trusty,Defender,Centre-Back,left,190.0,The Celtic Football Club,United States,1998-08-12,27.7,0.0,0.0,80.375
+391005,2024,19,0,2,1097,2,0,6000000,Mads Roerslev,Defender,Right-Back,right,184.0,Southampton FC,Denmark,1999-06-24,26.8,0.0,0.1640838650865998,57.73684210526316
+392085,2023,25,2,0,830,7,0,13000000,Nicolò Zaniolo,Attack,Second Striker,left,190.0,Udinese Calcio,Italy,1999-07-02,26.8,0.2168674698795181,0.0,33.2
+392179,2025,15,0,0,1180,0,0,6000000,Hjalmar Ekdal,Defender,Centre-Back,right,187.0,Burnley Football Club,Sweden,1998-10-21,27.5,0.0,0.0,78.66666666666667
+392591,2024,5,0,0,239,0,0,7000000,Chiedozie Ogbene,Attack,Right Winger,right,181.0,Sheffield United,Ireland,1997-05-01,28.9,0.0,0.0,47.8
+392757,2025,28,2,3,2520,5,0,65000000,Marc Guéhi,Defender,Centre-Back,right,182.0,Manchester City Football Club,England,2000-07-13,25.7,0.07142857142857142,0.10714285714285715,90.0
+392765,2025,30,3,0,1466,1,0,22000000,Emile Smith Rowe,Midfield,Attacking Midfield,right,182.0,Fulham Football Club,England,2000-07-28,25.7,0.18417462482946792,0.0,48.86666666666667
+392768,2025,29,3,3,1758,0,0,30000000,Callum Hudson-Odoi,Attack,Left Winger,right,178.0,Nottingham Forest Football Club,England,2000-11-07,25.4,0.15358361774744028,0.15358361774744028,60.62068965517241
+392770,2025,7,0,0,287,1,0,12000000,Angel Gomes,Midfield,Attacking Midfield,right,168.0,Wolverhampton Wanderers Football Club,England,2000-08-31,25.6,0.0,0.0,41.0
+392771,2025,28,1,1,2493,7,0,25000000,Ethan Ampadu,Midfield,Defensive Midfield,right,182.0,Leeds United Association Football Club,Wales,2000-09-14,25.6,0.036101083032490974,0.036101083032490974,89.03571428571429
+392775,2025,24,2,3,1639,0,0,20000000,Ryan Sessegnon,Defender,Left-Back,left,178.0,Fulham Football Club,England,2000-05-18,25.9,0.10982306284319707,0.16473459426479561,68.29166666666667
+393323,2025,30,4,3,1991,1,0,18000000,Brenden Aaronson,Midfield,Attacking Midfield,right,177.0,Leeds United Association Football Club,United States,2000-10-22,25.5,0.18081366147664493,0.13561024610748368,66.36666666666666
+394327,2025,18,1,3,1418,5,0,40000000,Boubacar Kamara,Midfield,Defensive Midfield,right,184.0,Aston Villa Football Club,France,1999-11-23,26.4,0.06346967559943582,0.19040902679830748,78.77777777777777
+395516,2023,38,6,8,2186,1,0,28000000,Moussa Diaby,Attack,Right Winger,left,170.0,Al-Ittihad Football Club,France,1999-07-07,26.8,0.24702653247941445,0.32936870997255263,57.526315789473685
+396638,2023,5,0,2,198,1,0,9000000,Manor Solomon,Attack,Left Winger,right,170.0,Associazione Calcio Fiorentina,Israel,1999-07-24,26.7,0.0,0.9090909090909092,39.6
+397033,2025,29,0,2,2046,3,0,80000000,Sandro Tonali,Midfield,Defensive Midfield,right,181.0,Newcastle United Football Club,Italy,2000-05-08,25.9,0.0,0.08797653958944282,70.55172413793103
+398065,2025,30,5,0,1657,1,0,32000000,Harvey Barnes,Attack,Left Winger,right,182.0,Newcastle United Football Club,England,1997-12-09,28.3,0.27157513578756787,0.0,55.233333333333334
+398402,2022,20,1,0,307,2,0,8000000,Sam Surridge,Attack,Centre-Forward,right,190.0,Nashville SC,England,1998-07-28,27.7,0.2931596091205212,0.0,15.35
+399434,2025,27,5,4,2130,4,0,23000000,Marcus Tavernier,Midfield,Attacking Midfield,left,178.0,Association Football Club Bournemouth,England,1999-03-22,27.1,0.2112676056338028,0.16901408450704225,78.88888888888889
+399776,2025,17,0,0,1389,0,0,22000000,Pau Torres,Defender,Centre-Back,left,192.0,Aston Villa Football Club,Spain,1997-01-16,29.2,0.0,0.0,81.70588235294117
+400536,2025,11,0,0,990,0,0,15000000,Mads Hermansen,Goalkeeper,Goalkeeper,right,187.0,West Ham United Football Club,Denmark,2000-07-11,25.7,0.0,0.0,90.0
+401173,2025,19,0,2,761,0,0,20000000,Jadon Sancho,Attack,Left Winger,right,180.0,Aston Villa Football Club,England,2000-03-25,26.0,0.0,0.23653088042049936,40.05263157894737
+401320,2024,35,0,2,3123,6,0,15000000,Dara O'Shea,Defender,Centre-Back,right,189.0,Ipswich Town,Ireland,1999-03-04,27.1,0.0,0.05763688760806916,89.22857142857143
+401356,2024,28,0,1,1782,9,0,18000000,Edson Álvarez,Midfield,Defensive Midfield,right,190.0,Fenerbahçe Spor Kulübü,Mexico,1997-10-24,28.5,0.0,0.05050505050505051,63.642857142857146
+401922,2025,17,3,4,804,0,0,15000000,Samuel Chukwueze,Attack,Right Winger,left,172.0,Fulham Football Club,Nigeria,1999-05-22,26.9,0.33582089552238803,0.44776119402985076,47.294117647058826
+402733,2023,14,0,2,802,5,0,4500000,Gonzalo Montiel,Defender,Right-Back,right,175.0,Club Atlético River Plate,Argentina,1997-01-01,29.3,0.0,0.22443890274314213,57.285714285714285
+403151,2025,29,0,1,2525,3,1,22000000,Robert Sánchez,Goalkeeper,Goalkeeper,right,197.0,Chelsea Football Club,Spain,1997-11-18,28.4,0.0,0.03564356435643565,87.06896551724138
+403898,2023,15,0,1,1238,6,0,2500000,Jordan Beyer,Defender,Centre-Back,right,187.0,Burnley Football Club,Germany,2000-05-19,25.9,0.0,0.07269789983844911,82.53333333333333
+404842,2025,26,0,1,2331,5,0,25000000,Vitaliy Mykolenko,Defender,Left-Back,left,180.0,Everton Football Club,Ukraine,1999-05-29,26.9,0.0,0.03861003861003861,89.65384615384616
+405385,2024,30,1,1,1557,4,0,7500000,Yukinari Sugawara,Defender,Right-Back,right,179.0,Sportverein Werder Bremen von 1899,Japan,2000-06-28,25.8,0.057803468208092484,0.057803468208092484,51.9
+406560,2023,13,0,0,340,0,1,3000000,Rhian Brewster,Attack,Centre-Forward,right,180.0,Sheffield United,England,2000-04-01,26.0,0.0,0.0,26.153846153846153
+406635,2025,26,7,3,1814,4,0,80000000,Phil Foden,Midfield,Attacking Midfield,left,171.0,Manchester City Football Club,England,2000-05-28,25.9,0.3472987872105843,0.14884233737596472,69.76923076923077
+406638,2024,24,0,0,1122,8,0,7000000,Oliver Skipp,Midfield,Defensive Midfield,right,175.0,Leicester City,England,2000-09-16,25.6,0.0,0.0,46.75
+407021,2023,8,1,0,399,1,0,3000000,Mads Andersen,Defender,Centre-Back,right,194.0,Luton Town,Denmark,1997-12-27,28.3,0.22556390977443608,0.0,49.875
+410225,2025,20,7,1,1730,2,0,35000000,Ismaïla Sarr,Attack,Right Winger,right,185.0,Crystal Palace Football Club,Senegal,1998-02-25,28.1,0.36416184971098264,0.05202312138728324,86.5
+410425,2025,8,0,0,463,3,0,12000000,Yves Bissouma,Midfield,Defensive Midfield,right,182.0,Tottenham Hotspur Football Club,Mali,1996-08-30,29.6,0.0,0.0,57.875
+410708,2025,28,0,1,2431,4,0,22000000,Pascal Struijk,Defender,Centre-Back,left,190.0,Leeds United Association Football Club,Netherlands,1999-08-11,26.7,0.0,0.03702180172768408,86.82142857142857
+411537,2025,22,8,0,1191,3,0,12000000,Zian Flemming,Attack,Centre-Forward,right,185.0,Burnley Football Club,Netherlands,1998-08-01,27.7,0.6045340050377833,0.0,54.13636363636363
+413032,2022,18,0,0,816,4,0,6500000,Ibrahima Diallo,Midfield,Defensive Midfield,right,179.0,Southampton FC,France,1999-03-08,27.1,0.0,0.0,45.333333333333336
+413039,2025,26,9,3,2200,4,0,80000000,Bryan Mbeumo,Attack,Right Winger,left,171.0,Manchester United Football Club,Cameroon,1999-08-07,26.7,0.3681818181818182,0.12272727272727274,84.61538461538461
+413220,2025,22,1,1,1266,2,0,12000000,James Justin,Defender,Right-Back,both,183.0,Leeds United Association Football Club,England,1998-02-23,28.1,0.07109004739336493,0.07109004739336493,57.54545454545455
+413403,2025,30,0,0,2676,0,1,40000000,Ezri Konsa,Defender,Centre-Back,right,183.0,Aston Villa Football Club,England,1997-10-23,28.5,0.0,0.0,89.2
+413507,2025,31,0,0,2790,6,0,30000000,Nikola Milenković,Defender,Centre-Back,right,195.0,Nottingham Forest Football Club,Serbia,1997-10-12,28.5,0.0,0.0,90.0
+414908,2025,13,1,1,874,2,0,12000000,Marshall Munetsi,Midfield,Central Midfield,right,188.0,Paris Football Club,Zimbabwe,1996-06-22,29.8,0.10297482837528604,0.10297482837528604,67.23076923076923
+415381,2025,21,0,3,1575,7,0,25000000,Mats Wieffer,Midfield,Defensive Midfield,right,188.0,Brighton and Hove Albion Football Club,Netherlands,1999-11-16,26.4,0.0,0.17142857142857143,75.0
+415912,2025,24,1,0,1902,2,0,15000000,Konstantinos Mavropanos,Defender,Centre-Back,right,194.0,West Ham United Football Club,Greece,1997-12-11,28.3,0.0473186119873817,0.0,79.25
+415970,2025,11,0,0,497,0,0,3000000,Joe Worrall,Defender,Centre-Back,right,190.0,Burnley Football Club,England,1997-01-10,29.2,0.0,0.0,45.18181818181818
+417346,2025,11,0,0,263,0,0,8000000,Jack Harrison,Attack,Left Winger,left,175.0,Associazione Calcio Fiorentina,England,1996-11-20,29.4,0.0,0.0,23.90909090909091
+418560,2025,29,22,7,2419,1,0,200000000,Erling Haaland,Attack,Centre-Forward,left,195.0,Manchester City Football Club,Norway,2000-07-21,25.7,0.8185200496072758,0.260438197602315,83.41379310344827
+420002,2025,24,8,0,1945,2,0,35000000,Jean-Philippe Mateta,Attack,Centre-Forward,right,192.0,Crystal Palace Football Club,France,1997-06-28,28.8,0.37017994858611825,0.0,81.04166666666667
+420210,2025,25,0,0,1415,1,0,20000000,Lutsharel Geertruida,Defender,Right-Back,right,184.0,Sunderland Association Football Club,Netherlands,2000-07-18,25.7,0.0,0.0,56.6
+420243,2025,30,3,6,2457,5,0,70000000,Jurriën Timber,Defender,Right-Back,right,179.0,Arsenal Football Club,Netherlands,2001-06-17,24.8,0.10989010989010989,0.21978021978021978,81.9
+420808,2024,26,3,1,647,3,0,8000000,George Hirst,Attack,Centre-Forward,right,191.0,Ipswich Town,Scotland,1999-02-15,27.1,0.41731066460587324,0.1391035548686244,24.884615384615383
+421637,2025,6,0,1,88,0,0,7000000,Frank Onyeka,Midfield,Central Midfield,right,183.0,,Nigeria,1998-01-01,28.3,0.0,1.0227272727272727,14.666666666666666
+423440,2025,31,5,1,2605,4,0,80000000,Martín Zubimendi,Midfield,Defensive Midfield,right,181.0,Arsenal Football Club,Spain,1999-02-02,27.2,0.1727447216890595,0.0345489443378119,84.03225806451613
+424015,2025,6,0,0,239,0,0,10000000,Nathan Patterson,Defender,Right-Back,right,189.0,Everton Football Club,Scotland,2001-10-16,24.5,0.0,0.0,39.833333333333336
+425306,2023,17,0,0,1530,1,0,2500000,Matt Turner,Goalkeeper,Goalkeeper,right,191.0,New England Revolution,United States,1994-06-24,31.8,0.0,0.0,90.0
+425334,2025,28,3,2,2447,7,0,22000000,Matty Cash,Defender,Right-Back,right,185.0,Aston Villa Football Club,Poland,1997-08-07,28.7,0.1103391908459338,0.07355946056395586,87.39285714285714
+425902,2025,16,0,1,406,1,0,8000000,Ryan Yates,Midfield,Central Midfield,right,190.0,Nottingham Forest Football Club,England,1997-11-21,28.4,0.0,0.22167487684729065,25.375
+425918,2024,17,1,0,1117,1,0,27000000,Jakub Kiwior,Defender,Centre-Back,left,189.0,Futebol Clube do Porto,Poland,2000-02-15,26.1,0.08057296329453895,0.0,65.70588235294117
+426192,2024,10,0,0,448,1,0,6000000,Ben Brereton Díaz,Attack,Centre-Forward,right,185.0,,Chile,1999-04-18,27.0,0.0,0.0,44.8
+427568,2025,10,0,0,823,1,0,12000000,Aaron Ramsdale,Goalkeeper,Goalkeeper,right,190.0,Newcastle United Football Club,England,1998-05-14,27.9,0.0,0.0,82.3
+429014,2025,31,9,2,2650,1,0,60000000,Morgan Gibbs-White,Midfield,Attacking Midfield,right,171.0,Nottingham Forest Football Club,England,2000-01-27,26.2,0.30566037735849055,0.06792452830188679,85.48387096774194
+429915,2025,24,2,0,1154,2,0,22000000,Maxim De Cuyper,Defender,Left-Back,left,182.0,Brighton and Hove Albion Football Club,Belgium,2000-12-22,25.3,0.1559792027729636,0.0,48.083333333333336
+429983,2025,28,4,1,1873,4,0,45000000,Jørgen Strand Larsen,Attack,Centre-Forward,right,193.0,Crystal Palace Football Club,Norway,2000-02-06,26.2,0.19220501868659903,0.04805125467164976,66.89285714285714
+430310,2025,7,0,0,157,0,0,5000000,Andrew Irving,Midfield,Central Midfield,left,190.0,"AC Sparta Praha, a. s.",Scotland,2000-05-13,25.9,0.0,0.0,22.428571428571427
+431755,2024,32,7,4,2391,3,0,35000000,Dejan Kulusevski,Midfield,Attacking Midfield,left,186.0,Tottenham Hotspur Football Club,Sweden,2000-04-25,26.0,0.26348808030112925,0.15056461731493098,74.71875
+432164,2025,30,3,3,1812,0,0,22000000,Igor Jesus,Attack,Centre-Forward,right,179.0,Nottingham Forest Football Club,Brazil,2001-02-25,25.1,0.1490066225165563,0.1490066225165563,60.4
+432914,2025,5,0,0,438,1,0,7000000,John Victor,Goalkeeper,Goalkeeper,right,197.0,Nottingham Forest Football Club,Brazil,1996-02-13,30.2,0.0,0.0,87.6
+433177,2025,27,6,5,2002,1,0,120000000,Bukayo Saka,Attack,Right Winger,left,178.0,Arsenal Football Club,England,2001-09-05,24.6,0.26973026973026976,0.22477522477522477,74.14814814814815
+433183,2024,24,0,1,476,1,0,8000000,Tommy Doyle,Midfield,Central Midfield,right,172.0,Wolverhampton Wanderers Football Club,England,2001-10-17,24.5,0.0,0.18907563025210083,19.833333333333332
+433188,2025,27,0,1,1348,1,0,35000000,Curtis Jones,Midfield,Central Midfield,right,185.0,Liverpool Football Club,England,2001-01-30,25.2,0.0,0.06676557863501484,49.925925925925924
+434224,2025,28,1,2,2486,3,1,40000000,Maxence Lacroix,Defender,Centre-Back,right,190.0,Crystal Palace Football Club,France,2000-04-06,26.0,0.036202735317779566,0.07240547063555913,88.78571428571429
+434675,2025,29,6,3,2154,2,0,65000000,Cody Gakpo,Attack,Left Winger,right,193.0,Liverpool Football Club,Netherlands,1999-05-07,26.9,0.25069637883008355,0.12534818941504178,74.27586206896552
+435338,2025,25,3,4,2166,3,0,75000000,Gabriel,Defender,Centre-Back,left,190.0,Arsenal Football Club,Brazil,1997-12-19,28.3,0.12465373961218837,0.16620498614958448,86.64
+435648,2025,18,2,1,510,1,0,22000000,Joshua Zirkzee,Attack,Centre-Forward,right,193.0,Manchester United Football Club,Netherlands,2001-05-22,24.9,0.3529411764705882,0.1764705882352941,28.333333333333332
+438001,2025,22,2,2,1923,4,0,10000000,Santiago Bueno,Defender,Centre-Back,right,190.0,Wolverhampton Wanderers Football Club,Uruguay,1998-11-09,27.4,0.093603744149766,0.093603744149766,87.4090909090909
+439072,2022,12,2,0,455,1,0,4000000,Matías Viña,Defender,Left-Back,left,180.0,Club Atlético River Plate,Uruguay,1997-11-09,28.4,0.3956043956043956,0.0,37.916666666666664
+442531,2022,10,0,0,855,1,0,4500000,Edouard Mendy,Goalkeeper,Goalkeeper,right,194.0,Al-Ahli Saudi Football Club,Senegal,1992-03-01,34.1,0.0,0.0,85.5
+444211,2024,18,1,0,682,1,0,5000000,Will Smallbone,Midfield,Central Midfield,right,183.0,,Ireland,2000-02-21,26.1,0.13196480938416422,0.0,37.888888888888886
+444523,2025,18,4,1,1522,7,0,35000000,Lucas Paquetá,Midfield,Attacking Midfield,left,180.0,Clube de Regatas do Flamengo,Brazil,1997-08-27,28.6,0.23653088042049936,0.05913272010512484,84.55555555555556
+445939,2025,17,1,3,573,2,0,60000000,Omar Marmoush,Attack,Centre-Forward,right,183.0,Manchester City Football Club,Egypt,1999-02-07,27.2,0.15706806282722513,0.47120418848167545,33.705882352941174
+447661,2025,16,1,0,809,2,0,20000000,Douglas Luiz,Midfield,Central Midfield,right,177.0,Aston Villa Football Club,Brazil,1998-05-09,27.9,0.11124845488257107,0.0,50.5625
+447995,2024,12,1,0,385,1,0,2800000,Ross Stewart,Attack,Centre-Forward,right,188.0,Southampton FC,Scotland,1996-07-11,29.7,0.23376623376623376,0.0,32.083333333333336
+448854,2022,19,2,2,716,3,0,2000000,Emmanuel Dennis,Attack,Centre-Forward,right,175.0,Brøndby Idrætsforening,Nigeria,1997-11-15,28.4,0.25139664804469275,0.25139664804469275,37.68421052631579
+450050,2025,22,1,1,1088,4,0,16000000,Jean-Ricner Bellegarde,Midfield,Central Midfield,right,172.0,Wolverhampton Wanderers Football Club,Haiti,1998-06-27,27.8,0.08272058823529412,0.08272058823529412,49.45454545454545
+451276,2025,29,5,3,2603,7,1,100000000,Dominik Szoboszlai,Midfield,Attacking Midfield,right,187.0,Liverpool Football Club,Hungary,2000-10-25,25.5,0.17287744909719555,0.10372646945831732,89.75862068965517
+455661,2025,27,7,3,1676,0,0,65000000,Nick Woltemade,Attack,Centre-Forward,right,198.0,Newcastle United Football Club,Germany,2002-02-14,24.2,0.37589498806682575,0.16109785202863963,62.074074074074076
+458178,2024,32,1,0,838,4,0,3000000,Jack Taylor,Midfield,Central Midfield,right,185.0,Ipswich Town,Ireland,1998-06-23,27.8,0.10739856801909309,0.0,26.1875
+460939,2025,26,5,2,1499,2,0,60000000,Tijjani Reijnders,Midfield,Central Midfield,right,185.0,Manchester City Football Club,Netherlands,1998-07-29,27.7,0.3002001334222815,0.1200800533689126,57.65384615384615
+461833,2024,19,1,0,1124,4,0,8000000,Caleb Okoli,Defender,Centre-Back,right,191.0,Leicester City,Italy,2001-07-13,24.7,0.08007117437722419,0.0,59.1578947368421
+461883,2025,23,1,1,1902,5,0,28000000,Calvin Bassey,Defender,Centre-Back,left,185.0,Fulham Football Club,Nigeria,1999-12-31,26.3,0.0473186119873817,0.0473186119873817,82.69565217391305
+462250,2024,12,1,1,363,2,0,25000000,João Félix,Attack,Second Striker,right,181.0,Al-Nassr Football Club,Portugal,1999-11-10,26.4,0.24793388429752067,0.24793388429752067,30.25
+463603,2025,8,0,0,471,2,0,18000000,Benoît Badiashile,Defender,Centre-Back,left,194.0,Chelsea Football Club,France,2001-03-26,25.0,0.0,0.0,58.875
+463605,2025,18,0,0,1275,1,0,30000000,Bafodé Diakité,Defender,Centre-Back,right,184.0,Association Football Club Bournemouth,France,2001-01-06,25.3,0.0,0.0,70.83333333333333
+465555,2025,31,0,0,2790,2,0,28000000,Djordje Petrovic,Goalkeeper,Goalkeeper,right,194.0,Association Football Club Bournemouth,Serbia,1999-10-08,26.5,0.0,0.0,90.0
+465717,2025,29,1,3,2412,6,0,12000000,Jayden Bogle,Defender,Right-Back,right,178.0,Leeds United Association Football Club,England,2000-07-27,25.7,0.0373134328358209,0.11194029850746269,83.17241379310344
+466805,2025,21,1,0,1375,6,0,45000000,Nico González,Midfield,Defensive Midfield,right,188.0,Manchester City Football Club,Spain,2002-01-03,24.3,0.06545454545454545,0.0,65.47619047619048
+466810,2023,19,2,0,511,2,0,15000000,Ansu Fati,Attack,Left Winger,right,178.0,Association sportive de Monaco Football Club,Spain,2002-10-31,23.4,0.3522504892367906,0.0,26.894736842105264
+467623,2025,23,3,2,1307,4,0,10000000,Lyle Foster,Attack,Centre-Forward,right,185.0,Burnley Football Club,South Africa,2000-09-03,25.6,0.20657995409334354,0.13771996939556236,56.82608695652174
+468002,2024,23,1,2,1349,5,0,7000000,Ben Johnson,Defender,Right-Back,right,184.0,Ipswich Town,England,2000-01-24,26.2,0.06671608598962193,0.13343217197924387,58.65217391304348
+468066,2024,30,1,1,1978,2,0,8000000,Jens Cajuste,Midfield,Defensive Midfield,right,188.0,Ipswich Town,Sweden,1999-08-10,26.7,0.0455005055611729,0.0455005055611729,65.93333333333334
+468198,2024,32,3,0,2020,1,0,4000000,Joe Aribo,Midfield,Central Midfield,left,183.0,Leicester City,Nigeria,1996-07-21,29.7,0.13366336633663367,0.0,63.125
+468249,2023,32,0,2,2318,1,0,8000000,Vitinho,Defender,Right-Back,right,174.0,S. A. F. Botafogo,Brazil,1999-07-23,26.7,0.0,0.07765314926660916,72.4375
+469050,2025,28,1,2,2342,5,0,30000000,Nathan Collins,Defender,Centre-Back,right,193.0,Brentford Football Club,Ireland,2001-04-30,24.9,0.03842869342442357,0.07685738684884715,83.64285714285714
+469781,2025,30,0,4,2660,8,0,22000000,Marcos Senesi,Defender,Centre-Back,left,184.0,Association Football Club Bournemouth,Argentina,1997-05-10,28.9,0.0,0.13533834586466167,88.66666666666667
+469958,2023,19,2,0,1020,4,0,4000000,Jacob Brown,Attack,Centre-Forward,right,178.0,Luton Town,Scotland,1998-04-10,28.0,0.1764705882352941,0.0,53.68421052631579
+470596,2024,8,0,0,112,0,0,350000,Paris Maghoma,Midfield,Central Midfield,right,184.0,Brentford Football Club,England,2001-05-08,24.9,0.0,0.0,14.0
+470607,2025,27,2,1,1232,5,0,35000000,Brennan Johnson,Attack,Right Winger,right,186.0,Crystal Palace Football Club,Wales,2001-05-23,24.9,0.14610389610389612,0.07305194805194806,45.629629629629626
+472423,2025,27,2,5,1896,4,0,60000000,Reece James,Defender,Right-Back,right,180.0,Chelsea Football Club,England,1999-12-08,26.3,0.09493670886075949,0.23734177215189872,70.22222222222223
+473050,2025,28,7,3,2218,6,1,35000000,Kevin Schade,Attack,Left Winger,right,185.0,Brentford Football Club,Germany,2001-11-27,24.4,0.2840396753832281,0.12173128944995493,79.21428571428571
+473169,2025,24,6,1,1370,4,0,25000000,Brian Brobbey,Attack,Centre-Forward,right,180.0,Sunderland Association Football Club,Netherlands,2002-02-01,24.2,0.39416058394160586,0.0656934306569343,57.083333333333336
+474701,2025,24,5,3,1868,4,0,30000000,Crysencio Summerville,Attack,Left Winger,right,174.0,West Ham United Football Club,Netherlands,2001-10-30,24.4,0.24089935760171305,0.14453961456102785,77.83333333333333
+475188,2025,24,6,5,2014,6,0,32000000,Kiernan Dewsbury-Hall,Midfield,Central Midfield,left,176.0,Everton Football Club,England,1998-09-06,27.6,0.26812313803376364,0.2234359483614697,83.91666666666667
+475411,2025,19,0,1,1277,6,0,28000000,Wesley Fofana,Defender,Centre-Back,right,188.0,Chelsea Football Club,France,2000-12-17,25.3,0.0,0.07047768206734534,67.21052631578948
+475959,2025,16,2,2,1304,2,0,70000000,Josko Gvardiol,Defender,Centre-Back,left,185.0,Manchester City Football Club,Croatia,2002-01-23,24.2,0.13803680981595093,0.13803680981595093,81.5
+476344,2023,22,1,0,1155,4,0,7000000,Emerson Royal,Defender,Right-Back,right,183.0,Clube de Regatas do Flamengo,Brazil,1999-01-14,27.2,0.07792207792207792,0.0,52.5
+476352,2022,28,0,1,2220,7,0,12000000,Renan Lodi,Defender,Left-Back,left,173.0,Clube Atlético Mineiro,Brazil,1998-04-08,28.0,0.0,0.04054054054054054,79.28571428571429
+476701,2025,21,0,0,791,1,0,30000000,Manuel Ugarte,Midfield,Defensive Midfield,right,182.0,Manchester United Football Club,Uruguay,2001-04-11,25.0,0.0,0.0,37.666666666666664
+477758,2025,22,0,3,1906,4,0,22000000,Aaron Wan-Bissaka,Defender,Right-Back,right,183.0,West Ham United Football Club,DR Congo,1997-11-26,28.4,0.0,0.1416579223504722,86.63636363636364
+478573,2025,29,4,3,2521,5,0,90000000,Ryan Gravenberch,Midfield,Defensive Midfield,right,190.0,Liverpool Football Club,Netherlands,2002-05-16,23.9,0.14280047600158668,0.10710035700119,86.93103448275862
+479999,2025,26,6,2,1504,1,0,60000000,Eberechi Eze,Midfield,Attacking Midfield,right,178.0,Arsenal Football Club,England,1998-06-29,27.8,0.3590425531914893,0.11968085106382978,57.84615384615385
+480116,2024,10,0,1,301,2,0,20000000,Lloyd Kelly,Defender,Centre-Back,left,189.0,Juventus Football Club,England,1998-10-06,27.5,0.0,0.29900332225913623,30.1
+480692,2024,36,13,7,2413,2,0,70000000,Luis Díaz,Attack,Left Winger,right,180.0,FC Bayern München,Colombia,1997-01-13,29.2,0.48487360132615004,0.2610857853294654,67.02777777777777
+480762,2025,14,0,0,905,0,0,40000000,Lisandro Martínez,Defender,Centre-Back,left,175.0,Manchester United Football Club,Argentina,1998-01-18,28.2,0.0,0.0,64.64285714285714
+480987,2023,10,0,1,613,2,0,3500000,Chris Mepham,Defender,Centre-Back,right,190.0,West Bromwich Albion,Wales,1997-11-05,28.4,0.0,0.1468189233278956,61.3
+483348,2025,24,0,0,1812,4,0,30000000,Djed Spence,Defender,Left-Back,right,184.0,Tottenham Hotspur Football Club,England,2000-08-09,25.7,0.0,0.0,75.5
+484547,2025,15,0,2,753,1,0,35000000,Jeremie Frimpong,Defender,Right-Back,right,172.0,Liverpool Football Club,Netherlands,2000-12-10,25.3,0.0,0.2390438247011952,50.2
+485424,2022,16,0,2,705,1,0,1200000,Moussa Djenepo,Attack,Left Winger,right,177.0,Antalyaspor,Mali,1998-06-15,27.8,0.0,0.25531914893617025,44.0625
+485585,2025,24,0,1,1258,2,0,30000000,Ian Maatsen,Defender,Left-Back,left,178.0,Aston Villa Football Club,Netherlands,2002-03-10,24.1,0.0,0.07154213036565978,52.416666666666664
+485706,2025,22,2,0,1567,2,0,45000000,Amadou Onana,Midfield,Defensive Midfield,right,195.0,Aston Villa Football Club,Belgium,2001-08-16,24.6,0.11486917677089982,0.0,71.22727272727273
+486049,2025,22,1,6,1231,0,0,65000000,Jérémy Doku,Attack,Left Winger,right,173.0,Manchester City Football Club,Belgium,2002-05-27,23.9,0.07311129163281885,0.4386677497969131,55.95454545454545
+486144,2024,10,0,0,900,1,0,300000,Jakub Stolarczyk,Goalkeeper,Goalkeeper,right,194.0,Leicester City,Poland,2000-12-19,25.3,0.0,0.0,90.0
+487465,2025,29,5,4,2219,4,0,60000000,Pedro Neto,Attack,Right Winger,left,174.0,Chelsea Football Club,Portugal,2000-03-09,26.1,0.20279405137449302,0.16223524109959442,76.51724137931035
+487969,2025,23,1,1,1235,2,0,22000000,Randal Kolo Muani,Attack,Centre-Forward,right,187.0,Tottenham Hotspur Football Club,France,1998-12-05,27.3,0.0728744939271255,0.0728744939271255,53.69565217391305
+488362,2025,9,0,1,588,0,0,35000000,Conor Gallagher,Midfield,Central Midfield,right,182.0,Tottenham Hotspur Football Club,England,2000-02-06,26.2,0.0,0.15306122448979592,65.33333333333333
+488656,2022,6,0,0,104,0,0,2000000,Siriki Dembélé,Attack,Left Winger,right,173.0,Association Football Club Bournemouth,Scotland,1996-09-07,29.6,0.0,0.0,17.333333333333332
+489359,2025,21,2,0,765,1,0,10000000,Ao Tanaka,Midfield,Central Midfield,right,180.0,Leeds United Association Football Club,Japan,1998-09-10,27.6,0.23529411764705882,0.0,36.42857142857143
+490307,2022,6,0,1,211,0,0,18000000,Enock Mwepu,Midfield,Central Midfield,right,184.0,Brighton and Hove Albion Football Club,Zambia,1998-01-01,28.3,0.0,0.4265402843601896,35.166666666666664
+491296,2023,6,0,0,149,0,1,8000000,Anass Zaroury,Attack,Left Winger,right,176.0,Panathinaikos Athlitikos Omilos,Morocco,2000-11-07,25.4,0.0,0.0,24.833333333333332
+493003,2025,21,3,2,1782,5,0,27000000,Daniel Muñoz,Defender,Right-Back,right,181.0,Crystal Palace Football Club,Colombia,1996-05-26,29.9,0.15151515151515152,0.10101010101010102,84.85714285714286
+494237,2025,26,4,0,1067,2,0,18000000,Wilson Isidor,Attack,Centre-Forward,right,186.0,Sunderland Association Football Club,Haiti,2000-08-27,25.6,0.3373945641986879,0.0,41.03846153846154
+494880,2025,14,0,0,934,5,0,8000000,Jorge Cuenca,Defender,Centre-Back,left,190.0,Fulham Football Club,Spain,1999-11-17,26.4,0.0,0.0,66.71428571428571
+495666,2025,25,1,0,2075,1,0,90000000,William Saliba,Defender,Centre-Back,right,192.0,Arsenal Football Club,France,2001-03-24,25.0,0.043373493975903614,0.0,83.0
+497291,2025,20,1,0,940,2,0,16000000,Nicolás Domínguez,Midfield,Central Midfield,right,179.0,Nottingham Forest Football Club,Argentina,1998-06-28,27.8,0.09574468085106383,0.0,47.0
+500689,2025,19,1,1,887,0,0,28000000,Evann Guessand,Attack,Right Winger,right,188.0,Crystal Palace Football Club,Cote d'Ivoire,2001-07-01,24.8,0.10146561443066515,0.10146561443066515,46.68421052631579
+502676,2025,6,0,0,540,0,0,28000000,Giorgi Mamardashvili,Goalkeeper,Goalkeeper,left,197.0,Liverpool Football Club,Georgia,2000-09-29,25.5,0.0,0.0,90.0
+502821,2025,22,1,2,1456,5,0,50000000,Riccardo Calafiori,Defender,Left-Back,left,188.0,Arsenal Football Club,Italy,2002-05-19,23.9,0.061813186813186816,0.12362637362637363,66.18181818181819
+503680,2025,30,1,3,2621,5,1,25000000,Neco Williams,Defender,Left-Back,right,183.0,Nottingham Forest Football Club,Wales,2001-04-13,25.0,0.03433803891644411,0.10301411674933231,87.36666666666666
+503686,2025,26,2,2,2007,3,0,20000000,Dan Ballard,Defender,Centre-Back,right,187.0,Sunderland Association Football Club,Northern Ireland,1999-09-22,26.5,0.08968609865470852,0.08968609865470852,77.1923076923077
+503733,2025,25,6,2,1743,3,1,60000000,Anthony Gordon,Attack,Left Winger,right,183.0,Newcastle United Football Club,England,2001-02-24,25.1,0.3098106712564544,0.10327022375215145,69.72
+503743,2025,31,8,5,2757,6,0,80000000,Morgan Rogers,Midfield,Attacking Midfield,right,187.0,Aston Villa Football Club,England,2002-07-26,23.7,0.2611534276387378,0.16322089227421108,88.93548387096774
+503749,2025,21,2,1,1077,5,0,35000000,Jacob Ramsey,Midfield,Central Midfield,right,180.0,Newcastle United Football Club,England,2001-05-28,24.9,0.1671309192200557,0.08356545961002786,51.285714285714285
+503883,2025,25,0,0,2250,0,0,30000000,Senne Lammens,Goalkeeper,Goalkeeper,right,193.0,Manchester United Football Club,Belgium,2002-07-07,23.8,0.0,0.0,90.0
+503975,2022,6,0,0,173,1,0,700000,Joe Hodge,Midfield,Defensive Midfield,right,172.0,Clube Desportivo de Tondela,Ireland,2002-09-14,23.6,0.0,0.0,28.833333333333332
+503977,2024,34,1,0,2828,9,0,20000000,Taylor Harwood-Bellis,Defender,Centre-Back,right,188.0,Southampton FC,England,2002-01-30,24.2,0.03182461103253183,0.0,83.17647058823529
+503980,2022,15,0,2,202,1,0,7000000,Joe Gelhardt,Attack,Centre-Forward,left,179.0,Leeds United Association Football Club,England,2002-05-04,23.9,0.0,0.8910891089108911,13.466666666666667
+503981,2025,15,0,1,1164,1,0,40000000,Tino Livramento,Defender,Right-Back,right,182.0,Newcastle United Football Club,England,2002-11-12,23.4,0.0,0.07731958762886598,77.6
+503987,2025,20,2,1,899,0,0,50000000,Noni Madueke,Attack,Right Winger,left,182.0,Arsenal Football Club,England,2002-03-10,24.1,0.20022246941045607,0.10011123470522804,44.95
+503990,2024,11,0,0,772,2,0,4000000,Nathan Wood,Defender,Centre-Back,right,188.0,Southampton FC,England,2002-05-31,23.9,0.0,0.0,70.18181818181819
+504148,2024,15,2,2,860,0,0,5000000,Tariq Lamptey,Defender,Right-Back,right,163.0,Associazione Calcio Fiorentina,Ghana,2000-09-30,25.5,0.20930232558139533,0.20930232558139533,57.333333333333336
+504215,2023,9,0,1,230,0,0,4000000,Giovanni Reyna,Midfield,Attacking Midfield,right,187.0,Borussia Verein für Leibesübungen 1900 Mönchengladbach,United States,2002-11-13,23.4,0.0,0.391304347826087,25.555555555555557
+504581,2023,11,0,0,501,0,0,4500000,Ryan Giles,Defender,Left-Back,left,183.0,Luton Town,England,2000-01-26,26.2,0.0,0.0,45.54545454545455
+504849,2025,20,2,1,1427,3,0,25000000,Kaoru Mitoma,Attack,Left Winger,right,178.0,Brighton and Hove Albion Football Club,Japan,1997-05-20,28.9,0.12613875262789068,0.06306937631394534,71.35
+505194,2024,14,0,0,1113,3,0,6000000,Luke Thomas,Defender,Left-Back,left,181.0,Leicester City,England,2001-06-10,24.8,0.0,0.0,79.5
+505219,2025,31,2,6,2784,7,0,35000000,James Garner,Midfield,Defensive Midfield,right,182.0,Everton Football Club,England,2001-03-13,25.1,0.06465517241379311,0.1939655172413793,89.80645161290323
+505653,2023,8,0,0,262,2,0,28000000,Fábio Silva,Attack,Centre-Forward,right,185.0,Borussia Dortmund,Portugal,2002-07-19,23.7,0.0,0.0,32.75
+506189,2024,27,1,0,2155,12,0,12000000,Flynn Downes,Midfield,Defensive Midfield,right,178.0,Southampton FC,England,1999-01-20,27.2,0.04176334106728538,0.0,79.81481481481481
+511550,2022,11,1,0,219,0,0,6000000,Ellis Simms,Attack,Centre-Forward,right,191.0,Everton Football Club,England,2001-01-05,25.3,0.410958904109589,0.0,19.90909090909091
+512385,2024,12,1,1,230,0,0,11000000,Luis Sinisterra,Attack,Left Winger,right,172.0,Cruzeiro Esporte Clube,Colombia,1999-06-17,26.8,0.391304347826087,0.391304347826087,19.166666666666668
+513245,2024,25,0,1,1241,2,0,5000000,Jesper Lindstrøm,Attack,Right Winger,right,182.0,Verein für Leibesübungen Wolfsburg,Denmark,2000-02-29,26.1,0.0,0.072522159548751,49.64
+513970,2024,12,0,0,498,2,0,10000000,Julián Araujo,Defender,Right-Back,right,176.0,The Celtic Football Club,Mexico,2001-08-13,24.7,0.0,0.0,41.5
+514285,2025,17,0,4,1503,1,0,18000000,Quilindschy Hartman,Defender,Left-Back,left,183.0,Burnley Football Club,Netherlands,2001-11-14,24.4,0.0,0.23952095808383234,88.41176470588235
+515544,2025,31,0,1,2584,8,0,22000000,Trai Hume,Defender,Right-Back,right,180.0,Sunderland Association Football Club,Northern Ireland,2002-03-18,24.1,0.0,0.0348297213622291,83.35483870967742
+517894,2025,28,7,4,2075,1,0,70000000,Matheus Cunha,Attack,Centre-Forward,right,183.0,Manchester United Football Club,Brazil,1999-05-27,26.9,0.3036144578313253,0.17349397590361446,74.10714285714286
+520624,2025,23,9,5,2021,5,0,75000000,Bruno Guimarães,Midfield,Central Midfield,right,182.0,Newcastle United Football Club,Brazil,1997-11-16,28.4,0.400791687283523,0.2226620484908461,87.8695652173913
+521964,2025,28,4,0,2334,3,0,45000000,Malick Thiaw,Defender,Centre-Back,right,194.0,Newcastle United Football Club,Germany,2001-08-08,24.7,0.15424164524421594,0.0,83.35714285714286
+522784,2025,11,2,0,867,2,0,28000000,Taty Castellanos,Attack,Centre-Forward,right,178.0,West Ham United Football Club,Argentina,1998-10-03,27.5,0.20761245674740486,0.0,78.81818181818181
+525247,2025,21,0,0,1558,4,0,16000000,Maximilian Kilman,Defender,Centre-Back,left,194.0,West Ham United Football Club,England,1997-05-23,28.9,0.0,0.0,74.19047619047619
+527425,2024,15,0,0,1187,2,0,2000000,Luke Woolfenden,Defender,Centre-Back,right,193.0,Ipswich Town,England,1998-10-21,27.5,0.0,0.0,79.13333333333334
+528892,2024,7,0,0,378,3,0,4000000,Harry Clarke,Defender,Right-Back,right,180.0,Ipswich Town,England,2001-03-02,25.1,0.0,0.0,54.0
+532178,2022,18,1,2,411,1,0,2500000,Sam Greenwood,Midfield,Attacking Midfield,right,180.0,Morski Klub Sportowy Pogoń Szczecin,England,2002-01-26,24.2,0.21897810218978103,0.43795620437956206,22.833333333333332
+532776,2025,27,3,2,1032,2,0,20000000,Amine Adli,Attack,Left Winger,left,180.0,Association Football Club Bournemouth,Morocco,2000-05-10,25.9,0.2616279069767442,0.1744186046511628,38.22222222222222
+533662,2024,35,2,0,1433,0,0,10000000,Cameron Archer,Attack,Centre-Forward,right,175.0,Southampton FC,England,2001-12-09,24.3,0.1256106071179344,0.0,40.94285714285714
+533916,2023,10,1,1,224,1,0,2500000,Shandon Baptiste,Midfield,Central Midfield,right,180.0,Brentford Football Club,Grenada,1998-04-08,28.0,0.40178571428571425,0.40178571428571425,22.4
+534033,2025,30,2,2,2185,5,0,80000000,Alexis Mac Allister,Midfield,Central Midfield,right,176.0,Liverpool Football Club,Argentina,1998-12-24,27.3,0.08237986270022883,0.08237986270022883,72.83333333333333
+535955,2023,8,0,0,455,2,0,13000000,Nuno Tavares,Defender,Left-Back,left,183.0,Società Sportiva Lazio S.p.A.,Portugal,2000-01-26,26.2,0.0,0.0,56.875
+536835,2025,25,2,3,1921,2,0,50000000,Amad Diallo,Attack,Right Winger,left,173.0,Manchester United Football Club,Cote d'Ivoire,2002-07-11,23.7,0.09370119729307652,0.14055179593961478,76.84
+537382,2023,11,0,0,201,0,0,12000000,Bryan Gil,Attack,Left Winger,left,175.0,Girona Fútbol Club S. A. D.,Spain,2001-02-11,25.2,0.0,0.0,18.272727272727273
+537598,2023,11,1,2,292,0,1,18000000,Fábio Vieira,Midfield,Attacking Midfield,left,170.0,Hamburger Sport Verein,Portugal,2000-05-30,25.9,0.3082191780821918,0.6164383561643836,26.545454545454547
+537860,2024,7,0,0,146,0,0,18000000,Mykhaylo Mudryk,Attack,Left Winger,right,175.0,Chelsea Football Club,Ukraine,2001-01-05,25.3,0.0,0.0,20.857142857142858
+538971,2023,20,0,0,331,4,0,3500000,Naouirou Ahamada,Midfield,Central Midfield,right,183.0,Association de la Jeunesse auxerroise,France,2002-03-29,24.0,0.0,0.0,16.55
+538977,2025,25,2,3,1613,2,0,30000000,Georginio Rutter,Attack,Centre-Forward,left,182.0,Brighton and Hove Albion Football Club,France,2002-04-20,24.0,0.11159330440173588,0.16738995660260383,64.52
+540664,2025,10,0,1,344,1,0,28000000,Dilane Bakwa,Attack,Right Winger,left,180.0,Nottingham Forest Football Club,France,2002-08-26,23.6,0.0,0.2616279069767442,34.4
+540941,2025,26,3,4,1578,0,0,30000000,Mikkel Damsgaard,Midfield,Attacking Midfield,right,180.0,Brentford Football Club,Denmark,2000-07-03,25.8,0.17110266159695817,0.22813688212927755,60.69230769230769
+541231,2025,26,0,1,2303,1,0,32000000,Sepp van den Berg,Defender,Centre-Back,right,192.0,Brentford Football Club,Netherlands,2001-12-20,24.3,0.0,0.03907946157186279,88.57692307692308
+541628,2025,7,1,0,165,0,0,4000000,Oliver Sonne,Defender,Right-Back,right,184.0,"AC Sparta Praha, a. s.",Peru,2000-11-10,25.4,0.5454545454545454,0.0,23.571428571428573
+542586,2022,34,0,0,3060,3,0,10000000,Illan Meslier,Goalkeeper,Goalkeeper,left,197.0,Leeds United Association Football Club,France,2000-03-02,26.1,0.0,0.0,90.0
+543164,2023,5,0,0,111,1,0,2500000,Rhys Norrington-Davies,Defender,Left-Back,left,181.0,Queens Park Rangers,Wales,1999-04-22,27.0,0.0,0.0,22.2
+543387,2024,13,0,0,445,1,0,13000000,Cheick Doucouré,Midfield,Defensive Midfield,right,180.0,Crystal Palace Football Club,Mali,2000-01-08,26.3,0.0,0.0,34.23076923076923
+543499,2025,19,2,6,1546,3,0,55000000,Mohammed Kudus,Attack,Right Winger,left,177.0,Tottenham Hotspur Football Club,Ghana,2000-08-02,25.7,0.1164294954721863,0.34928848641655885,81.36842105263158
+546543,2024,30,5,3,1118,8,0,25000000,Darwin Núñez,Attack,Centre-Forward,right,187.0,Al-Hilal Saudi Football Club,Uruguay,1999-06-24,26.8,0.4025044722719141,0.24150268336314845,37.266666666666666
+546712,2023,15,0,0,412,2,0,2500000,Anis Ben Slimane,Midfield,Central Midfield,both,188.0,Norwich City,Tunisia,2001-03-16,25.1,0.0,0.0,27.466666666666665
+548470,2023,30,1,0,2470,3,0,12000000,Teden Mengi,Defender,Centre-Back,right,186.0,Luton Town,England,2002-04-30,23.9,0.03643724696356275,0.0,82.33333333333333
+548729,2023,34,5,1,1973,2,0,9000000,Zeki Amdouni,Attack,Centre-Forward,both,185.0,Burnley Football Club,Switzerland,2000-12-04,25.3,0.22807906741003547,0.0456158134820071,58.029411764705884
+553875,2025,27,0,2,2168,6,0,40000000,Pedro Porro,Defender,Right-Back,right,173.0,Tottenham Hotspur Football Club,Spain,1999-09-13,26.6,0.0,0.08302583025830258,80.29629629629629
+554251,2023,11,0,0,533,1,0,1500000,Yasser Larouci,Defender,Left-Back,left,176.0,Athlitiki Enosi Kifisias,Algeria,2001-01-01,25.3,0.0,0.0,48.45454545454545
+555076,2023,5,0,0,37,1,0,5000000,Romain Faivre,Midfield,Attacking Midfield,left,180.0,Association de la Jeunesse auxerroise,France,1998-07-14,27.7,0.0,0.0,7.4
+556385,2025,14,0,1,842,3,0,35000000,Destiny Udogie,Defender,Left-Back,left,188.0,Tottenham Hotspur Football Club,Italy,2002-11-28,23.4,0.0,0.10688836104513065,60.142857142857146
+557459,2025,28,4,1,2413,7,1,65000000,Micky van de Ven,Defender,Centre-Back,left,193.0,Tottenham Hotspur Football Club,Netherlands,2001-04-19,25.0,0.14919187733112307,0.03729796933278077,86.17857142857143
+557612,2022,22,1,2,542,1,0,4000000,Sékou Mara,Attack,Centre-Forward,right,183.0,Association de la Jeunesse auxerroise,France,2002-07-30,23.7,0.16605166051660517,0.33210332103321033,24.636363636363637
+559263,2025,6,1,0,100,0,0,10000000,Fábio Carvalho,Midfield,Attacking Midfield,right,170.0,Brentford Football Club,Portugal,2002-08-30,23.6,0.9,0.0,16.666666666666668
+559794,2024,32,0,4,1170,2,0,15000000,Jack Clarke,Attack,Left Winger,right,181.0,Ipswich Town,England,2000-11-23,25.4,0.0,0.3076923076923077,36.5625
+560694,2022,13,1,0,580,2,0,4000000,Lewis O'Brien,Midfield,Central Midfield,left,173.0,Nottingham Forest Football Club,England,1998-10-14,27.5,0.15517241379310345,0.0,44.61538461538461
+563963,2022,22,0,1,1973,5,0,10000000,Mohammed Salisu,Defender,Centre-Back,left,188.0,Association sportive de Monaco Football Club,Ghana,1999-04-17,27.0,0.0,0.0456158134820071,89.68181818181819
+564529,2024,30,0,1,2489,1,0,14000000,Victor Kristiansen,Defender,Left-Back,left,181.0,Leicester City,Denmark,2002-12-16,23.3,0.0,0.03615910004017678,82.96666666666667
+565093,2025,31,0,0,2790,3,0,40000000,Bart Verbruggen,Goalkeeper,Goalkeeper,right,194.0,Brighton and Hove Albion Football Club,Netherlands,2002-08-18,23.6,0.0,0.0,90.0
+565822,2025,5,0,0,110,0,0,22000000,Harvey Elliott,Midfield,Attacking Midfield,left,170.0,Aston Villa Football Club,England,2003-04-04,23.0,0.0,0.0,22.0
+566723,2023,19,10,6,1278,0,0,140000000,Michael Olise,Attack,Right Winger,left,184.0,FC Bayern München,France,2001-12-12,24.3,0.7042253521126761,0.4225352112676056,67.26315789473684
+566931,2025,25,1,4,1599,4,1,50000000,Xavi Simons,Midfield,Attacking Midfield,right,179.0,Tottenham Hotspur Football Club,Netherlands,2003-04-21,23.0,0.05628517823639775,0.225140712945591,63.96
+567576,2025,31,2,2,2775,6,0,60000000,Elliot Anderson,Midfield,Central Midfield,right,179.0,Nottingham Forest Football Club,England,2002-11-06,23.4,0.06486486486486487,0.06486486486486487,89.51612903225806
+568006,2025,7,0,0,302,1,0,8000000,Dennis Cirkin,Defender,Left-Back,left,182.0,Sunderland Association Football Club,Latvia,2002-04-06,24.0,0.0,0.0,43.142857142857146
+568157,2025,27,2,1,1731,4,0,35000000,Yéremy Pino,Attack,Right Winger,right,172.0,Crystal Palace Football Club,Spain,2002-10-20,23.5,0.10398613518197573,0.05199306759098787,64.11111111111111
+568177,2025,20,9,1,1426,4,0,110000000,Cole Palmer,Midfield,Attacking Midfield,left,185.0,Chelsea Football Club,England,2002-05-06,23.9,0.5680224403927069,0.06311360448807854,71.3
+568559,2025,8,0,0,514,0,0,20000000,Radu Drăgușin,Defender,Centre-Back,right,191.0,Tottenham Hotspur Football Club,Romania,2002-02-03,24.2,0.0,0.0,64.25
+568693,2025,22,2,3,1322,2,0,32000000,Pape Matar Sarr,Midfield,Central Midfield,right,184.0,Tottenham Hotspur Football Club,Senegal,2002-09-14,23.6,0.1361573373676248,0.2042360060514372,60.09090909090909
+571743,2025,20,1,1,813,0,0,8000000,Armando Broja,Attack,Centre-Forward,right,191.0,Burnley Football Club,Albania,2001-09-10,24.6,0.11070110701107011,0.11070110701107011,40.65
+576024,2023,36,11,9,2659,2,0,90000000,Julián Alvarez,Attack,Centre-Forward,right,170.0,Club Atlético de Madrid S.A.D.,Argentina,2000-01-31,26.2,0.3723204212109815,0.3046257991726213,73.86111111111111
+576314,2025,29,3,2,2581,7,0,35000000,Jan Paul van Hecke,Defender,Centre-Back,right,189.0,Brighton and Hove Albion Football Club,Netherlands,2000-06-08,25.8,0.10461061604029447,0.06974041069352964,89.0
+578391,2025,13,0,2,782,2,0,40000000,Rayan Aït-Nouri,Defender,Left-Back,left,180.0,Manchester City Football Club,Algeria,2001-06-06,24.8,0.0,0.23017902813299235,60.15384615384615
+578539,2025,26,1,0,2333,3,0,25000000,Chris Richards,Defender,Centre-Back,right,188.0,Crystal Palace Football Club,United States,2000-03-28,26.0,0.03857693956279468,0.0,89.73076923076923
+583189,2025,27,0,1,1217,0,0,40000000,Anthony Elanga,Attack,Right Winger,right,178.0,Newcastle United Football Club,Sweden,2002-04-27,24.0,0.0,0.07395234182415776,45.074074074074076
+583199,2025,10,0,0,174,1,0,20000000,James McAtee,Midfield,Attacking Midfield,left,180.0,Nottingham Forest Football Club,England,2002-10-18,23.5,0.0,0.0,17.4
+583255,2025,29,15,4,2592,6,0,75000000,Antoine Semenyo,Attack,Right Winger,right,185.0,Manchester City Football Club,Ghana,2000-01-07,26.3,0.5208333333333333,0.1388888888888889,89.37931034482759
+584769,2025,18,0,1,948,1,0,20000000,Dwight McNeil,Attack,Left Winger,left,183.0,Everton Football Club,England,1999-11-22,26.4,0.0,0.09493670886075949,52.666666666666664
+585550,2022,32,0,0,2880,0,0,15000000,Gavin Bazunu,Goalkeeper,Goalkeeper,right,188.0,Stoke City,Ireland,2002-02-20,24.1,0.0,0.0,90.0
+585959,2025,9,0,0,88,0,0,25000000,Arnaud Kalimuendo,Attack,Centre-Forward,right,175.0,Eintracht Frankfurt Fußball AG,France,2002-01-20,24.2,0.0,0.0,9.777777777777779
+586834,2023,6,0,0,132,0,0,2000000,Jesurun Rak-Sakyi,Attack,Right Winger,left,178.0,Crystal Palace Football Club,England,2002-10-05,23.5,0.0,0.0,22.0
+588989,2025,23,1,0,1124,1,0,15000000,Jhon Arias,Attack,Right Winger,right,168.0,Sociedade Esportiva Palmeiras,Colombia,1997-09-21,28.6,0.08007117437722419,0.0,48.869565217391305
+591949,2025,18,0,0,594,1,0,16000000,Aaron Hickey,Defender,Right-Back,both,185.0,Brentford Football Club,Scotland,2002-06-10,23.8,0.0,0.0,33.0
+595809,2025,31,6,1,1205,2,0,20000000,Beto,Attack,Centre-Forward,right,194.0,Everton Football Club,Guinea-Bissau,1998-01-31,28.2,0.4481327800829875,0.07468879668049792,38.87096774193548
+596446,2024,33,1,3,2746,5,1,20000000,Leif Davis,Defender,Left-Back,left,182.0,Ipswich Town,England,1999-12-31,26.3,0.03277494537509104,0.09832483612527312,83.21212121212122
+598577,2025,27,4,3,2017,1,0,110000000,Florian Wirtz,Midfield,Attacking Midfield,right,177.0,Liverpool Football Club,Germany,2003-05-03,22.9,0.17848289538919185,0.1338621715418939,74.70370370370371
+601883,2025,27,1,6,2267,4,0,45000000,Matheus Nunes,Defender,Right-Back,right,183.0,Manchester City Football Club,Portugal,1998-08-27,27.6,0.03970004411116012,0.23820026466696076,83.96296296296296
+602105,2024,8,0,0,135,0,0,40000000,Antony,Attack,Right Winger,left,172.0,Real Betis Balompié S.A.D.,Brazil,2000-02-24,26.1,0.0,0.0,16.875
+605184,2025,20,0,1,1702,4,1,23000000,Jean-Clair Todibo,Defender,Centre-Back,right,190.0,West Ham United Football Club,France,1999-12-30,26.3,0.0,0.052878965922444184,85.1
+606718,2025,14,0,0,1043,2,1,20000000,Toti,Defender,Centre-Back,left,187.0,Wolverhampton Wanderers Football Club,Portugal,1999-01-16,27.2,0.0,0.0,74.5
+607223,2025,25,3,8,1308,1,0,65000000,Rayan Cherki,Midfield,Attacking Midfield,both,177.0,Manchester City Football Club,France,2003-08-17,22.6,0.20642201834862386,0.5504587155963303,52.32
+607224,2025,23,1,3,990,7,0,16000000,Hannibal,Midfield,Attacking Midfield,right,183.0,Burnley Football Club,Tunisia,2003-01-21,23.2,0.09090909090909091,0.2727272727272727,43.04347826086956
+607226,2025,23,1,0,854,1,0,15000000,Loum Tchaouna,Attack,Right Winger,left,180.0,Burnley Football Club,France,2003-09-08,22.6,0.1053864168618267,0.0,37.130434782608695
+608175,2023,37,2,8,2937,5,0,10000000,Alfie Doughty,Midfield,Left Midfield,left,183.0,Luton Town,England,1999-12-21,26.3,0.061287027579162406,0.24514811031664963,79.37837837837837
+608832,2025,12,0,0,358,0,0,16000000,Merlin Röhl,Midfield,Attacking Midfield,right,192.0,Everton Football Club,Germany,2002-07-05,23.8,0.0,0.0,29.833333333333332
+609556,2025,17,2,0,281,0,0,15000000,William Osula,Attack,Centre-Forward,right,191.0,Newcastle United Football Club,Denmark,2003-08-04,22.7,0.6405693950177935,0.0,16.529411764705884
+610442,2024,32,4,1,2014,2,0,50000000,Rasmus Højlund,Attack,Centre-Forward,left,191.0,Società Sportiva Calcio Napoli,Denmark,2003-02-04,23.2,0.17874875868917575,0.04468718967229394,62.9375
+610581,2024,11,0,0,125,3,0,2000000,Ali Al-Hamadi,Attack,Centre-Forward,right,187.0,Luton Town,Iraq,2002-03-01,24.1,0.0,0.0,11.363636363636363
+610849,2025,22,1,1,791,2,0,32000000,Liam Delap,Attack,Centre-Forward,right,186.0,Chelsea Football Club,England,2003-02-08,23.2,0.11378002528445007,0.11378002528445007,35.95454545454545
+611793,2025,22,0,3,1474,2,0,15000000,James Hill,Defender,Centre-Back,right,184.0,Association Football Club Bournemouth,England,2002-01-10,24.2,0.0,0.18317503392130258,67.0
+612517,2025,15,0,2,1240,5,0,15000000,Bashir Humphreys,Defender,Centre-Back,left,186.0,Burnley Football Club,England,2003-03-15,23.1,0.0,0.14516129032258066,82.66666666666667
+614258,2024,35,2,1,3150,9,0,50000000,Levi Colwill,Defender,Centre-Back,left,187.0,Chelsea Football Club,England,2003-02-26,23.1,0.05714285714285714,0.02857142857142857,90.0
+614603,2022,5,0,0,68,0,0,1000000,Chem Campbell,Midfield,Attacking Midfield,right,180.0,Wolverhampton Wanderers Football Club,Wales,2002-12-30,23.3,0.0,0.0,13.6
+620322,2025,28,2,3,1744,4,0,35000000,Malo Gusto,Defender,Right-Back,right,178.0,Chelsea Football Club,France,2003-05-19,22.9,0.10321100917431193,0.1548165137614679,62.285714285714285
+620598,2023,13,1,0,1055,1,0,4000000,Ameen Al-Dakhil,Defender,Centre-Back,right,187.0,Verein für Bewegungsspiele Stuttgart 1893,Belgium,2002-03-06,24.1,0.08530805687203792,0.0,81.15384615384616
+621193,2024,18,1,1,853,3,0,900000,Kasey McAteer,Midfield,Right Midfield,right,177.0,Ipswich Town,Ireland,2001-11-22,24.4,0.10550996483001171,0.10550996483001171,47.388888888888886
+621993,2023,11,0,0,782,2,0,7000000,Andrew Omobamidele,Defender,Centre-Back,right,188.0,Racing Club de Strasbourg Alsace,Ireland,2002-06-23,23.8,0.0,0.0,71.0909090909091
+622380,2023,11,0,0,71,0,0,14000000,Cesare Casadei,Midfield,Central Midfield,right,192.0,Torino Calcio,Italy,2003-01-10,23.2,0.0,0.0,6.454545454545454
+623570,2025,25,6,3,2159,2,0,50000000,Iliman Ndiaye,Attack,Right Winger,right,180.0,Everton Football Club,Senegal,2000-03-06,26.1,0.25011579434923575,0.12505789717461788,86.36
+624258,2025,15,0,2,933,5,0,30000000,Conor Bradley,Defender,Right-Back,right,181.0,Liverpool Football Club,Northern Ireland,2003-07-09,22.8,0.0,0.19292604501607716,62.2
+626724,2025,31,14,8,2323,4,0,75000000,João Pedro,Attack,Centre-Forward,right,182.0,Chelsea Football Club,Brazil,2001-09-26,24.5,0.5424020662935859,0.30994403788204905,74.93548387096774
+627248,2023,12,1,0,227,1,0,2500000,Lewis Dobbin,Attack,Left Winger,right,175.0,Everton Football Club,England,2003-01-03,23.3,0.39647577092511016,0.0,18.916666666666668
+627442,2025,26,9,1,1334,2,0,65000000,Benjamin Sesko,Attack,Centre-Forward,right,195.0,Manchester United Football Club,Slovenia,2003-05-31,22.9,0.6071964017991005,0.06746626686656672,51.30769230769231
+627626,2025,16,0,2,380,3,0,18000000,Wilfried Gnonto,Attack,Right Winger,right,170.0,Leeds United Association Football Club,Italy,2003-11-05,22.4,0.0,0.47368421052631576,23.75
+628451,2025,8,0,0,221,0,0,25000000,Roméo Lavia,Midfield,Defensive Midfield,right,181.0,Chelsea Football Club,Belgium,2004-01-06,22.3,0.0,0.0,27.625
+632349,2024,13,0,0,488,2,0,45000000,Jarell Quansah,Defender,Centre-Back,right,190.0,Bayer 04 Leverkusen Fußball,England,2003-01-29,23.2,0.0,0.0,37.53846153846154
+633530,2022,19,0,1,1456,1,0,5000000,Jordan Zemura,Defender,Left-Back,left,173.0,Udinese Calcio,Zimbabwe,1999-11-14,26.4,0.0,0.061813186813186816,76.63157894736842
+633992,2025,29,4,4,2306,5,0,25000000,Enzo Le Fée,Midfield,Central Midfield,right,173.0,Sunderland Association Football Club,France,2000-02-03,26.2,0.15611448395490027,0.15611448395490027,79.51724137931035
+644401,2025,29,3,2,1341,1,0,25000000,Keane Lewis-Potter,Midfield,Left Midfield,right,170.0,Brentford Football Club,England,2001-02-22,25.1,0.20134228187919462,0.1342281879194631,46.241379310344826
+645686,2025,24,0,0,801,5,0,15000000,Lamare Bogarde,Midfield,Defensive Midfield,right,185.0,Aston Villa Football Club,Netherlands,2004-01-05,22.3,0.0,0.0,33.375
+646658,2023,14,0,0,526,1,0,15000000,Aaron Ramsey,Midfield,Attacking Midfield,right,181.0,Burnley Football Club,England,2003-01-21,23.2,0.0,0.0,37.57142857142857
+646738,2022,5,0,0,152,0,0,2000000,Juan Larios,Defender,Left-Back,left,170.0,Southampton FC,Spain,2004-01-12,22.2,0.0,0.0,30.4
+646750,2025,14,0,0,669,2,0,35000000,Cristhian Mosquera,Defender,Centre-Back,right,191.0,Arsenal Football Club,Spain,2004-06-27,21.8,0.0,0.0,47.785714285714285
+646991,2025,28,0,0,2520,3,0,25000000,Robin Roefs,Goalkeeper,Goalkeeper,left,193.0,Sunderland Association Football Club,Netherlands,2003-01-17,23.2,0.0,0.0,90.0
+648046,2024,21,1,0,388,0,0,25000000,Evan Ferguson,Attack,Centre-Forward,right,188.0,Associazione Sportiva Roma,Ireland,2004-10-19,21.5,0.23195876288659795,0.0,18.476190476190474
+648195,2025,30,8,3,2583,8,0,90000000,Enzo Fernández,Midfield,Central Midfield,right,178.0,Chelsea Football Club,Argentina,2001-01-17,25.2,0.2787456445993031,0.10452961672473868,86.1
+649317,2024,20,7,0,626,3,1,25000000,Jhon Durán,Attack,Centre-Forward,left,185.0,AO FK Zenit Sankt-Peterburg,Colombia,2003-12-13,22.3,1.0063897763578273,0.0,31.3
+649452,2023,24,0,2,1732,7,0,4000000,Issa Kaboré,Defender,Right-Back,right,180.0,Manchester City Football Club,Burkina Faso,2001-05-12,24.9,0.0,0.10392609699769052,72.16666666666667
+654253,2024,6,0,0,174,0,0,5000000,Toby Collyer,Midfield,Defensive Midfield,right,180.0,Manchester United Football Club,England,2004-01-03,22.3,0.0,0.0,29.0
+654539,2025,31,0,3,2750,3,0,25000000,Adrien Truffert,Defender,Left-Back,left,176.0,Association Football Club Bournemouth,France,2001-11-20,24.4,0.0,0.09818181818181819,88.70967741935483
+654982,2024,32,2,3,2197,4,0,32000000,Bilal El Khannouss,Midfield,Attacking Midfield,right,180.0,Verein für Bewegungsspiele Stuttgart 1893,Morocco,2004-05-10,21.9,0.08192990441511151,0.12289485662266728,68.65625
+655488,2025,25,1,3,846,2,0,45000000,Gabriel Martinelli,Attack,Left Winger,right,178.0,Arsenal Football Club,Brazil,2001-06-18,24.8,0.10638297872340426,0.3191489361702128,33.84
+657817,2023,5,0,0,37,1,0,400000,Benicio Baker-Boaitey,Attack,Left Winger,left,,Brighton and Hove Albion Football Club,England,2004-01-09,22.3,0.0,0.0,7.4
+658536,2025,14,1,1,658,2,0,25000000,Simon Adingra,Attack,Left Winger,right,175.0,Association sportive de Monaco Football Club,Cote d'Ivoire,2002-01-01,24.3,0.13677811550151975,0.13677811550151975,47.0
+659089,2024,36,0,1,3114,4,1,45000000,Ilya Zabarnyi,Defender,Centre-Back,right,189.0,Paris Saint-Germain Football Club,Ukraine,2002-09-01,23.6,0.0,0.028901734104046242,86.5
+659459,2023,9,1,1,223,2,0,20000000,Carney Chukwuemeka,Midfield,Central Midfield,right,188.0,Borussia Dortmund,Austria,2003-10-20,22.5,0.40358744394618834,0.40358744394618834,24.77777777777778
+659813,2025,21,1,2,1504,2,0,50000000,Piero Hincapié,Defender,Centre-Back,left,184.0,Arsenal Football Club,Ecuador,2002-01-09,24.2,0.05984042553191489,0.11968085106382978,71.61904761904762
+660860,2025,5,0,0,194,2,0,10000000,Diego Coppola,Defender,Centre-Back,right,193.0,Paris Football Club,Italy,2003-12-28,22.3,0.0,0.0,38.8
+660867,2024,25,2,3,1165,3,0,22000000,Julio Enciso,Midfield,Attacking Midfield,right,173.0,Racing Club de Strasbourg Alsace,Paraguay,2004-01-23,22.2,0.15450643776824033,0.23175965665236054,46.6
+661053,2025,8,1,1,504,1,0,45000000,Jarrad Branthwaite,Defender,Centre-Back,left,195.0,Everton Football Club,England,2002-06-27,23.8,0.17857142857142855,0.17857142857142855,63.0
+661207,2025,16,0,1,764,1,0,30000000,Oscar Bobb,Attack,Right Winger,left,175.0,Fulham Football Club,Norway,2003-07-12,22.7,0.0,0.11780104712041886,47.75
+661427,2025,18,0,2,843,1,0,10000000,David Møller Wolfe,Defender,Left-Back,left,187.0,Wolverhampton Wanderers Football Club,Norway,2002-04-23,24.0,0.0,0.21352313167259787,46.833333333333336
+663581,2023,36,1,0,2672,3,0,8000000,Vini Souza,Midfield,Defensive Midfield,right,187.0,Verein für Leibesübungen Wolfsburg,Brazil,1999-06-17,26.8,0.033682634730538924,0.0,74.22222222222223
+665390,2024,21,2,0,800,5,0,18000000,Jaden Philogene,Attack,Left Winger,right,181.0,Aston Villa Football Club,England,2002-02-08,24.2,0.225,0.0,38.095238095238095
+667121,2025,15,3,0,600,0,0,15000000,Rodrigo Gomes,Midfield,Left Midfield,right,175.0,Wolverhampton Wanderers Football Club,Portugal,2003-07-07,22.8,0.45,0.0,40.0
+667287,2025,24,3,2,1723,1,0,30000000,Yasin Ayari,Midfield,Central Midfield,right,172.0,Brighton and Hove Albion Football Club,Sweden,2003-10-06,22.5,0.1567034242600116,0.1044689495066744,71.79166666666667
+670858,2025,24,1,1,1753,4,0,35000000,Lewis Hall,Defender,Left-Back,left,179.0,Newcastle United Football Club,England,2004-09-08,21.6,0.05134055904164289,0.05134055904164289,73.04166666666667
+670882,2025,16,0,2,490,0,0,35000000,Jamie Gittens,Attack,Left Winger,right,178.0,Chelsea Football Club,England,2004-08-08,21.7,0.0,0.3673469387755102,30.625
+673492,2025,15,0,0,939,4,0,14000000,Morato,Defender,Centre-Back,left,192.0,Nottingham Forest Football Club,Brazil,2001-06-30,24.8,0.0,0.0,62.6
+676318,2023,9,0,1,165,0,0,6000000,Facundo Pellistri,Attack,Right Winger,right,175.0,Panathinaikos Athlitikos Omilos,Uruguay,2001-12-20,24.3,0.0,0.5454545454545454,18.333333333333332
+683571,2025,27,3,1,1237,1,0,22000000,Tolu Arokodare,Attack,Centre-Forward,right,197.0,Wolverhampton Wanderers Football Club,Nigeria,2000-11-23,25.4,0.2182700080840744,0.07275666936135812,45.81481481481482
+683895,2025,14,0,0,1101,1,1,18000000,Emmanuel Agbadou,Defender,Centre-Back,right,192.0,Beşiktaş Jimnastik Kulübü,Cote d'Ivoire,1997-06-17,28.8,0.0,0.0,78.64285714285714
+684210,2025,30,7,3,2123,4,0,18000000,Jaidon Anthony,Attack,Left Winger,right,183.0,Burnley Football Club,England,1999-12-01,26.4,0.29674988224211024,0.12717852096090437,70.76666666666667
+687626,2025,26,3,1,2185,9,1,110000000,Moisés Caicedo,Midfield,Defensive Midfield,right,178.0,Chelsea Football Club,Ecuador,2001-11-02,24.4,0.12356979405034324,0.041189931350114416,84.03846153846153
+689637,2025,6,0,1,314,2,0,12000000,Chadi Riad,Defender,Centre-Back,left,187.0,Crystal Palace Football Club,Morocco,2003-06-17,22.8,0.0,0.28662420382165604,52.333333333333336
+693095,2024,25,1,0,2205,5,0,16000000,Jacob Greaves,Defender,Centre-Back,left,193.0,Ipswich Town,England,2000-09-12,25.6,0.04081632653061225,0.0,88.2
+696181,2025,14,0,0,401,1,0,8000000,Romaine Mundle,Attack,Left Winger,right,172.0,Sunderland Association Football Club,England,2003-04-24,23.0,0.0,0.0,28.642857142857142
+696589,2025,23,0,3,1108,8,0,15000000,Tim Iroegbunam,Midfield,Central Midfield,right,183.0,Everton Football Club,England,2003-06-30,22.8,0.0,0.24368231046931407,48.17391304347826
+698164,2025,20,0,1,1144,1,0,10000000,Freddie Potts,Midfield,Defensive Midfield,right,183.0,West Ham United Football Club,England,2003-09-12,22.6,0.0,0.07867132867132867,57.2
+698678,2025,28,1,1,1952,1,0,12000000,Hugo Bueno,Defender,Left-Back,left,180.0,Wolverhampton Wanderers Football Club,Spain,2002-09-18,23.6,0.04610655737704918,0.04610655737704918,69.71428571428571
+700106,2025,18,1,1,716,2,0,28000000,Brajan Gruda,Midfield,Attacking Midfield,left,178.0,RasenBallsport Leipzig,Germany,2004-05-31,21.9,0.12569832402234637,0.12569832402234637,39.77777777777778
+701057,2025,10,0,1,312,1,0,32000000,Rico Lewis,Defender,Right-Back,right,170.0,Manchester City Football Club,England,2004-11-21,21.4,0.0,0.28846153846153844,31.2
+708072,2025,14,2,0,1026,2,0,18000000,Nicolò Savona,Defender,Right-Back,right,192.0,Nottingham Forest Football Club,Italy,2003-03-19,23.1,0.17543859649122806,0.0,73.28571428571429
+709726,2025,28,11,4,1811,0,0,90000000,Hugo Ekitiké,Attack,Centre-Forward,right,190.0,Liverpool Football Club,France,2002-06-20,23.8,0.5466593042517945,0.19878520154610715,64.67857142857143
+711337,2025,29,6,2,2209,1,0,35000000,Evanilson,Attack,Centre-Forward,both,183.0,Association Football Club Bournemouth,Brazil,1999-10-06,26.5,0.24445450430058852,0.08148483476686283,76.17241379310344
+711544,2025,30,0,1,2549,2,1,18000000,Jake O'Brien,Defender,Right-Back,right,197.0,Everton Football Club,Ireland,2001-05-15,24.9,0.0,0.03530796390741467,84.96666666666667
+711969,2023,15,1,2,1238,5,0,10000000,Lorenz Assignon,Defender,Right-Back,right,181.0,Verein für Bewegungsspiele Stuttgart 1893,France,2000-06-22,25.8,0.07269789983844911,0.14539579967689822,82.53333333333333
+711999,2025,30,3,2,1983,3,0,25000000,Lesley Ugochukwu,Midfield,Defensive Midfield,right,190.0,Burnley Football Club,France,2004-03-26,22.0,0.1361573373676248,0.09077155824508322,66.1
+712117,2023,5,0,0,87,0,0,1000000,Bobby Clark,Midfield,Central Midfield,right,178.0,Fußballclub Red Bull Salzburg,England,2005-02-07,21.2,0.0,0.0,17.4
+716276,2025,22,0,0,1712,10,0,12000000,Yerson Mosquera,Defender,Centre-Back,right,188.0,Wolverhampton Wanderers Football Club,Colombia,2001-05-02,24.9,0.0,0.0,77.81818181818181
+717411,2025,31,1,2,2139,7,0,30000000,Yegor Yarmolyuk,Midfield,Central Midfield,right,180.0,Brentford Football Club,Ukraine,2004-03-01,22.1,0.04207573632538569,0.08415147265077139,69.0
+719673,2025,5,0,1,56,0,0,16000000,Ben Gannon-Doak,Attack,Right Winger,right,173.0,Association Football Club Bournemouth,Scotland,2005-11-11,20.4,0.0,1.607142857142857,11.2
+724783,2023,8,0,0,139,1,0,500000,Tawanda Chirewa,Midfield,Attacking Midfield,right,181.0,Wolverhampton Wanderers Football Club,Zimbabwe,2003-10-12,22.5,0.0,0.0,17.375
+725912,2024,6,0,0,540,0,0,13000000,Antonín Kinský,Goalkeeper,Goalkeeper,right,190.0,Tottenham Hotspur Football Club,Czech Republic,2003-03-13,23.1,0.0,0.0,90.0
+727089,2025,26,0,0,2297,7,0,30000000,Noah Sadiki,Midfield,Central Midfield,right,173.0,Sunderland Association Football Club,DR Congo,2004-12-17,21.3,0.0,0.0,88.34615384615384
+729264,2024,10,0,0,480,1,0,3000000,Welington,Defender,Left-Back,left,170.0,Southampton FC,Brazil,2001-02-19,25.1,0.0,0.0,48.0
+730861,2025,28,2,1,2036,4,0,40000000,Milos Kerkez,Defender,Left-Back,left,180.0,Liverpool Football Club,Hungary,2003-11-07,22.4,0.08840864440078584,0.04420432220039292,72.71428571428571
+730893,2025,30,1,1,2670,5,0,25000000,Tyrick Mitchell,Defender,Left-Back,left,181.0,Crystal Palace Football Club,England,1999-09-01,26.6,0.033707865168539325,0.033707865168539325,89.0
+734425,2023,8,0,0,51,0,0,600000,Michael Olakigbe,Attack,Right Winger,,180.0,Brentford Football Club,England,2004-04-25,22.0,0.0,0.0,6.375
+735570,2025,29,1,1,2301,9,0,35000000,João Gomes,Midfield,Central Midfield,right,176.0,Wolverhampton Wanderers Football Club,Brazil,2001-02-12,25.2,0.03911342894393742,0.03911342894393742,79.34482758620689
+735571,2025,14,1,1,580,1,0,25000000,Rodrigo Muniz,Attack,Centre-Forward,right,186.0,Fulham Football Club,Brazil,2001-05-04,24.9,0.15517241379310345,0.15517241379310345,41.42857142857143
+739443,2025,31,19,1,2657,6,0,50000000,Igor Thiago,Attack,Centre-Forward,right,191.0,Brentford Football Club,Brazil,2001-06-26,24.8,0.6435829883327061,0.03387278885961611,85.70967741935483
+741238,2025,24,1,5,1280,0,0,30000000,Omari Hutchinson,Midfield,Attacking Midfield,left,174.0,Nottingham Forest Football Club,England,2003-10-30,22.4,0.0703125,0.3515625,53.333333333333336
+741257,2025,27,1,0,1966,9,0,22000000,Álex Jiménez,Defender,Right-Back,right,177.0,Association Football Club Bournemouth,Spain,2005-05-08,20.9,0.04577822990844354,0.0,72.81481481481481
+742451,2024,10,0,1,233,2,0,18000000,Carlos Forbs,Attack,Left Winger,left,169.0,Club Brugge Koninklijke Voetbalvereniging,Portugal,2004-03-19,22.1,0.0,0.38626609442060084,23.3
+743384,2025,23,4,2,1330,0,0,25000000,Chemsdine Talbi,Attack,Right Winger,right,175.0,Sunderland Association Football Club,Morocco,2005-05-09,20.9,0.27067669172932335,0.13533834586466167,57.82608695652174
+743413,2025,28,4,3,2135,4,0,50000000,Nico O'Reilly,Defender,Left-Back,left,193.0,Manchester City Football Club,England,2005-03-21,21.1,0.1686182669789227,0.12646370023419204,76.25
+743498,2025,24,0,2,981,0,0,20000000,Wilson Odobert,Attack,Left Winger,right,182.0,Tottenham Hotspur Football Club,France,2004-11-28,21.4,0.0,0.1834862385321101,40.875
+743591,2025,17,0,2,565,2,0,40000000,Savinho,Attack,Left Winger,left,176.0,Manchester City Football Club,Brazil,2004-04-10,22.0,0.0,0.3185840707964602,33.23529411764706
+743600,2025,23,0,0,1003,4,0,45000000,Andrey Santos,Midfield,Central Midfield,right,180.0,Chelsea Football Club,Brazil,2004-05-03,21.9,0.0,0.0,43.608695652173914
+744149,2025,27,0,5,2176,6,0,60000000,Adam Wharton,Midfield,Defensive Midfield,left,182.0,Crystal Palace Football Club,England,2004-02-06,22.2,0.0,0.2068014705882353,80.5925925925926
+745181,2025,20,1,0,972,4,0,17000000,Soungoutou Magassa,Midfield,Defensive Midfield,right,190.0,West Ham United Football Club,France,2003-10-08,22.5,0.0925925925925926,0.0,48.6
+745191,2024,19,1,0,280,1,0,10000000,Ramón Sosa,Attack,Second Striker,right,179.0,Sociedade Esportiva Palmeiras,Paraguay,1999-08-31,26.6,0.3214285714285714,0.0,14.736842105263158
+745461,2023,15,1,1,986,0,0,4000000,Luca Koleosho,Attack,Right Winger,right,175.0,Paris Football Club,Italy,2004-09-15,21.6,0.09127789046653144,0.09127789046653144,65.73333333333333
+746695,2024,26,1,1,1406,2,0,18000000,Kamaldeen Sulemana,Attack,Left Winger,right,175.0,Atalanta Bergamasca Calcio S.p.a.,Ghana,2002-02-15,24.1,0.06401137980085349,0.06401137980085349,54.07692307692308
+746739,2023,20,0,0,942,1,0,2500000,Andre Brooks,Midfield,Central Midfield,left,180.0,Sheffield United,England,2003-08-20,22.6,0.0,0.0,47.1
+746740,2024,16,1,0,105,1,0,4000000,Daniel Jebbison,Attack,Centre-Forward,right,190.0,,Canada,2003-08-13,22.7,0.8571428571428572,0.0,6.5625
+747009,2025,18,1,0,597,0,0,12000000,Justin Devenny,Midfield,Attacking Midfield,left,184.0,Crystal Palace Football Club,Northern Ireland,2003-10-11,22.5,0.15075376884422112,0.0,33.166666666666664
+748319,2025,16,0,1,673,3,0,15000000,Carlos Alcaraz,Midfield,Central Midfield,right,176.0,Everton Football Club,Argentina,2002-11-30,23.4,0.0,0.1337295690936107,42.0625
+763079,2025,15,0,0,889,2,0,35000000,Abdukodir Khusanov,Defender,Centre-Back,right,186.0,Manchester City Football Club,Uzbekistan,2004-02-29,22.1,0.0,0.0,59.266666666666666
+776890,2024,30,10,5,2240,7,1,40000000,Nicolas Jackson,Attack,Centre-Forward,right,187.0,FC Bayern München,Senegal,2001-06-20,24.8,0.40178571428571425,0.20089285714285712,74.66666666666667
+780630,2023,8,0,0,326,1,0,4000000,Willy Kambwala,Defender,Centre-Back,right,192.0,Villarreal Club de Fútbol S.A.D.,France,2004-08-25,21.6,0.0,0.0,40.75
+787232,2023,15,4,1,879,1,0,5000000,David Datro Fofana,Attack,Centre-Forward,right,182.0,Racing Club de Strasbourg Alsace,Cote d'Ivoire,2002-12-22,23.3,0.40955631399317405,0.10238907849829351,58.6
+790992,2023,11,1,0,202,1,0,5000000,Alfie Gilchrist,Defender,Centre-Back,right,183.0,Chelsea Football Club,England,2003-11-28,22.4,0.44554455445544555,0.0,18.363636363636363
+800176,2025,28,1,0,2136,9,0,25000000,André,Midfield,Defensive Midfield,right,176.0,Wolverhampton Wanderers Football Club,Brazil,2001-07-16,24.7,0.042134831460674156,0.0,76.28571428571429
+801734,2025,24,3,0,898,0,0,25000000,Mathys Tel,Attack,Centre-Forward,right,183.0,Tottenham Hotspur Football Club,France,2005-04-27,21.0,0.30066815144766146,0.0,37.416666666666664
+805714,2024,7,0,0,176,2,0,25000000,Renato Veiga,Defender,Centre-Back,left,190.0,Villarreal Club de Fútbol S.A.D.,Portugal,2003-07-29,22.7,0.0,0.0,25.142857142857142
+808509,2024,8,0,0,276,0,0,24000000,Danilo,Midfield,Central Midfield,left,177.0,S. A. F. Botafogo,Brazil,2001-04-29,24.9,0.0,0.0,34.5
+811779,2025,20,1,4,1125,2,0,40000000,Alejandro Garnacho,Attack,Left Winger,right,180.0,Chelsea Football Club,Argentina,2004-07-01,21.8,0.08,0.32,56.25
+817665,2025,7,0,0,409,0,0,18000000,Pablo,Attack,Centre-Forward,right,184.0,West Ham United Football Club,Brazil,2004-01-02,22.3,0.0,0.0,58.42857142857143
+820374,2025,22,0,2,1114,0,0,50000000,Kobbie Mainoo,Midfield,Central Midfield,right,184.0,Manchester United Football Club,England,2005-04-19,21.0,0.0,0.16157989228007183,50.63636363636363
+823231,2025,25,5,7,1720,4,0,35000000,Dango Ouattara,Attack,Right Winger,left,177.0,Brentford Football Club,Burkina Faso,2002-02-11,24.2,0.2616279069767442,0.36627906976744184,68.8
+823486,2025,30,1,0,2634,6,0,35000000,Michael Kayode,Defender,Right-Back,right,179.0,Brentford Football Club,Italy,2004-07-10,21.7,0.03416856492027335,0.0,87.8
+842341,2025,28,0,0,2406,0,0,25000000,Maxime Estève,Defender,Centre-Back,left,193.0,Burnley Football Club,France,2002-05-26,23.9,0.0,0.0,85.92857142857143
+848509,2025,28,0,1,1698,3,0,12000000,Jackson Tchatchoua,Defender,Right-Back,right,180.0,Wolverhampton Wanderers Football Club,Cameroon,2001-09-14,24.6,0.0,0.05300353356890459,60.642857142857146
+848682,2024,5,0,0,121,0,0,6000000,Kosta Nedeljkovic,Defender,Right-Back,right,184.0,RasenBallsport Leipzig,Serbia,2005-12-16,20.3,0.0,0.0,24.2
+849410,2023,6,0,0,308,1,0,35000000,Valentín Barco,Midfield,Central Midfield,left,170.0,Racing Club de Strasbourg Alsace,Argentina,2004-07-23,21.7,0.0,0.0,51.333333333333336
+852024,2023,8,0,0,385,0,0,8000000,Bénie Traoré,Attack,Left Winger,right,172.0,FC Basel 1893 AG,Cote d'Ivoire,2002-11-30,23.4,0.0,0.0,48.125
+855256,2025,31,2,1,2320,3,0,40000000,Alex Scott,Midfield,Central Midfield,right,178.0,Association Football Club Bournemouth,England,2003-08-21,22.6,0.07758620689655173,0.03879310344827586,74.83870967741936
+862297,2024,5,0,0,65,0,0,6000000,Nasser Djiga,Defender,Centre-Back,right,192.0,Rangers Football Club,Burkina Faso,2002-11-15,23.4,0.0,0.0,13.0
+863741,2023,7,0,0,184,1,0,600000,Nathan Fraser,Attack,Centre-Forward,right,188.0,Wolverhampton Wanderers Football Club,Ireland,2005-02-22,21.1,0.0,0.0,26.285714285714285
+864121,2024,11,0,2,577,0,0,20000000,Abdul Fatawu,Attack,Right Winger,left,177.0,Leicester City,Ghana,2004-03-08,22.1,0.0,0.3119584055459272,52.45454545454545
+865993,2023,9,0,0,148,1,0,1000000,David Ozoh,Midfield,Defensive Midfield,right,189.0,Crystal Palace Football Club,England,2005-05-06,20.9,0.0,0.0,16.444444444444443
+866246,2025,18,1,2,854,2,0,40000000,Lucas Bergvall,Midfield,Central Midfield,right,187.0,Tottenham Hotspur Football Club,Sweden,2006-02-02,20.2,0.1053864168618267,0.2107728337236534,47.44444444444444
+866655,2025,14,0,0,350,2,0,22000000,Tyler Dibling,Attack,Right Winger,left,178.0,Everton Football Club,England,2006-02-17,20.1,0.0,0.0,25.0
+867688,2025,20,1,4,1179,0,0,22000000,Jack Hinshelwood,Midfield,Defensive Midfield,right,182.0,Brighton and Hove Albion Football Club,England,2005-04-11,21.0,0.07633587786259542,0.3053435114503817,58.95
+874066,2023,12,0,0,946,2,0,450000,Oliver Arblaster,Midfield,Central Midfield,right,180.0,Sheffield United,England,2004-01-08,22.3,0.0,0.0,78.83333333333333
+876631,2025,14,2,1,1104,4,0,32000000,Habib Diarra,Midfield,Central Midfield,right,178.0,Sunderland Association Football Club,Senegal,2004-01-03,22.3,0.16304347826086957,0.08152173913043478,78.85714285714286
+880245,2025,29,3,3,2401,5,0,35000000,Mateus Fernandes,Midfield,Central Midfield,right,180.0,West Ham United Football Club,Portugal,2004-07-10,21.7,0.11245314452311538,0.11245314452311538,82.79310344827586
+888493,2023,8,1,0,45,1,0,3500000,Alejo Veliz,Attack,Centre-Forward,right,186.0,Club Atlético Rosario Central,Argentina,2003-09-19,22.6,2.0,0.0,5.625
+890290,2024,32,3,2,2422,10,0,65000000,Dean Huijsen,Defender,Centre-Back,both,197.0,Real Madrid Club de Fútbol,Spain,2005-04-14,21.0,0.11147811725846407,0.07431874483897605,75.6875
+890719,2025,6,0,0,165,0,0,40000000,Ethan Nwaneri,Midfield,Attacking Midfield,left,176.0,Olympique de Marseille,England,2007-03-21,19.1,0.0,0.0,27.5
+890721,2025,14,0,0,312,3,0,35000000,Myles Lewis-Skelly,Defender,Left-Back,left,178.0,Arsenal Football Club,England,2006-09-26,19.5,0.0,0.0,22.285714285714285
+900195,2025,23,1,2,905,1,0,30000000,Kevin,Attack,Left Winger,right,176.0,Fulham Football Club,Brazil,2003-01-04,23.3,0.0994475138121547,0.1988950276243094,39.34782608695652
+903611,2025,5,0,0,257,0,0,17000000,Nilson Angulo,Attack,Left Winger,right,183.0,Sunderland Association Football Club,Ecuador,2003-06-19,22.8,0.0,0.0,51.4
+904802,2025,16,0,0,640,4,0,35000000,Jorrel Hato,Defender,Left-Back,left,182.0,Chelsea Football Club,Netherlands,2006-03-07,20.1,0.0,0.0,40.0
+922563,2025,12,0,1,658,1,0,10000000,Oliver Scarles,Defender,Left-Back,left,180.0,West Ham United Football Club,England,2005-12-12,20.3,0.0,0.13677811550151975,54.833333333333336
+922693,2025,21,2,2,1377,5,0,35000000,Archie Gray,Midfield,Central Midfield,right,187.0,Tottenham Hotspur Football Club,England,2006-03-12,20.1,0.13071895424836602,0.13071895424836602,65.57142857142857
+922769,2025,19,1,3,1134,0,0,25000000,Lewis Miley,Midfield,Central Midfield,right,189.0,Newcastle United Football Club,England,2006-05-01,19.9,0.07936507936507936,0.23809523809523808,59.68421052631579
+923831,2025,28,0,1,1615,1,0,50000000,Leny Yoro,Defender,Centre-Back,right,190.0,Manchester United Football Club,France,2005-11-13,20.4,0.0,0.05572755417956657,57.67857142857143
+926952,2025,22,3,3,1333,5,0,35000000,Patrick Dorgu,Defender,Left-Back,left,185.0,Manchester United Football Club,Denmark,2004-10-26,21.5,0.20255063765941483,0.20255063765941483,60.59090909090909
+927768,2025,15,0,0,1103,0,1,5000000,Lucas Pires,Defender,Left-Back,left,182.0,Burnley Football Club,Brazil,2001-03-24,25.0,0.0,0.0,73.53333333333333
+936874,2025,9,0,0,247,2,0,22000000,Tyrique George,Attack,Left Winger,right,181.0,Everton Football Club,England,2006-02-04,20.2,0.0,0.0,27.444444444444443
+937941,2025,31,6,0,1645,3,0,30000000,Thierno Barry,Attack,Centre-Forward,right,195.0,Everton Football Club,France,2002-10-21,23.5,0.3282674772036474,0.0,53.064516129032256
+938158,2025,9,0,1,248,1,0,12000000,Marc Guiu,Attack,Centre-Forward,right,187.0,Chelsea Football Club,Spain,2006-01-04,20.3,0.0,0.3629032258064516,27.555555555555557
+947411,2025,13,0,0,562,0,0,25000000,Chris Rigg,Midfield,Attacking Midfield,left,177.0,Sunderland Association Football Club,England,2007-06-18,18.8,0.0,0.0,43.23076923076923
+950091,2025,9,1,1,132,0,0,20000000,Stefanos Tzimas,Attack,Centre-Forward,both,186.0,Brighton and Hove Albion Football Club,Greece,2006-01-06,20.3,0.6818181818181819,0.6818181818181819,14.666666666666666
+955357,2025,26,9,0,1161,3,0,40000000,Junior Kroupi,Attack,Centre-Forward,right,179.0,Association Football Club Bournemouth,France,2006-06-23,19.8,0.6976744186046512,0.0,44.65384615384615
+967319,2024,7,1,1,136,0,0,10000000,Romain Esse,Attack,Right Winger,left,178.0,Crystal Palace Football Club,England,2005-05-13,20.9,0.6617647058823529,0.6617647058823529,19.428571428571427
+967346,2025,19,2,0,755,0,0,18000000,Eliezer Mayenda,Attack,Centre-Forward,left,180.0,Sunderland Association Football Club,Spain,2005-05-08,20.9,0.23841059602649006,0.0,39.73684210526316
+973085,2025,25,0,0,1288,5,0,55000000,Carlos Baleba,Midfield,Defensive Midfield,left,179.0,Brighton and Hove Albion Football Club,Cameroon,2004-01-03,22.3,0.0,0.0,51.52
+989112,2025,7,0,0,367,0,0,20000000,Veljko Milosavljevic,Defender,Centre-Back,right,192.0,Association Football Club Bournemouth,Serbia,2007-06-28,18.8,0.0,0.0,52.42857142857143
+991800,2025,5,0,0,121,0,0,12000000,Luís Guilherme,Attack,Right Winger,left,175.0,Sporting Clube de Portugal,Brazil,2006-02-09,20.2,0.0,0.0,24.2
+996897,2025,28,5,1,1947,9,0,25000000,Diego Gómez,Midfield,Central Midfield,right,185.0,Brighton and Hove Albion Football Club,Paraguay,2003-03-27,23.0,0.23112480739599384,0.046224961479198766,69.53571428571429
+1004708,2025,12,1,0,572,1,0,25000000,Josh Acheampong,Defender,Right-Back,right,190.0,Chelsea Football Club,England,2006-05-05,19.9,0.15734265734265734,0.0,47.666666666666664
+1005649,2025,23,1,0,2001,4,0,50000000,Murillo,Defender,Centre-Back,left,180.0,Nottingham Forest Football Club,Brazil,2002-07-04,23.8,0.04497751124437781,0.0,87.0
+1006411,2025,13,0,0,704,2,0,20000000,Jaydee Canvot,Defender,Centre-Back,right,188.0,Crystal Palace Football Club,France,2006-07-29,19.7,0.0,0.0,54.15384615384615
+1011131,2025,25,1,2,1141,3,0,20000000,Josh King,Midfield,Attacking Midfield,right,173.0,Fulham Football Club,England,2007-01-03,19.3,0.07887817703768624,0.15775635407537247,45.64
+1011147,2024,10,0,1,361,0,0,16000000,Mikey Moore,Attack,Left Winger,right,180.0,Rangers Football Club,England,2007-08-11,18.7,0.0,0.24930747922437674,36.1
+1011738,2024,5,0,0,346,0,0,5000000,Harry Amass,Defender,Left-Back,left,181.0,Manchester United Football Club,England,2007-03-16,19.1,0.0,0.0,69.2
+1012534,2025,27,2,4,1839,2,0,40000000,Yankuba Minteh,Attack,Right Winger,left,180.0,Brighton and Hove Albion Football Club,The Gambia,2004-07-22,21.7,0.09787928221859706,0.1957585644371941,68.11111111111111
+1012564,2025,8,2,1,627,1,0,40000000,Rayan,Attack,Right Winger,left,185.0,Association Football Club Bournemouth,Brazil,2006-08-03,19.7,0.28708133971291866,0.14354066985645933,78.375
+1042886,2024,7,0,0,160,1,0,5000000,Chido Obi,Attack,Centre-Forward,right,188.0,Manchester United Football Club,Denmark,2007-11-29,18.4,0.0,0.0,22.857142857142858
+1056993,2025,20,2,2,763,3,0,80000000,Estêvão,Attack,Right Winger,left,176.0,Chelsea Football Club,Brazil,2007-04-24,19.0,0.23591087811271297,0.23591087811271297,38.15
+1060087,2025,16,2,1,294,2,0,25000000,Charalampos Kostoulas,Attack,Centre-Forward,right,185.0,Brighton and Hove Albion Football Club,Greece,2007-05-30,18.9,0.6122448979591837,0.30612244897959184,18.375
+1064471,2025,9,0,1,230,1,0,16000000,Fer López,Midfield,Attacking Midfield,left,188.0,Real Club Celta de Vigo S. A. D.,Spain,2004-05-24,21.9,0.0,0.391304347826087,25.555555555555557
+1069512,2025,5,0,0,30,1,0,4000000,Jonah Kusi-Asare,Attack,Centre-Forward,right,196.0,Fulham Football Club,Sweden,2007-07-04,18.8,0.0,0.0,6.0
+1078163,2025,14,0,1,653,2,0,20000000,Ayden Heaven,Defender,Centre-Back,left,189.0,Manchester United Football Club,England,2006-09-22,19.5,0.0,0.13782542113323124,46.642857142857146
+1081995,2025,8,0,0,31,1,0,300000,Mohamadou Kanté,Midfield,Defensive Midfield,right,189.0,West Ham United Football Club,France,2005-09-20,20.6,0.0,0.0,3.875
+1107726,2025,6,0,0,113,0,0,1200000,Ezra Mayers,Defender,Centre-Back,left,183.0,West Ham United Football Club,England,2007-01-16,19.2,0.0,0.0,18.833333333333332
+1107733,2025,11,0,0,499,0,0,12000000,Harrison Armstrong,Midfield,Central Midfield,right,185.0,Everton Football Club,England,2007-01-19,19.2,0.0,0.0,45.36363636363637
+1108466,2025,13,1,0,219,0,0,20000000,Rio Ngumoha,Attack,Left Winger,right,170.0,Liverpool Football Club,England,2008-08-29,17.6,0.410958904109589,0.0,16.846153846153847
+1111589,2025,25,0,5,2097,4,0,28000000,El Hadji Malick Diouf,Defender,Left-Back,left,183.0,West Ham United Football Club,Senegal,2004-12-28,21.3,0.0,0.21459227467811157,83.88
+1124005,2025,14,0,1,159,0,0,15000000,Christantus Uche,Attack,Centre-Forward,both,190.0,Crystal Palace Football Club,Nigeria,2003-05-19,22.9,0.0,0.5660377358490566,11.357142857142858
+1141628,2024,10,0,0,37,0,0,3500000,Yunus Konak,Midfield,Defensive Midfield,right,181.0,Brentford Football Club,Türkiye,2006-01-10,20.2,0.0,0.0,3.7
+1230661,2025,20,2,2,1282,0,0,20000000,Mateus Mané,Midfield,Attacking Midfield,right,175.0,Wolverhampton Wanderers Football Club,Portugal,2007-09-16,18.6,0.14040561622464898,0.14040561622464898,64.1

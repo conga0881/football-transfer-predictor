@@ -1,0 +1,18 @@
+# Raw Kaggle data (too large for GitHub)
+appearances.csv
+club_games.csv
+clubs.csv
+competitions.csv
+countries.csv
+game_events.csv
+game_lineups.csv
+games.csv
+national_teams.csv
+player_valuations.csv
+players.csv
+transfers.csv
+
+# Python
+__pycache__/
+*.pyc
+.env
