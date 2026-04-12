@@ -43,13 +43,6 @@ def fmt_eur(v):
         return f"€{v/1e6:.1f}m"
     return f"€{v/1e3:.0f}k"
 
-# ── Sidebar ───────────────────────────────────────────────────────────────────
-st.sidebar.title("⚽ Football Value Predictor")
-st.sidebar.markdown("Premier League · Seasons 2024+")
-
-all_names     = sorted(df_all["name"].tolist())
-selected_name = st.sidebar.selectbox("Select a player", all_names)
-
 # ── Helper ────────────────────────────────────────────────────────────────────
 def get_player(name):
     row   = df_all[df_all["name"] == name].iloc[0]
@@ -58,18 +51,30 @@ def get_player(name):
     idx   = int(np.where(gd["player_names"] == name)[0][0])
     return row, group, gd, idx
 
-# ── Tabs ──────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4 = st.tabs([
-    "🔍 Player Explorer",
-    "📊 Market Analysis",
-    "⚖️ Compare Players",
-    "🛠️ Build a Player",
-])
+# ── Sidebar nav ───────────────────────────────────────────────────────────────
+st.sidebar.title("⚽ Football Value Predictor")
+st.sidebar.markdown("Premier League · Seasons 2024+")
+st.sidebar.divider()
+
+page = st.sidebar.radio(
+    "Navigate",
+    ["🔍 Select a Player", "📊 Market Analysis", "⚖️ Compare Players", "🛠️ Build a Player"],
+    label_visibility="collapsed",
+)
+
+all_names = sorted(df_all["name"].tolist())
+
+# Player selector only shown on the player page
+if page == "🔍 Select a Player":
+    st.sidebar.divider()
+    selected_name = st.sidebar.selectbox("Select a player", all_names)
+else:
+    selected_name = all_names[0]  # default for scatter highlight
 
 # ══════════════════════════════════════════════════════════════════════════════
-# TAB 1 — Player Explorer
+# PAGE — Select a Player
 # ══════════════════════════════════════════════════════════════════════════════
-with tab1:
+if page == "🔍 Select a Player":
     row, group, gd, idx = get_player(selected_name)
     actual    = float(row["market_value_in_eur"])
     predicted = float(row["predicted_value"])
@@ -121,9 +126,9 @@ with tab1:
     )
 
 # ══════════════════════════════════════════════════════════════════════════════
-# TAB 2 — Market Analysis
+# PAGE — Market Analysis
 # ══════════════════════════════════════════════════════════════════════════════
-with tab2:
+elif page == "📊 Market Analysis":
     # Feature importance — one chart per group
     st.subheader("Feature Importance by Position Group")
     grp_select = st.selectbox("Position group", list(groups.keys()), key="fi_grp")
@@ -206,9 +211,9 @@ with tab2:
         st.dataframe(top_ov, hide_index=True, use_container_width=True)
 
 # ══════════════════════════════════════════════════════════════════════════════
-# TAB 3 — Compare Players
+# PAGE — Compare Players
 # ══════════════════════════════════════════════════════════════════════════════
-with tab3:
+elif page == "⚖️ Compare Players":
     st.subheader("Compare Two Players")
     cc1, cc2 = st.columns(2)
     with cc1:
@@ -281,9 +286,9 @@ with tab3:
         st.caption("Higher = better rank among all PL players in the dataset for that stat.")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# TAB 4 — Build a Player
+# PAGE — Build a Player
 # ══════════════════════════════════════════════════════════════════════════════
-with tab4:
+elif page == "🛠️ Build a Player":
     st.subheader("Build a Custom Player")
     st.markdown("Design a player with the sliders and see what the model predicts.")
 
