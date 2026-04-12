@@ -13,7 +13,7 @@ import shap
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Football Transfer Value Predictor",
+    page_title="Football Value Predictor",
     page_icon="⚽",
     layout="wide",
 )
@@ -48,7 +48,7 @@ def fmt_eur(v):
     return f"€{v/1e3:.0f}k"
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
-st.sidebar.title("⚽ Transfer Value Predictor")
+st.sidebar.title("⚽ Football Value Predictor")
 st.sidebar.markdown("Premier League · Seasons 2022+")
 
 sorted_names = sorted(player_names)
