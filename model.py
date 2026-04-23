@@ -79,6 +79,13 @@ df["age_squared"] = df["age"] ** 2
 # Availability: fraction of a 38-game season the player appeared in
 df["availability"] = (df["appearances"] / 38).clip(upper=1.0)
 
+# FPL advanced stats — NaN where player not matched; XGBoost/LightGBM handle
+# NaN natively so no imputation needed. Ensure float dtype.
+# FPL stats (saves, clean_sheets, xG, xA) are fetched by fetch_fpl_data.py
+# but excluded from the model: at 64% match rate the 36% imputed values add
+# more noise than signal (xG ≈ goals at season level; saves require GK coverage).
+# Re-enable once match rate exceeds ~85%.
+
 # ── 7. Position-specific feature sets ─────────────────────────────────────────
 COMMON = [
     "age", "age_squared", "height_in_cm",
