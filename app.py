@@ -24,32 +24,45 @@ def load_artifacts():
         data = pickle.load(f)
     with open("model.pkl", "rb") as f:
         bundle = pickle.load(f)
-    # Pre-build SHAP explainers (slow to create, cache them)
     explainers = {grp: shap.TreeExplainer(m) for grp, m in bundle["models"].items()}
     return data, bundle, explainers
 
 data, bundle, explainers = load_artifacts()
 
-groups             = data["groups"]
-df_all             = data["df_all"]
-sub_pos_by_group   = data["sub_positions_by_group"]
-models             = bundle["models"]
-foot_enc           = bundle["foot_enc"]
-sub_pos_enc        = bundle["sub_pos_enc"]
-feature_cols       = bundle["feature_cols"]   # raw col names per group
+groups           = data["groups"]
+df_all           = data["df_all"]
+sub_pos_by_group = data["sub_positions_by_group"]
+clubs_sorted     = data.get("clubs_sorted", [])
+models           = bundle["models"]
+lgbm_models      = bundle.get("lgbm_models", {})
+foot_enc         = bundle["foot_enc"]
+subpos_enc_map   = bundle.get("subpos_enc_map", {})
+club_enc_map     = bundle.get("club_enc_map", {})
+global_mean_log  = bundle.get("global_mean_log", 0.0)
+eu_countries     = bundle.get("eu_countries", set())
+feature_cols     = bundle["feature_cols"]
+
 
 def fmt_eur(v):
     if v >= 1e6:
         return f"€{v/1e6:.1f}m"
     return f"€{v/1e3:.0f}k"
 
-# ── Helper ────────────────────────────────────────────────────────────────────
+
 def get_player(name):
     row   = df_all[df_all["name"] == name].iloc[0]
     group = row["position_group"]
     gd    = groups[group]
     idx   = int(np.where(gd["player_names"] == name)[0][0])
     return row, group, gd, idx
+
+
+def predict_ensemble(group, X):
+    xgb_pred = models[group].predict(X)
+    if group in lgbm_models:
+        return (xgb_pred + lgbm_models[group].predict(X)) / 2
+    return xgb_pred
+
 
 # ── Sidebar nav ───────────────────────────────────────────────────────────────
 st.sidebar.title("⚽ Football Value Predictor")
@@ -64,12 +77,11 @@ page = st.sidebar.radio(
 
 all_names = sorted(df_all["name"].tolist())
 
-# Player selector only shown on the player page
 if page == "🔍 Select a Player":
     st.sidebar.divider()
     selected_name = st.sidebar.selectbox("Select a player", all_names)
 else:
-    selected_name = all_names[0]  # default for scatter highlight
+    selected_name = all_names[0]
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE — Select a Player
@@ -91,7 +103,6 @@ if page == "🔍 Select a Player":
 
     st.divider()
 
-    # Season stats
     st.subheader("Season Stats")
     s1, s2, s3, s4, s5, s6 = st.columns(6)
     s1.metric("Appearances", int(row["appearances"]))
@@ -103,7 +114,6 @@ if page == "🔍 Select a Player":
 
     st.divider()
 
-    # SHAP waterfall — at the bottom as requested
     st.subheader("Why this prediction? (SHAP)")
     exp = explainers[group]
     ev  = exp.expected_value
@@ -129,7 +139,6 @@ if page == "🔍 Select a Player":
 # PAGE — Market Analysis
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "📊 Market Analysis":
-    # Feature importance — one chart per group
     st.subheader("Feature Importance by Position Group")
     grp_select = st.selectbox("Position group", list(groups.keys()), key="fi_grp")
     gd_fi = groups[grp_select]
@@ -149,7 +158,6 @@ elif page == "📊 Market Analysis":
 
     st.divider()
 
-    # Predicted vs Actual scatter
     st.subheader("All Players: Predicted vs Actual Value")
     row_sel, _, _, _ = get_player(selected_name)
     fig_sc = px.scatter(
@@ -178,7 +186,6 @@ elif page == "📊 Market Analysis":
 
     st.divider()
 
-    # Undervalued / Overvalued
     st.subheader("Most Undervalued & Overvalued Players")
     df_val = df_all[["name", "position_group", "current_club_name",
                       "market_value_in_eur", "predicted_value"]].copy()
@@ -238,8 +245,8 @@ elif page == "⚖️ Compare Players":
             st.metric("Actual",    fmt_eur(float(row_a["market_value_in_eur"])))
             st.metric("Appearances", int(row_a["appearances"]))
             if row_a["position_group"] != "GK":
-                st.metric("Goals",   int(row_a["goals"]))
-                st.metric("Assists", int(row_a["assists"]))
+                st.metric("Goals",      int(row_a["goals"]))
+                st.metric("Assists",    int(row_a["assists"]))
                 st.metric("Goals/90",   f"{row_a['goals_per_90']:.2f}")
                 st.metric("Assists/90", f"{row_a['assists_per_90']:.2f}")
         with col_b:
@@ -251,14 +258,13 @@ elif page == "⚖️ Compare Players":
             st.metric("Actual",    fmt_eur(float(row_b["market_value_in_eur"])))
             st.metric("Appearances", int(row_b["appearances"]))
             if row_b["position_group"] != "GK":
-                st.metric("Goals",   int(row_b["goals"]))
-                st.metric("Assists", int(row_b["assists"]))
+                st.metric("Goals",      int(row_b["goals"]))
+                st.metric("Assists",    int(row_b["assists"]))
                 st.metric("Goals/90",   f"{row_b['goals_per_90']:.2f}")
                 st.metric("Assists/90", f"{row_b['assists_per_90']:.2f}")
 
         st.divider()
 
-        # Percentile bar chart vs all PL players
         st.subheader("Percentile Rank vs all PL players")
         stat_cols   = ["appearances", "minutes_played", "goals",
                        "assists", "goals_per_90", "assists_per_90"]
@@ -298,6 +304,11 @@ elif page == "🛠️ Build a Player":
         custom_group  = st.selectbox("Position Group", ["GK", "DEF", "MID", "FWD"])
         custom_sub    = st.selectbox("Sub-position", sub_pos_by_group.get(custom_group, ["Unknown"]))
         custom_foot   = st.selectbox("Preferred Foot", ["right", "left", "both", "unknown"])
+
+        club_options  = ["(Average Club)"] + clubs_sorted
+        selected_club = st.selectbox("Club", club_options)
+        is_eu         = st.checkbox("EU/EEA Citizen", value=True)
+
         custom_age    = st.slider("Age", 16, 40, 24)
         custom_height = st.slider("Height (cm)", 155, 210, 181)
         custom_apps   = st.slider("Appearances", 1, 50, 20)
@@ -313,29 +324,47 @@ elif page == "🛠️ Build a Player":
     # Derived features
     mins_safe = max(custom_mins, 1)
     apps_safe = max(custom_apps, 1)
-    g90 = custom_goals / mins_safe * 90
-    a90 = custom_assists / mins_safe * 90
-    mpg = mins_safe / apps_safe
+    g90  = custom_goals / mins_safe * 90
+    a90  = custom_assists / mins_safe * 90
+    gc90 = (custom_goals + custom_assists) / mins_safe * 90
+    mpg  = mins_safe / apps_safe
+    age2 = custom_age ** 2
 
     # Encode inputs
     foot_val    = foot_enc.transform([custom_foot])[0] if custom_foot in foot_enc.classes_ else 0
-    sub_pos_str = custom_sub if custom_sub in sub_pos_enc.classes_ else sub_pos_enc.classes_[0]
-    sub_val     = sub_pos_enc.transform([sub_pos_str])[0]
+    subpos_val  = subpos_enc_map.get(custom_sub, global_mean_log)
+    club_val    = (
+        club_enc_map.get(selected_club, global_mean_log)
+        if selected_club != "(Average Club)"
+        else global_mean_log
+    )
+    eu_val = 1 if is_eu else 0
 
     all_feature_values = {
-        "age": custom_age, "height_in_cm": custom_height,
-        "appearances": custom_apps, "minutes_played": custom_mins,
-        "minutes_per_game": mpg, "yellow_cards": custom_yellow,
-        "red_cards": custom_red, "foot_enc": foot_val,
-        "sub_position_enc": sub_val,
-        "goals": custom_goals, "assists": custom_assists,
-        "goals_per_90": g90, "assists_per_90": a90,
+        "age":                       custom_age,
+        "age_squared":               age2,
+        "height_in_cm":              custom_height,
+        "appearances":               custom_apps,
+        "minutes_played":            custom_mins,
+        "minutes_per_game":          mpg,
+        "availability":              min(custom_apps / 38, 1.0),
+        "yellow_cards":              custom_yellow,
+        "red_cards":                 custom_red,
+        "foot_enc":                  foot_val,
+        "sub_position_enc":          subpos_val,
+        "club_enc":                  club_val,
+        "is_eu_citizen":             eu_val,
+        "goals":                     custom_goals,
+        "assists":                   custom_assists,
+        "goals_per_90":              g90,
+        "assists_per_90":            a90,
+        "goal_contributions_per_90": gc90,
     }
 
     cols_for_group = feature_cols[custom_group]
-    X_custom = np.array([[all_feature_values[f] for f in cols_for_group]])
+    X_custom = np.array([[all_feature_values[f] for f in cols_for_group]], dtype=float)
 
-    custom_pred_log = models[custom_group].predict(X_custom)[0]
+    custom_pred_log = predict_ensemble(custom_group, X_custom)[0]
     custom_pred_eur = np.expm1(custom_pred_log)
 
     with out_col:
