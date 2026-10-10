@@ -48,12 +48,13 @@ stats = stats[stats["season"] >= 2024]
 
 # ── 4. Merge everything together ───────────────────────────────────────────────
 df = stats.merge(latest_valuations, on="player_id", how="inner")
-df = df.merge(
-    players[["player_id", "name", "position", "sub_position", "foot",
-             "height_in_cm", "current_club_name", "country_of_citizenship",
-             "date_of_birth"]],
-    on="player_id", how="left"
-)
+player_cols = ["player_id", "name", "position", "sub_position", "foot",
+               "height_in_cm", "current_club_name", "country_of_citizenship",
+               "date_of_birth"]
+if "contract_expiration_date" in players.columns:
+    player_cols.append("contract_expiration_date")
+
+df = df.merge(players[player_cols], on="player_id", how="left")
 
 # ── 5. Feature engineering ─────────────────────────────────────────────────────
 df["date_of_birth"] = pd.to_datetime(df["date_of_birth"], errors="coerce")
@@ -61,6 +62,22 @@ df["age"] = ((pd.Timestamp.now() - df["date_of_birth"]).dt.days / 365.25).round(
 df["goals_per_90"] = (df["goals"] / df["minutes_played"] * 90).replace([np.inf, -np.inf], 0)
 df["assists_per_90"] = (df["assists"] / df["minutes_played"] * 90).replace([np.inf, -np.inf], 0)
 df["minutes_per_game"] = (df["minutes_played"] / df["appearances"]).replace([np.inf, -np.inf], 0)
+
+# Contract expiry: months remaining from start of 2025-26 season
+# Players in the last year of contract trade at a discount; free agents at ~0 for fees.
+CONTRACT_REF_DATE = pd.Timestamp("2025-09-01")
+if "contract_expiration_date" in df.columns:
+    df["contract_expiration_date"] = pd.to_datetime(
+        df["contract_expiration_date"], errors="coerce"
+    )
+    df["months_to_contract_end"] = (
+        (df["contract_expiration_date"] - CONTRACT_REF_DATE).dt.days / 30.44
+    )
+    median_months = df["months_to_contract_end"].median()
+    df["months_to_contract_end"] = df["months_to_contract_end"].fillna(median_months)
+else:
+    # Placeholder until contract_expiration_date is available in players.csv
+    df["months_to_contract_end"] = np.nan
 
 # Drop players with no market value or too few appearances
 df = df.dropna(subset=["market_value_in_eur", "age"])

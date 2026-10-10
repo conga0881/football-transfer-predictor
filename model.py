@@ -34,6 +34,16 @@ df["height_in_cm"]           = df["height_in_cm"].fillna(df["height_in_cm"].medi
 df["current_club_name"]      = df["current_club_name"].fillna("Unknown")
 df["country_of_citizenship"] = df["country_of_citizenship"].fillna("Unknown")
 
+# Contract: fill NaN (no data yet) with median so existing model runs unchanged.
+# Once data_prep.py populates real values the median shifts and the feature fires.
+CONTRACT_REF_DATE = pd.Timestamp("2025-09-01")
+if "months_to_contract_end" not in df.columns or df["months_to_contract_end"].isna().all():
+    df["months_to_contract_end"] = np.nan
+contract_median = df["months_to_contract_end"].median()
+if pd.isna(contract_median):
+    contract_median = 24.0   # assume 2 years if entirely unknown
+df["months_to_contract_end"] = df["months_to_contract_end"].fillna(contract_median)
+
 # ── 3. Foot label encoding ────────────────────────────────────────────────────
 foot_enc = LabelEncoder()
 df["foot_enc"] = foot_enc.fit_transform(df["foot"].astype(str))
@@ -93,6 +103,7 @@ COMMON = [
     "availability",
     "yellow_cards", "red_cards",
     "foot_enc", "sub_position_enc", "club_enc", "is_eu_citizen",
+    "months_to_contract_end",
 ]
 OUTFIELD = [
     "goals", "assists", "goals_per_90", "assists_per_90",
@@ -113,6 +124,7 @@ DISPLAY_NAMES = {
     "age_squared":               "age²",
     "goal_contributions_per_90": "g+a/90",
     "is_eu_citizen":             "EU citizen",
+    "months_to_contract_end":    "contract months left",
 }
 
 # ── 8. Metric helpers ─────────────────────────────────────────────────────────
@@ -285,16 +297,18 @@ clubs_sorted = sorted(club_enc_map.keys())
 # ── 12. Save artifacts ────────────────────────────────────────────────────────
 with open("model.pkl", "wb") as f:
     pickle.dump({
-        "models":             models,
-        "lgbm_models":        lgbm_models,
-        "foot_enc":           foot_enc,
-        "sub_pos_enc":        None,           # replaced by target encoding
-        "subpos_enc_map":     subpos_enc_map,
-        "club_enc_map":       club_enc_map,
-        "global_mean_log":    global_mean_log,
-        "eu_countries":       EU_EEA_COUNTRIES,
-        "feature_cols":       POSITION_FEATURES,
-        "position_group_map": POSITION_GROUP_MAP,
+        "models":              models,
+        "lgbm_models":         lgbm_models,
+        "foot_enc":            foot_enc,
+        "sub_pos_enc":         None,           # replaced by target encoding
+        "subpos_enc_map":      subpos_enc_map,
+        "club_enc_map":        club_enc_map,
+        "global_mean_log":     global_mean_log,
+        "eu_countries":        EU_EEA_COUNTRIES,
+        "feature_cols":        POSITION_FEATURES,
+        "position_group_map":  POSITION_GROUP_MAP,
+        "contract_ref_date":   CONTRACT_REF_DATE,
+        "contract_median_months": float(contract_median),
     }, f)
 
 with open("model_data.pkl", "wb") as f:

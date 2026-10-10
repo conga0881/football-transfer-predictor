@@ -33,14 +33,16 @@ groups           = data["groups"]
 df_all           = data["df_all"]
 sub_pos_by_group = data["sub_positions_by_group"]
 clubs_sorted     = data.get("clubs_sorted", [])
-models           = bundle["models"]
-lgbm_models      = bundle.get("lgbm_models", {})
-foot_enc         = bundle["foot_enc"]
-subpos_enc_map   = bundle.get("subpos_enc_map", {})
-club_enc_map     = bundle.get("club_enc_map", {})
-global_mean_log  = bundle.get("global_mean_log", 0.0)
-eu_countries     = bundle.get("eu_countries", set())
-feature_cols     = bundle["feature_cols"]
+models                  = bundle["models"]
+lgbm_models             = bundle.get("lgbm_models", {})
+foot_enc                = bundle["foot_enc"]
+subpos_enc_map          = bundle.get("subpos_enc_map", {})
+club_enc_map            = bundle.get("club_enc_map", {})
+global_mean_log         = bundle.get("global_mean_log", 0.0)
+eu_countries            = bundle.get("eu_countries", set())
+feature_cols            = bundle["feature_cols"]
+contract_ref_date       = bundle.get("contract_ref_date", pd.Timestamp("2025-09-01"))
+contract_median_months  = bundle.get("contract_median_months", 24.0)
 
 
 def fmt_eur(v):
@@ -93,7 +95,26 @@ if page == "🔍 Select a Player":
     error_pct = (predicted - actual) / actual * 100
 
     st.title(selected_name)
-    st.markdown(f"**{row['sub_position']}** · {row.get('current_club_name', 'Unknown')} · *{group}*")
+
+    contract_months = row.get("months_to_contract_end", np.nan)
+    has_contract    = pd.notna(contract_months) and contract_months != contract_median_months
+    if has_contract:
+        if contract_months <= 0:
+            contract_badge = "🔴 Out of contract"
+        elif contract_months <= 6:
+            contract_badge = f"🔴 Contract expires in {contract_months:.0f} months"
+        elif contract_months <= 12:
+            contract_badge = f"🟠 Contract expires in {contract_months:.0f} months"
+        elif contract_months <= 24:
+            contract_badge = f"🟡 Contract expires in {contract_months:.0f} months"
+        else:
+            contract_badge = f"🟢 {contract_months:.0f} months on contract"
+        st.markdown(
+            f"**{row['sub_position']}** · {row.get('current_club_name', 'Unknown')} · "
+            f"*{group}* · {contract_badge}"
+        )
+    else:
+        st.markdown(f"**{row['sub_position']}** · {row.get('current_club_name', 'Unknown')} · *{group}*")
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Age", f"{row['age']:.1f}")
@@ -309,6 +330,19 @@ elif page == "🛠️ Build a Player":
         selected_club = st.selectbox("Club", club_options)
         is_eu         = st.checkbox("EU/EEA Citizen", value=True)
 
+        import datetime
+        default_expiry = (contract_ref_date + pd.DateOffset(months=24)).date()
+        contract_expiry = st.date_input(
+            "Contract expires",
+            value=default_expiry,
+            min_value=datetime.date(2024, 1, 1),
+            max_value=datetime.date(2032, 6, 30),
+            help="Date the player's current contract ends. Affects transfer value significantly.",
+        )
+        custom_contract_months = (
+            pd.Timestamp(contract_expiry) - contract_ref_date
+        ).days / 30.44
+
         custom_age    = st.slider("Age", 16, 40, 24)
         custom_height = st.slider("Height (cm)", 155, 210, 181)
         custom_apps   = st.slider("Appearances", 1, 50, 20)
@@ -354,6 +388,7 @@ elif page == "🛠️ Build a Player":
         "sub_position_enc":          subpos_val,
         "club_enc":                  club_val,
         "is_eu_citizen":             eu_val,
+        "months_to_contract_end":    custom_contract_months,
         "goals":                     custom_goals,
         "assists":                   custom_assists,
         "goals_per_90":              g90,
@@ -370,6 +405,17 @@ elif page == "🛠️ Build a Player":
     with out_col:
         st.markdown("### Predicted Market Value")
         st.metric("", fmt_eur(custom_pred_eur))
+
+        if custom_contract_months <= 0:
+            st.error("Out of contract — can be signed for free (Bosman)")
+        elif custom_contract_months <= 6:
+            st.error(f"Final {custom_contract_months:.0f} months — significant discount expected")
+        elif custom_contract_months <= 12:
+            st.warning(f"Last year of contract — clubs may sell at reduced fee")
+        elif custom_contract_months <= 18:
+            st.warning(f"Contract up in {custom_contract_months:.0f} months — mild discount")
+        else:
+            st.success(f"{custom_contract_months:.0f} months remaining — no contract pressure")
 
         st.markdown("#### What's driving this prediction?")
         exp_c = explainers[custom_group]
